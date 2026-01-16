@@ -22,6 +22,13 @@ tailwind.config = {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(180deg, #67c0ff 0%, #0075bf 100%)',
       },
+      colors: {
+        'brand-blue': '#0075bf',
+        'brand-black': '#000000',
+      },
+      boxShadow: {
+        'soft': '0px 3px 12px 0px #00000014',
+      },
     },
   },
 };

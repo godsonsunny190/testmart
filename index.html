@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css" />
 
     <!-- SLICK SLIDER CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- FONT STYLESHEET LINK -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
 
     <!-- EXTERNAL CSS LINK -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -109,34 +112,25 @@
     <!-- HERO SECTION STRTS HERE -->
     <section class="mt-[72px]">
         <div class="container">
-            <div class="content">
-                <div class="slider fade">
-                    <div>
-                        <div class="image">
-                            <img class="w-full h-[750px] object-cover" src="./assets/images/Hero image.png" />
-                        </div>
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Hero image.png" alt="hero image" />
                     </div>
-                    <div>
-                        <div class="image">
-                            <img class="w-full h-[750px] object-cover" src="./assets/images/Property 1=Hero 2.png" />
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 2.png" alt="hero image" />
                     </div>
-                    <div>
-                        <div class="image">
-                            <img class="w-full h-[750px] object-cover" src="./assets/images/Property 1=Hero 3.png" />
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 3.png" alt="hero image" />
                     </div>
-                    <div>
-                        <div class="image">
-                            <img class="w-full h-[750px] object-cover" src="./assets/images/Property 1=Hero 4.png" />
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 4.png" alt="hero image" />
                     </div>
-                    <div>
-                        <div class="image">
-                            <img class="w-full h-[750px] object-cover" src="./assets/images/Property 1=Hero 5.png" />
-                        </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 5.png" alt="hero image" />
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -145,136 +139,311 @@
     <!-- CARDS SECTION STARTS HERE -->
     <section class="mt-[60px]">
         <div class="container">
-            <div
-                class="box-border flex gap-8 items-start p-0 mx-auto my-0 w-full max-md:gap-6 max-md:px-4 max-md:py-0 max-sm:flex-col max-sm:gap-4 max-sm:px-4 max-sm:py-0">
-
-                <div
-                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-lg flex-[1_0_0] max-sm:w-full">
+            <div class="grid grid-cols-4 max-lg:gap-6 gap-8 max-xl:grid-cols-2 max-sm:grid-cols-1 ">
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
                         <div
-                            class="box-border flex overflow-hidden relative justify-center items-center p-3 w-12 h-12 bg-sky-600 rounded-md">
-                            <div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="icon-svg"
-                                    style="width: 24px; height: 24px; flex-shrink: 0">
-                                    <g clip-path="url(#clip0_525_7682)">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M10.716 1.0485C11.1345 0.8785 11.57 0.75 11.936 0.75C12.2995 0.75 12.7405 0.8775 13.1675 1.046C13.6185 1.2235 14.1345 1.4805 14.6745 1.806C15.752 2.455 16.9645 3.4035 17.9555 4.6055C18.2708 4.98952 18.462 5.46034 18.5035 5.9555C18.7085 8.244 18.754 12.398 18.75 15.9485C18.7476 17.488 18.7371 19.0276 18.7185 20.567L18.716 20.75H19.966L19.9685 20.5815C19.9825 19.383 19.9975 17.7375 20 15.95C20.003 13.3005 19.979 10.2735 19.878 7.931C20.4816 8.00956 21.0382 8.29817 21.4502 8.74618C21.8621 9.19419 22.1032 9.77299 22.131 10.381C22.1895 11.5645 22.25 13.371 22.25 15.7995V20.75H22.5C22.8315 20.75 23.1495 20.8817 23.3839 21.1161C23.6183 21.3505 23.75 21.6685 23.75 22C23.75 22.3315 23.6183 22.6495 23.3839 22.8839C23.1495 23.1183 22.8315 23.25 22.5 23.25H1.5C1.16848 23.25 0.850537 23.1183 0.616117 22.8839C0.381696 22.6495 0.25 22.3315 0.25 22C0.25 21.6685 0.381696 21.3505 0.616117 21.1161C0.850537 20.8817 1.16848 20.75 1.5 20.75H1.75V15.7995C1.75 13.371 1.81 11.5645 1.869 10.3805C1.89692 9.77258 2.13802 9.1939 2.55 8.74599C2.96198 8.29808 3.51853 8.00954 4.122 7.931C4.021 10.2735 3.997 13.301 4 15.95C4.002 17.7375 4.017 19.383 4.031 20.5815L4.033 20.75H5.283L5.281 20.567C5.26262 19.0276 5.25229 17.488 5.25 15.9485C5.245 12.3985 5.291 8.2435 5.496 5.955C5.53814 5.46103 5.72825 4.99125 6.0415 4.607C7.0225 3.409 8.1995 2.4615 9.247 1.811C9.772 1.485 10.274 1.2275 10.715 1.0485M14.25 18.4995V20.75H9.75V18.4995C9.75 17.2565 10.7575 16.25 12 16.25C13.2425 16.25 14.25 17.2565 14.25 18.4995ZM12 4.25C11.7702 4.25 11.5426 4.29526 11.3303 4.38321C11.118 4.47116 10.9251 4.60006 10.7626 4.76256C10.6001 4.92507 10.4712 5.11798 10.3832 5.3303C10.2953 5.54262 10.25 5.77019 10.25 6C10.25 6.22981 10.2953 6.45738 10.3832 6.6697C10.4712 6.88202 10.6001 7.07493 10.7626 7.23744C10.9251 7.39994 11.118 7.52884 11.3303 7.61679C11.5426 7.70474 11.7702 7.75 12 7.75C12.4641 7.75 12.9092 7.56563 13.2374 7.23744C13.5656 6.90925 13.75 6.46413 13.75 6C13.75 5.53587 13.5656 5.09075 13.2374 4.76256C12.9092 4.43437 12.4641 4.25 12 4.25ZM10 8.75C10.1989 8.75 10.3897 8.82902 10.5303 8.96967C10.671 9.11032 10.75 9.30109 10.75 9.5V10.5C10.75 10.6989 10.671 10.8897 10.5303 11.0303C10.3897 11.171 10.1989 11.25 10 11.25C9.80109 11.25 9.61032 11.171 9.46967 11.0303C9.32902 10.8897 9.25 10.6989 9.25 10.5V9.5C9.25 9.30109 9.32902 9.11032 9.46967 8.96967C9.61032 8.82902 9.80109 8.75 10 8.75ZM10.75 13C10.75 12.8011 10.671 12.6103 10.5303 12.4697C10.3897 12.329 10.1989 12.25 10 12.25C9.80109 12.25 9.61032 12.329 9.46967 12.4697C9.32902 12.6103 9.25 12.8011 9.25 13V14C9.25 14.1989 9.32902 14.3897 9.46967 14.5303C9.61032 14.671 9.80109 14.75 10 14.75C10.1989 14.75 10.3897 14.671 10.5303 14.5303C10.671 14.3897 10.75 14.1989 10.75 14V13ZM14 8.75C14.1989 8.75 14.3897 8.82902 14.5303 8.96967C14.671 9.11032 14.75 9.30109 14.75 9.5V10.5C14.75 10.6989 14.671 10.8897 14.5303 11.0303C14.3897 11.171 14.1989 11.25 14 11.25C13.8011 11.25 13.6103 11.171 13.4697 11.0303C13.329 10.8897 13.25 10.6989 13.25 10.5V9.5C13.25 9.30109 13.329 9.11032 13.4697 8.96967C13.6103 8.82902 13.8011 8.75 14 8.75ZM14.75 13C14.75 12.8011 14.671 12.6103 14.5303 12.4697C14.3897 12.329 14.1989 12.25 14 12.25C13.8011 12.25 13.6103 12.329 13.4697 12.4697C13.329 12.6103 13.25 12.8011 13.25 13V14C13.25 14.1989 13.329 14.3897 13.4697 14.5303C13.6103 14.671 13.8011 14.75 14 14.75C14.1989 14.75 14.3897 14.671 14.5303 14.5303C14.671 14.3897 14.75 14.1989 14.75 14V13Z"
-                                            fill="white"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_525_7682">
-                                            <rect width="24" height="24" fill="white"></rect>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
+                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                            <img src="./assets/images/icons/service.svg" alt="icons" class=" w-12 h-12">
                         </div>
-                        <div class="text-base font-medium text-green-500">
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
                             +12%
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <div class="self-stretch text-3xl font-semibold text-black">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
                             64965.00
-                        </div>
-                        <div class="self-stretch text-base font-medium text-black opacity-70">
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
                             Government Customers Served
-                        </div>
+                        </p>
                     </div>
-                </div>
+                </article>
 
-
-                <div
-                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-lg flex-[1_0_0] max-sm:w-full">
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
                         <div
-                            class="box-border flex overflow-hidden relative justify-center items-center p-3 w-12 h-12 bg-emerald-500 rounded-md">
-                            <div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="icon-svg"
-                                    style="width: 24px; height: 24px; flex-shrink: 0">
-                                    <path
-                                        d="M3.71969 2.78673L4.26969 4.64973H18.9237C20.7637 4.64973 22.1687 6.36673 21.6387 8.15973L19.9837 13.7597C19.6317 14.9527 18.5127 15.7497 17.2687 15.7497H8.11269C6.86869 15.7497 5.75069 14.9527 5.39769 13.7597L2.28069 3.21173C2.24981 3.11647 2.23832 3.01599 2.2469 2.91622C2.25548 2.81645 2.28395 2.71941 2.33063 2.63082C2.37731 2.54223 2.44127 2.46389 2.51871 2.40041C2.59616 2.33693 2.68554 2.28961 2.78157 2.26122C2.8776 2.23284 2.97834 2.22398 3.07786 2.23516C3.17737 2.24633 3.27363 2.27733 3.36098 2.3263C3.44832 2.37528 3.52497 2.44126 3.5864 2.52033C3.64784 2.59941 3.69382 2.68999 3.71969 2.78673ZM15.0907 8.93973C15.2037 8.77834 15.2487 8.57893 15.216 8.38462C15.1832 8.19031 15.0752 8.01672 14.9155 7.90136C14.7557 7.78601 14.5569 7.73816 14.3622 7.76817C14.1674 7.79818 13.9923 7.90363 13.8747 8.06173L12.1617 10.4327L11.5627 9.74873C11.4987 9.67176 11.4199 9.60839 11.331 9.56235C11.2421 9.5163 11.1449 9.48852 11.0451 9.48063C10.9453 9.47274 10.845 9.48492 10.75 9.51643C10.6549 9.54794 10.5672 9.59816 10.4919 9.66412C10.4166 9.73007 10.3552 9.81044 10.3115 9.90048C10.2677 9.99051 10.2424 10.0884 10.2371 10.1884C10.2318 10.2883 10.2465 10.3883 10.2804 10.4825C10.3144 10.5767 10.3668 10.6631 10.4347 10.7367L11.4687 11.9177C11.5651 12.0279 11.6851 12.115 11.8197 12.1724C11.9544 12.2298 12.1003 12.2562 12.2466 12.2494C12.3928 12.2427 12.5357 12.2031 12.6645 12.1336C12.7933 12.064 12.9048 11.9663 12.9907 11.8477L15.0907 8.93973ZM8.49969 17.2497C7.90295 17.2497 7.33065 17.4868 6.9087 17.9087C6.48674 18.3307 6.24969 18.903 6.24969 19.4997C6.24969 20.0965 6.48674 20.6688 6.9087 21.0907C7.33065 21.5127 7.90295 21.7497 8.49969 21.7497C9.09642 21.7497 9.66872 21.5127 10.0907 21.0907C10.5126 20.6688 10.7497 20.0965 10.7497 19.4997C10.7497 18.903 10.5126 18.3307 10.0907 17.9087C9.66872 17.4868 9.09642 17.2497 8.49969 17.2497ZM16.4997 17.2497C15.9029 17.2497 15.3307 17.4868 14.9087 17.9087C14.4867 18.3307 14.2497 18.903 14.2497 19.4997C14.2497 20.0965 14.4867 20.6688 14.9087 21.0907C15.3307 21.5127 15.9029 21.7497 16.4997 21.7497C17.0964 21.7497 17.6687 21.5127 18.0907 21.0907C18.5126 20.6688 18.7497 20.0965 18.7497 19.4997C18.7497 18.903 18.5126 18.3307 18.0907 17.9087C17.6687 17.4868 17.0964 17.2497 16.4997 17.2497Z"
-                                        fill="white"></path>
-                                </svg>
-                            </div>
+                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                            <img src="./assets/images/icons/shop.svg" alt="icons" class=" w-12 h-12">
                         </div>
-                        <div class="text-base font-medium text-green-500">
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
                             +8%
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <div class="self-stretch text-3xl font-semibold text-black">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
                             440k
-                        </div>
-                        <div class="self-stretch text-base font-medium text-black opacity-70">
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
                             Total Orders
-                        </div>
+                        </p>
                     </div>
-                </div>
+                </article>
 
-                <div
-                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-lg flex-[1_0_0] max-sm:w-full">
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
                         <div
-                            class="box-border flex overflow-hidden relative justify-center items-center p-3 w-12 h-12 bg-purple-600 rounded-md">
-                            <div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="icon-svg"
-                                    style="width: 24px; height: 24px; flex-shrink: 0">
-                                    <path
-                                        d="M12 1.75C9.97275 1.75 7.99101 2.35115 6.30541 3.47744C4.61981 4.60372 3.30604 6.20455 2.53024 8.07749C1.75444 9.95044 1.55146 12.0114 1.94696 13.9997C2.34245 15.988 3.31867 17.8144 4.75216 19.2478C6.18565 20.6813 8.01202 21.6576 10.0003 22.053C11.9886 22.4485 14.0496 22.2456 15.9225 21.4698C17.7955 20.694 19.3963 19.3802 20.5226 17.6946C21.6489 16.009 22.25 14.0273 22.25 12C22.2474 9.28234 21.1666 6.67675 19.2449 4.75508C17.3232 2.83341 14.7177 1.75265 12 1.75ZM12.75 17.75V18.54C12.75 18.7389 12.671 18.9297 12.5303 19.0703C12.3897 19.211 12.1989 19.29 12 19.29C11.8011 19.29 11.6103 19.211 11.4697 19.0703C11.329 18.9297 11.25 18.7389 11.25 18.54V17.75C10.5983 17.6526 9.98787 17.3716 9.49 16.94C9.13462 16.6421 8.842 16.2765 8.62913 15.8645C8.41625 15.4524 8.28738 15.0022 8.25 14.54C8.23735 14.3922 8.26878 14.2441 8.34032 14.1142C8.41186 13.9843 8.5203 13.8785 8.65194 13.8102C8.78357 13.7419 8.9325 13.7142 9.07989 13.7306C9.22727 13.7469 9.36651 13.8066 9.48 13.902C9.63309 14.0294 9.73005 14.2118 9.75 14.41C9.76913 14.6775 9.84184 14.9383 9.96381 15.1771C10.0858 15.4159 10.2545 15.6277 10.46 15.8C10.8732 16.1532 11.4073 16.3325 11.95 16.3C13.51 16.3 14.25 15.7 14.25 14.48C14.25 13.67 13.54 12.8 12 12.8C8.74 12.8 8.25 10.8 8.25 9.65C8.27666 8.93285 8.52311 8.24123 8.95599 7.66884C9.38886 7.09644 9.98722 6.67095 10.67 6.45C10.86 6.39133 11.0533 6.348 11.25 6.32V5.54C11.25 5.34109 11.329 5.15032 11.4697 5.00967C11.6103 4.86902 11.8011 4.79 12 4.79C12.1989 4.79 12.3897 4.86902 12.5303 5.00967C12.671 5.15032 12.75 5.34109 12.75 5.54V6.35C13.5351 6.48093 14.2549 6.86765 14.7974 7.44999C15.34 8.03232 15.6749 8.77764 15.75 9.57C15.7582 9.76129 15.693 9.94848 15.5676 10.0932C15.4423 10.2379 15.2663 10.3293 15.0758 10.3484C14.8853 10.3676 14.6947 10.3132 14.543 10.1964C14.3913 10.0795 14.2901 9.90909 14.26 9.72C14.2044 9.1773 13.9437 8.67631 13.531 8.31944C13.1184 7.96257 12.5851 7.77677 12.04 7.8H11.86C11.6164 7.79808 11.3739 7.83177 11.14 7.9C10.8841 7.98346 10.6477 8.1177 10.445 8.29468C10.2422 8.47167 10.0773 8.68775 9.96 8.93C9.83975 9.16968 9.77159 9.4321 9.76 9.7C9.76 10.52 10.03 11.32 12.01 11.32C14.47 11.32 15.76 12.92 15.76 14.5C15.7733 14.9117 15.7047 15.322 15.5581 15.707C15.4116 16.092 15.19 16.4441 14.9062 16.7427C14.6224 17.0414 14.2822 17.2807 13.9052 17.4467C13.5281 17.6128 13.1219 17.7023 12.71 17.71L12.75 17.75Z"
-                                        fill="white"></path>
-                                </svg>
-                            </div>
+                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                            <img src="./assets/images/icons/dollar.svg" alt="icons" class=" w-12 h-12">
                         </div>
-                        <div class="text-base font-medium text-green-500">
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
                             +15%
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <div class="self-stretch text-3xl font-semibold text-black">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
                             $2.4M
-                        </div>
-                        <div class="self-stretch text-base font-medium text-black opacity-70">
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
                             Total Savings
-                        </div>
+                        </p>
                     </div>
-                </div>
+                </article>
 
-                <div
-                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-lg flex-[1_0_0] max-sm:w-full">
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
                         <div
-                            class="box-border flex overflow-hidden relative justify-center items-center p-3 w-12 h-12 bg-orange-500 rounded-md">
-                            <div>
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" class="icon-svg"
-                                    style="width: 24px; height: 24px; flex-shrink: 0">
-                                    <path
-                                        d="M1.75 13.325C1.46667 13.325 1.22934 13.2293 1.038 13.038C0.84667 12.8467 0.75067 12.609 0.750003 12.325C0.749337 12.041 0.845337 11.8037 1.038 11.613C1.23067 11.4223 1.468 11.3263 1.75 11.325H5.25C5.53334 11.325 5.771 11.421 5.963 11.613C6.155 11.805 6.25067 12.0423 6.25 12.325C6.24934 12.6077 6.15334 12.8453 5.962 13.038C5.77067 13.2307 5.53334 13.3263 5.25 13.325H1.75ZM7 20C6.16667 20 5.45834 19.7083 4.875 19.125C4.29167 18.5417 4 17.8333 4 17H2.75C2.41667 17 2.15 16.875 1.95 16.625C1.75 16.375 1.69167 16.0917 1.775 15.775L2 14.825H5.125C5.825 14.825 6.41667 14.5833 6.9 14.1C7.38334 13.6167 7.625 13.025 7.625 12.325C7.625 12.1083 7.6 11.9083 7.55 11.725C7.5 11.5417 7.43334 11.3583 7.35 11.175H8.3C9 11.175 9.59167 10.9333 10.075 10.45C10.5583 9.96667 10.8 9.375 10.8 8.675C10.8 7.975 10.5583 7.38333 10.075 6.9C9.59167 6.41667 9 6.175 8.3 6.175H4.5L4.65 5.575C4.75 5.10833 4.97934 4.72933 5.338 4.438C5.69667 4.14667 6.11734 4.00067 6.6 4H16.75C17.0833 4 17.35 4.125 17.55 4.375C17.75 4.625 17.8083 4.90833 17.725 5.225L17.075 8H19C19.3167 8 19.6167 8.071 19.9 8.213C20.1833 8.355 20.4167 8.55067 20.6 8.8L22.475 11.275C22.6583 11.5083 22.775 11.7627 22.825 12.038C22.875 12.3133 22.875 12.5923 22.825 12.875L22.15 16.2C22.1 16.4333 21.9833 16.625 21.8 16.775C21.6167 16.925 21.4083 17 21.175 17H20C20 17.8333 19.7083 18.5417 19.125 19.125C18.5417 19.7083 17.8333 20 17 20C16.1667 20 15.4583 19.7083 14.875 19.125C14.2917 18.5417 14 17.8333 14 17H10C10 17.8333 9.70834 18.5417 9.125 19.125C8.54167 19.7083 7.83334 20 7 20ZM3.75 9.675C3.46667 9.675 3.22934 9.579 3.038 9.387C2.84667 9.195 2.75067 8.95767 2.75 8.675C2.74934 8.39233 2.84534 8.155 3.038 7.963C3.23067 7.771 3.468 7.675 3.75 7.675H8.25C8.53334 7.675 8.771 7.771 8.963 7.963C9.155 8.155 9.25067 8.39233 9.25 8.675C9.24934 8.95767 9.15334 9.19533 8.962 9.388C8.77067 9.58067 8.53334 9.67633 8.25 9.675H3.75ZM7 18C7.28334 18 7.521 17.904 7.713 17.712C7.905 17.52 8.00067 17.2827 8 17C7.99934 16.7173 7.90334 16.48 7.712 16.288C7.52067 16.096 7.28334 16 7 16C6.71667 16 6.47934 16.096 6.288 16.288C6.09667 16.48 6.00067 16.7173 6 17C5.99934 17.2827 6.09534 17.5203 6.288 17.713C6.48067 17.9057 6.718 18.0013 7 18ZM17 18C17.2833 18 17.521 17.904 17.713 17.712C17.905 17.52 18.0007 17.2827 18 17C17.9993 16.7173 17.9033 16.48 17.712 16.288C17.5207 16.096 17.2833 16 17 16C16.7167 16 16.4793 16.096 16.288 16.288C16.0967 16.48 16.0007 16.7173 16 17C15.9993 17.2827 16.0953 17.5203 16.288 17.713C16.4807 17.9057 16.718 18.0013 17 18ZM15.925 13H20.75L20.85 12.475L19 10H16.625L15.925 13Z"
-                                        fill="white"></path>
-                                </svg>
-                            </div>
+                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                            <img src="./assets/images/icons/delivery.svg" alt="icons" class=" w-12 h-12">
                         </div>
-                        <div class="text-base font-medium text-green-500">
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
                             98.7%
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <div class="self-stretch text-3xl font-semibold text-black">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
                             91.26%
-                        </div>
-                        <div class="self-stretch text-base font-medium text-black opacity-70">
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
                             On-Time Deliveries
-                        </div>
+                        </p>
                     </div>
-                </div>
+                </article>
+
             </div>
         </div>
     </section>
     <!-- CARDS SECTION ENDS HERE -->
+
+
+    <section
+        class="mt-[60px] overflow-hidden overflow-x-auto gap-10 items-start py-[60px] text-base font-medium text-black bg-[#FAFAFA]"
+        role="region" aria-label="Product carousel" tabindex="0">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Manufacturers section</h2>
+            </div>
+            <div class="swiper product-carousel mt-8">
+                <div class="swiper-wrapper">
+                    <article class=" swiper-slide">
+                        <img src="./assets/images/index/product Image (1).png" alt="product images">
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER SECTION STARTS HERE -->
+    <footer
+        class="box-border flex justify-center items-center  pt-16 pb-8 w-full bg-neutral-800 rounded-[48px_48px_0_0]  max-md:pt-12 max-md:pb-6 max-md:rounded-[32px_32px_0_0] max-sm:pt-8 max-sm:pb-5 max-sm:rounded-[24px_24px_0_0]"
+        role="contentinfo" aria-label="Site footer">
+        <div class="container">
+            <div class="flex flex-col gap-8 items-center ">
+                <div
+                    class="flex gap-10 justify-between items-start w-full max-md:flex-wrap max-md:gap-12 max-sm:flex-col max-sm:gap-10">
+                    <div class="flex flex-col shrink-0 gap-16 items-start w-[391px] max-md:gap-12 max-md:w-full max-md:max-w-[391px] max-sm:gap-10 max-sm:items-start max-sm:w-full"
+                        aria-label="Company information and social media">
+                        <div class="relative h-10 w-[251px] max-sm:h-8 max-sm:w-[200px]">
+                            <img src="./assets/images/logo/white-logo.svg" alt="TestMart Logo"
+                                class="block h-10 w-[251px] max-sm:h-8 max-sm:w-[200px]" />
+                        </div>
+
+                        <div class="flex gap-10 items-center max-sm:flex-wrap max-sm:gap-6" aria-label="Certifications">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/457ee3d212b9b20601326c4ec2918c2c9ae2224a?width=130"
+                                alt="GSA Logo" class="h-16 w-[65px] max-sm:h-[51px] max-sm:w-[52px]" />
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/dbfcbdba6aae0b3b23f2d94886febb82dd6bb94a?width=96"
+                                alt="Certification Logo" class="w-12 h-16 max-sm:h-[51px] max-sm:w-[38px]" />
+                        </div>
+
+                        <nav class="flex gap-10 items-center max-sm:flex-wrap max-sm:gap-6"
+                            aria-label="Social media links">
+                            <a href="#" aria-label="LinkedIn" class="social-icon linkedin-icon">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                  ">
+                                    <path
+                                        d="M38.5 2.75L5.49141 2.75C3.97891 2.75 2.75 3.99609 2.75 5.52578L2.75 38.4742C2.75 40.0039 3.97891 41.25 5.49141 41.25L38.5 41.25C40.0125 41.25 41.25 40.0039 41.25 38.4742L41.25 5.52578C41.25 3.99609 40.0125 2.75 38.5 2.75ZM14.3859 35.75H8.67969L8.67969 17.3766L14.3945 17.3766L14.3945 35.75H14.3859ZM11.5328 14.8672C9.70234 14.8672 8.22422 13.3805 8.22422 11.5586C8.22422 9.73672 9.70234 8.25 11.5328 8.25C13.3547 8.25 14.8414 9.73672 14.8414 11.5586C14.8414 13.3891 13.3633 14.8672 11.5328 14.8672ZM35.7758 35.75H30.0695V26.8125C30.0695 24.6812 30.0266 21.9398 27.1047 21.9398C24.1313 21.9398 23.6758 24.2602 23.6758 26.6578V35.75H17.9695L17.9695 17.3766L23.4438 17.3766V19.8859H23.5211C24.2859 18.4422 26.1508 16.9211 28.9266 16.9211C34.7016 16.9211 35.7758 20.7281 35.7758 25.6781V35.75Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+
+                            <a href="#" aria-label="Twitter" class="social-icon twitter-icon">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                  ">
+                                    <path
+                                        d="M24.7993 19.0416L37.3097 4.80078H34.3473L23.4795 17.1637L14.8051 4.80078H4.7998L17.9187 23.4973L4.7998 38.4288H7.76407L19.2329 25.3714L28.3945 38.4288H38.3998M8.83367 6.98851H13.3865L34.3435 36.3474H29.7907"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+
+                            <a href="#" aria-label="Facebook" class="social-icon facebook-icon">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                  ">
+                                    <g clip-path="url(#clip0_2079_3331)">
+                                        <path
+                                            d="M43.3125 22C43.3125 10.2266 33.7734 0.6875 22 0.6875C10.2266 0.6875 0.6875 10.2266 0.6875 22C0.6875 32.6373 8.48117 41.4545 18.6699 43.0547L18.6699 28.1609H13.2559L13.2559 22H18.6699V17.3044C18.6699 11.9634 21.8496 9.01312 26.7197 9.01312C29.052 9.01312 31.4909 9.42906 31.4909 9.42906V14.6713H28.8028C26.1559 14.6713 25.3301 16.3144 25.3301 17.9996V22H31.2409L30.2955 28.1609H25.3301L25.3301 43.0547C35.5188 41.4545 43.3125 32.6373 43.3125 22Z"
+                                            fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2079_3331">
+                                            <rect width="44" height="44" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                            <a href="#" aria-label="Instagram" class="social-icon instagram-icon">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" style="
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    overflow: hidden;
+                  ">
+                                    <path
+                                        d="M22.0082 12.1166C16.5426 12.1166 12.134 16.5252 12.134 21.9908C12.134 27.4564 16.5426 31.865 22.0082 31.865C27.4738 31.865 31.8824 27.4564 31.8824 21.9908C31.8824 16.5252 27.4738 12.1166 22.0082 12.1166ZM22.0082 28.4104C18.4762 28.4104 15.5887 25.5314 15.5887 21.9908C15.5887 18.4502 18.4676 15.5713 22.0082 15.5713C25.5488 15.5713 28.4277 18.4502 28.4277 21.9908C28.4277 25.5314 25.5402 28.4104 22.0082 28.4104ZM34.5895 11.7127C34.5895 12.9932 33.5582 14.0158 32.2863 14.0158C31.0059 14.0158 29.9832 12.9846 29.9832 11.7127C29.9832 10.4408 31.0145 9.40957 32.2863 9.40957C33.5582 9.40957 34.5895 10.4408 34.5895 11.7127ZM41.1293 14.0502C40.9832 10.965 40.2785 8.23223 38.0184 5.98066C35.7668 3.7291 33.034 3.02441 29.9488 2.86973C26.7691 2.68926 17.2387 2.68926 14.059 2.86973C10.9824 3.01582 8.24961 3.72051 5.98945 5.97207C3.7293 8.22363 3.0332 10.9564 2.87852 14.0416C2.69805 17.2213 2.69805 26.7518 2.87852 29.9314C3.02461 33.0166 3.7293 35.7494 5.98945 38.001C8.24961 40.2525 10.9738 40.9572 14.059 41.1119C17.2387 41.2924 26.7691 41.2924 29.9488 41.1119C33.034 40.9658 35.7668 40.2611 38.0184 38.001C40.2699 35.7494 40.9746 33.0166 41.1293 29.9314C41.3098 26.7518 41.3098 17.2299 41.1293 14.0502ZM37.0215 33.3432C36.3512 35.0275 35.0535 36.3252 33.3605 37.0041C30.8254 38.0096 24.8098 37.7775 22.0082 37.7775C19.2066 37.7775 13.1824 38.001 10.6559 37.0041C8.97148 36.3338 7.67383 35.0361 6.99492 33.3432C5.98945 30.808 6.22148 24.7924 6.22148 21.9908C6.22148 19.1893 5.99805 13.165 6.99492 10.6385C7.66523 8.9541 8.96289 7.65645 10.6559 6.97754C13.191 5.97207 19.2066 6.2041 22.0082 6.2041C24.8098 6.2041 30.834 5.98066 33.3605 6.97754C35.0449 7.64785 36.3426 8.94551 37.0215 10.6385C38.027 13.1736 37.7949 19.1893 37.7949 21.9908C37.7949 24.7924 38.027 30.8166 37.0215 33.3432Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+
+                    <nav class="flex flex-col shrink-0 gap-6 items-start w-[260px] max-md:min-w-[200px] max-md:w-[calc(50%_-_24px)] max-sm:gap-4 max-sm:w-full"
+                        aria-label="Customer Service">
+                        <h2 class="w-full text-2xl font-bold text-white max-sm:text-xl">
+                            Customer Service
+                        </h2>
+                        <div class="h-px bg-sky-600 opacity-30 w-[260px] max-sm:w-full"></div>
+                        <ul class="flex flex-col gap-4 items-start w-full max-sm:gap-3">
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    Help
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    Terms and Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="flex flex-col shrink-0 gap-6 items-start w-[260px] max-md:min-w-[200px] max-md:w-[calc(50%_-_24px)] max-sm:gap-4 max-sm:w-full"
+                        aria-label="Our Company">
+                        <h2 class="w-full text-2xl font-bold text-white max-sm:text-xl">
+                            Our Company
+                        </h2>
+                        <div class="h-px bg-sky-600 opacity-30 w-[260px] max-sm:w-full"></div>
+                        <ul class="flex flex-col gap-4 items-start w-full max-sm:gap-3">
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    Quality &amp; Compliance
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="flex flex-col shrink-0 gap-6 items-start w-auto min-w-[260px] max-md:w-full max-md:max-w-[310px] max-md:min-w-[200px] max-sm:gap-4 max-sm:w-full"
+                        aria-label="Contact Information">
+                        <h2 class="w-full text-2xl font-bold text-white max-sm:text-xl">
+                            Contact
+                        </h2>
+                        <div class="h-px bg-sky-600 opacity-30 w-[310px] max-sm:w-full"></div>
+                        <div class="flex flex-col gap-12 items-start max-sm:gap-8">
+                            <address class="flex flex-col gap-6 items-start w-full max-sm:gap-4 not-italic">
+                                <p class="text-base text-neutral-50 w-[310px] max-sm:w-full max-sm:text-sm">
+                                    1840 Gateway Dr., Suite 150 San Mateo, CA 94404
+                                </p>
+                                <a href="tel:+16506240525"
+                                    class="text-base text-white max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
+                                    +1 650-624-0525
+                                </a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full h-px bg-sky-600 opacity-30" role="separator"></div>
+
+                <div
+                    class="flex gap-5 justify-between items-center w-full max-md:flex-col max-md:gap-4 max-md:text-center max-sm:gap-3">
+                    <p class="text-base text-center text-white max-md:text-center max-sm:text-sm">
+                        Testmart © 2025
+                    </p>
+                    <p
+                        class="text-base text-center text-white max-md:text-sm max-md:text-center max-sm:text-xs max-sm:leading-snug">
+                        Cage code: 1RPN6 · Tax ID: 94-3310442 · DODAAC: Q90079 · UIC: N3836 ·
+                        D&amp;B: 086438152 · UEI #: MCQUYM6GHNJ5
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION ENDS HERE -->
+
+
+
 
 
     <!-- JQUERY CDN -->
@@ -286,23 +455,20 @@
     <!-- LENIS SMOOTH SCROLL CDN LINK -->
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
 
-    <!-- CUSTOM JS LINK -->
+    <!-- TAILWIND JS LINK -->
     <script src="tailwind.config.js"></script>
 
+    <!-- BUNDLE JS LINK -->
+    <script src="./assets/javascript/bundle.js"></script>
 
-    <script>
-        $(".fade").slick({
-            dots: false,
-            infinite: true,
-            speed: 400,
-            fade: true,
-            slide: "div",
-            cssEase: 'ease-in-out',
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-        });
-    </script>
+    <!-- LENIS JS LINK -->
+    <script src="./assets/javascript/lenis.js"></script>
+
+    <!-- CUSTOM JS LINK -->
+    <script src="./assets/javascript/script.js"></script>
+
+
+
 </body>
 
 </html>
