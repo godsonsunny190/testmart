@@ -2,15 +2,11 @@
 /*             FADE SLIDER              */
 /* ===================================== */
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".hero-banner", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
-  speed: 1000,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -49,39 +45,121 @@ var swiper = new Swiper(".product-carousel", {
       slidesPerView: 2.2,
       spaceBetween: 16,
     },
+
     768: {
       slidesPerView: 3.2,
+      spaceBetween: 20,
     },
+
     1024: {
       slidesPerView: 4,
+      spaceBetween: 28,
     },
 
     1280: {
       slidesPerView: 5,
+      spaceBetween: 28,
     },
 
   },
-
 });
-
-
 
 
 /* ===================================== */
 /*             PRODUCT SLIDER            */
 /* ===================================== */
 
+
+// Initialize Swiper
 var swiper = new Swiper(".logo-carousel", {
   spaceBetween: 80,
   slidesPerView: 7,
+  centeredSlides: true,
+  speed: 3000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  allowTouchMove: false,
+
+  breakpoints: {
+    0: {
+      slidesPerView: 2.2,
+      spaceBetween: 16,
+    },
+
+    640: {
+      slidesPerView: 3.2,
+      spaceBetween: 16,
+    },
+
+    768: {
+      slidesPerView: 3.2,
+    },
+
+    1024: {
+      slidesPerView: 4.2,
+    },
+
+    1280: {
+      slidesPerView: 5,
+    },
+
+    1440: {
+      slidesPerView: 7,
+    }
+  }
+});
+
+const marqueeEl = document.querySelector('.logo-carousel');
+marqueeEl.addEventListener('mouseenter', () => {
+  swiper.autoplay.stop();
+});
+
+marqueeEl.addEventListener('mouseleave', () => {
+  swiper.autoplay.start();
+});
+
+
+/* ===================================== */
+/*             PRODUCT SLIDER            */
+/* ===================================== */
+
+var swiper = new Swiper(".whitepaper-carousel", {
+  spaceBetween: 50,
+  slidesPerView: 4,
   centerSlide: true,
   loop: true,
   // autoplay: {
   //   delay: 1500,
   //   disableOnInteraction: false,
   // },
-});
 
+  breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+    },
+    640: {
+      slidesPerView: 2.2,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3.2,
+      spaceBetween: 25,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 25,
+    },
+
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  }
+});
 
 
 /* ===================================== */
@@ -113,5 +191,47 @@ document.querySelectorAll('.accordion-header').forEach(button => {
       icon.classList.replace('text-black', 'text-[#0075BF]');
       title.classList.replace('text-black', 'text-[#0075BF]');
     }
+  });
+});
+
+
+/* ===================================== */
+/*           MOBILE MENU SCRIPT          */
+/* ===================================== */
+
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const mobileMenuClose = document.getElementById('mobileMenuClose');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileOverlay = document.getElementById('mobileOverlay');
+
+function openMobileMenu() {
+  mobileMenu.classList.add('active');
+  mobileOverlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  mobileMenuToggle.setAttribute('aria-expanded', 'true');
+}
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('active');
+  mobileOverlay.classList.remove('active');
+  document.body.style.overflow = '';
+  mobileMenuToggle.setAttribute('aria-expanded', 'false');
+}
+
+mobileMenuToggle.addEventListener('click', openMobileMenu);
+mobileMenuClose.addEventListener('click', closeMobileMenu);
+mobileOverlay.addEventListener('click', closeMobileMenu);
+
+
+const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+
+dropdownToggles.forEach(toggle => {
+  toggle.addEventListener('click', function () {
+    const targetId = this.getAttribute('data-target');
+    const dropdown = document.getElementById(targetId);
+    const icon = this.querySelector('.mobile-dropdown-icon');
+
+    dropdown.classList.toggle('active');
+    icon.classList.toggle('rotated');
   });
 });

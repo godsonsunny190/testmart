@@ -28,108 +28,282 @@
 <body>
 
     <!-- HEADER SECTION STARTS HERE -->
-    <header class="header">
-        <div class="py-[6px] bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]">
-            <div class="container mx-auto px-4">
-                <div class="flex items-center justify-between">
-                    <button id="mobile-menu-btn" class="lg:hidden text-white p-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-
-                    <ul id="nav-menu"
-                        class="hidden lg:flex header-menu gap-10 font-poppins font-medium text-[16px] leading-[100%] tracking-normal text-center text-white">
-                        <li>
-                            <a href=""
-                                class="flex items-center gap-2 transition-colors duration-300 hover:text-[#1D1E28]">
-                                Products
-                            </a>
-                        </li>
-                        <li>
-                            <a href=""
-                                class="flex items-center gap-2 transition-colors duration-300 hover:text-[#1D1E28]">
-                                Brands
-                            </a>
-                        </li>
-                    </ul>
-
-                    <a href=""
-                        class="h-[40px] px-5 py-2 rounded-[38px] flex items-center justify-center gap-[10px] bg-white text-[#0075BF] font-semibold transition-all duration-300 hover:bg-[#1D1E28] hover:text-white hover:shadow-lg">
-                        Catalog
-                    </a>
-                </div>
-
-                <ul id="mobile-dropdown"
-                    class="hidden flex-col gap-4 py-4 lg:hidden font-poppins font-medium text-white border-t border-blue-400 mt-2">
-                    <li><a href="#" class="block py-2">Products</a></li>
-                    <li><a href="#" class="block py-2">Brands</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="py-[23px] border border-[#EEEEEE]">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0">
-
-                    <div class="max-w-[250px] w-full flex-shrink-0 flex justify-center lg:justify-start">
-                        <a href="index.html">
-                            <img src="./assets/images/logo/TestMart Logo.svg" alt="main logo" class="w-full h-auto">
-                        </a>
-                    </div>
-
-                    <div class="w-full max-w-[450px]">
-                        <div
-                            class="flex items-center h-[52px] bg-white border border-gray-300 rounded-full shadow-sm overflow-hidden">
-                            <div class="pl-4 text-gray-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1010.5 18a7.5 7.5 0 006.15-3.35z" />
-                                </svg>
+    <header>
+        <!-- Top Contact Bar -->
+        <div class="bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]">
+            <div class="container-fit">
+                <div class="flex flex-col gap-0.5 items-start w-ful" role="banner">
+                    <div class="box-border flex gap-8 items-center py-1.5 w-full  max-md:gap-5 max-md:py-1.5 max-sm:flex-wrap max-sm:gap-3 max-sm:px-4 max-sm:py-2"
+                        aria-label="Contact information">
+                        <!-- Phone Contact -->
+                        <div class="flex gap-1 items-center max-sm:gap-1">
+                            <div aria-hidden="true">
+                                <img src="./assets/images/icons/fi-rr-phone-call.svg" alt="icon">
                             </div>
-                            <input type="text" placeholder="What are you looking for?"
-                                class="flex-1 px-3 py-3 text-base font-[400] text-gray-600 focus:outline-none" />
-                            <button
-                                class="mr-2 px-4 py-[4.5px] text-lg font-[400] text-white bg-[#0075BF] rounded-full hover:bg-blue-700 transition">
-                                Search
-                            </button>
+                            <a href="tel:888-665-2765"
+                                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                aria-label="Call us at 888-665-2765">
+                                888-665-2765
+                            </a>
                         </div>
-                    </div>
 
-                    <div class="flex flex-col gap-3 items-center lg:items-start">
-                        <a href="tel:8886652765"
-                            class="inline-flex items-center gap-1 py-[10px] px-5 rounded-full bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)] text-white text-[22px] sm:text-[28px] font-semibold leading-[22px] transition w-fit">
-                            <img src="./assets/images/phone-call.svg" class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
-                                alt="phone icon">
-                            <span>888-665-2765</span>
-                        </a>
-
-                        <div class="flex items-center gap-1 text-base sm:text-lg font-semibold text-[#1E1E2F]">
-                            <img src="./assets/images/envelope.svg" alt="envelope icon">
-                            <a href="mailto:salesteam@testmart.com" class="hover:underline">
+                        <!-- Email Contact -->
+                        <div class="flex gap-1 items-center flex-[1_0_0] max-sm:gap-1">
+                            <div aria-hidden="true">
+                                <img src="./assets/images/icons/fi-rr-envelope.svg" alt="icon">
+                            </div>
+                            <a href="mailto:salesteam@testmart.com"
+                                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover:underline focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                                aria-label="Email us at salesteam@testmart.com">
                                 salesteam@testmart.com
                             </a>
                         </div>
+
+                        <!-- Flag Icon -->
+                        <img src="./assets/images/Sewp.png" alt="Country flag"
+                            class="shrink-0 h-9 w-[27px] max-sm:w-5 max-sm:h-[27px]" />
+
+                        <!-- GSA Icon -->
+                        <img src="./assets/images/GSA.png" alt="GSA certification"
+                            class="shrink-0 h-9 w-[37px] max-sm:w-7 max-sm:h-[27px]" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="bg-white">
+            <div class="container-fit">
+                <div class="box-border flex justify-between items-center py-6 w-full border-b border-solid border-b-zinc-100
+                     max-md:py-6 max-xl:flex-wrap max-xl:gap-4 max-sm:p-4">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+                        <img src="./assets/images/logo/TestMart Logo.svg" alt="TestMart Logo"
+                            class="h-10 w-[250px] max-sm:h-[29px] max-sm:w-[180px]" />
                     </div>
 
-                    <div class="flex gap-6 lg:gap-[50px] max-w-[170px] w-full justify-center lg:justify-end">
-                        <img src="./assets/images/GSA.png" alt="logo" class="h-8 lg:h-auto">
-                        <img src="./assets/images/Sewp.png" alt="logo" class="h-8 lg:h-auto">
+                    <!-- Search Bar -->
+                    <div
+                        class="box-border flex gap-4 justify-center items-center py-2 pr-2 pl-4 bg-white border border-solid border-neutral-200 rounded-[50px] w-[450px] max-xl:order-3 max-sm:gap-2 max-sm:px-3 max-sm:py-2 max-xl:w-full">
+                        <div aria-hidden="true" class="w-5 h-5">
+                            <img src="./assets/images/icons/search.svg" alt="search">
+                        </div>
+                        <input type="search" placeholder="What are you looking for?"
+                            class="text-base leading-8 text-black opacity-50 flex-[1_0_0] max-sm:text-sm max-sm:leading-6 bg-transparent border-none outline-none focus:opacity-100"
+                            aria-label="Search products" />
+                        <button type="submit"
+                            class="flex gap-2.5 justify-center items-center px-4 py-1 h-9 bg-sky-600 cursor-pointer rounded-[60px] max-sm:px-3 max-sm:py-1 max-sm:h-8 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                            aria-label="Search">
+                            <span class="text-lg text-white capitalize max-sm:text-sm">Search</span>
+                        </button>
                     </div>
 
+                    <!-- Desktop Navigation -->
+                    <nav class="flex gap-10 items-center max-md:gap-6 max-xl:hidden" role="navigation"
+                        aria-label="Main navigation">
+                        <!-- Products Dropdown -->
+                        <div class="flex gap-2 items-center cursor-pointer group relative">
+                            <button class="text-base font-medium text-center text-sky-600 max-md:text-sm hover:text-sky-700
+                                focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                aria-expanded="false" aria-haspopup="true" aria-label="Products menu">
+                                Products
+                            </button>
+                            <div aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="dropdown-icon-products"
+                                    style="width: 20px; height: 20px">
+                                    <path
+                                        d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                        fill="#0075BF" />
+                                </svg>
+                            </div>
+
+                            <div class="dropdown-list">
+                                <ul>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Brands Dropdown -->
+                        <div class="flex gap-2 items-center cursor-pointer group relative">
+                            <button
+                                class="text-base font-medium text-center text-black max-md:text-sm hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                                aria-expanded="false" aria-haspopup="true" aria-label="Brands menu">
+                                Brands
+                            </button>
+                            <div aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="dropdown-icon-brands"
+                                    style="width: 20px; height: 20px">
+                                    <path
+                                        d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            <div class="dropdown-list">
+                                <ul>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Catalog Button -->
+                        <button
+                            class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                            aria-label="View catalog">
+                            <span class="text-base font-medium text-white max-md:text-sm">Catalog</span>
+                        </button>
+                    </nav>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuToggle"
+                        class="hidden text-3xl text-black cursor-pointer max-xl:block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                        aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <img src="./assets/images/icons/menu-icon.svg" class="w-7 h-7" alt="menu icon">
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="mobileOverlay" class="mobile-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="p-6">
+            <!-- Close Button -->
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                <button id="mobileMenuClose"
+                    class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-lg p-1"
+                    aria-label="Close mobile menu">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="space-y-4">
+                <!-- Products Dropdown -->
+                <div class="border-b border-gray-200 pb-4">
+                    <button
+                        class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-lg font-medium text-sky-600 focus:outline-none"
+                        data-target="productsDropdown">
+                        Products
+                        <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                fill="#0075BF" />
+                        </svg>
+                    </button>
+                    <div id="productsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+                        <ul>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Brands Dropdown -->
+                <div class="border-b border-gray-200 pb-4">
+                    <button
+                        class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-lg font-medium text-gray-800 focus:outline-none"
+                        data-target="brandsDropdown">
+                        Brands
+                        <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+                    <div id="brandsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+                        <ul>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                            <li><a href="">
+                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                    cable and antenna analyzer
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Catalog Button -->
+                <div class="pt-2">
+                    <button
+                        class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
+                        Catalog
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
     <!-- HEADER SECTION ENDS HERE -->
 
     <!-- HERO SECTION STRTS HERE -->
     <section class="mt-[72px]">
-        <div class="container">
-            <div class="swiper-container mySwiper">
+        <div class="container-fit">
+            <div class="swiper hero-banner">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./assets/images/Hero image.png" class="rounded-2xl" alt="hero image" />
@@ -147,7 +321,7 @@
                         <img src="./assets/images/Property 1=Hero 5.png" class="rounded-2xl" alt="hero image" />
                     </div>
                 </div>
-
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -155,7 +329,7 @@
 
     <!-- CARDS SECTION STARTS HERE -->
     <section class="mt-[60px]">
-        <div class="container">
+        <div class="container-fit">
             <div class="grid grid-cols-4 max-lg:gap-6 gap-8 max-xl:grid-cols-2 max-sm:grid-cols-1 ">
                 <article
                     class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
@@ -250,7 +424,7 @@
     <section
         class="mt-[60px] overflow-hidden overflow-x-auto gap-10 items-start py-[60px] text-base font-medium text-black bg-[#FAFAFA]"
         role="region" aria-label="Product carousel" tabindex="0">
-        <div class="container">
+        <div class="container-fit">
             <div class="section-title">
                 <h2>Featured Manufacturers section</h2>
             </div>
@@ -386,8 +560,8 @@
 
     <!-- TWO IMAGE BANNER SECTION STARTS HERE -->
     <section class="mt-[60px]">
-        <div class="container">
-            <div class="grid grid-cols-2 gap-8
+        <div class="container-fit">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8
                 max-md:gap-6 max-md:items-center max-sm:gap-4 max-sm:px-4">
                 <figure
                     class="relative shrink-0 h-[353px] max-md:h-auto max-md:aspect-[744/353] shadow-[0_4px_6px_0_#0000000A] border border-[#eeeeee]">
@@ -443,7 +617,7 @@
 
     <!-- LOGOS SLIDER SECTION STARTS HERE -->
     <section class="mt-[60px]">
-        <div class="container">
+        <div class="container-fit">
             <div class="swiper logo-carousel">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide h-[96px]">
@@ -478,126 +652,126 @@
 
     <!-- WHITE PAPER SECTION STARTS HERE -->
     <section class="bg-[#FAFAFA] mt-[60px] py-[60px]">
-        <div class="container">
+        <div class="container-fit">
             <div class="section-title">
                 <h2>whitepaper</h2>
             </div>
-            <div class="mt-8">
-                <article
-                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
-                    role="article" aria-labelledby="whitepaper-title">
-                    <div>
-                        <h2 id="whitepaper-title"
-                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
-                            WHITEPAPER 1
-                        </h2>
-                    </div>
+            <div class="mt-8 swiper whitepaper-carousel">
+                <div class="swiper-wrapper">
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div>
+                            <h2 id="whitepaper-title"
+                                class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                                WHITEPAPER 1
+                            </h2>
+                        </div>
 
-                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
-                        role="img" aria-label="Whitepaper preview with download option">
-                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
-                            alt="Whitepaper 1 preview document"
-                            class="object-cover absolute top-0 left-0 blur size-full" />
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                                alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
 
-                        <button type="button"
-                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
-                            aria-label="Download and read whitepaper 1" tabindex="0">
-                            <span
-                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
-                                Read whitepaper
-                            </span>
-                        </button>
-                    </div>
-                </article>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                aria-label="Download and read whitepaper 1" tabindex="0">
+                                <span
+                                    class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
 
-                <article
-                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
-                    role="article" aria-labelledby="whitepaper-title">
-                    <div>
-                        <h2 id="whitepaper-title"
-                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
-                            WHITEPAPER 1
-                        </h2>
-                    </div>
+                    <article
+                        class="box-border flex items-center flex-col gap-6  max-md:gap-5  max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div>
+                            <h2 id="whitepaper-title"
+                                class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                                WHITEPAPER 2
+                            </h2>
+                        </div>
 
-                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
-                        role="img" aria-label="Whitepaper preview with download option">
-                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
-                            alt="Whitepaper 1 preview document"
-                            class="object-cover absolute top-0 left-0 blur size-full" />
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                                alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
 
-                        <button type="button"
-                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
-                            aria-label="Download and read whitepaper 1" tabindex="0">
-                            <span
-                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
-                                Read whitepaper
-                            </span>
-                        </button>
-                    </div>
-                </article>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                aria-label="Download and read whitepaper 1" tabindex="0">
+                                <span
+                                    class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
 
-                <article
-                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
-                    role="article" aria-labelledby="whitepaper-title">
-                    <div>
-                        <h2 id="whitepaper-title"
-                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
-                            WHITEPAPER 1
-                        </h2>
-                    </div>
+                    <article class="box-border flex items-center flex-col gap-6  max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div>
+                            <h2 id="whitepaper-title"
+                                class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                                WHITEPAPER 3
+                            </h2>
+                        </div>
 
-                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
-                        role="img" aria-label="Whitepaper preview with download option">
-                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
-                            alt="Whitepaper 1 preview document"
-                            class="object-cover absolute top-0 left-0 blur size-full" />
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                                alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
 
-                        <button type="button"
-                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
-                            aria-label="Download and read whitepaper 1" tabindex="0">
-                            <span
-                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
-                                Read whitepaper
-                            </span>
-                        </button>
-                    </div>
-                </article>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                aria-label="Download and read whitepaper 1" tabindex="0">
+                                <span
+                                    class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
 
-                <article
-                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
-                    role="article" aria-labelledby="whitepaper-title">
-                    <div>
-                        <h2 id="whitepaper-title"
-                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
-                            WHITEPAPER 1
-                        </h2>
-                    </div>
+                    <article
+                        class="box-border flex items-center flex-col gap-6  max-md:gap-5  max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div>
+                            <h2 id="whitepaper-title"
+                                class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                                WHITEPAPER 4
+                            </h2>
+                        </div>
 
-                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
-                        role="img" aria-label="Whitepaper preview with download option">
-                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
-                            alt="Whitepaper 1 preview document"
-                            class="object-cover absolute top-0 left-0 blur size-full" />
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                                alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
 
-                        <button type="button"
-                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
-                            aria-label="Download and read whitepaper 1" tabindex="0">
-                            <span
-                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
-                                Read whitepaper
-                            </span>
-                        </button>
-                    </div>
-                </article>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                aria-label="Download and read whitepaper 1" tabindex="0">
+                                <span
+                                    class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
     </section>
     <!-- WHITE PAPER SECTION ENDS HERE -->
 
     <!-- FAQ SECTION STARTS HERE -->
-    <section class="max:md-[mt-60px] mt-[120px]">
-        <div class="container">
+    <section class="max:md-[mt-60px] my-[120px] max-lg:my-[60px]">
+        <div class="container-fit">
             <div class="section-title">
                 <h2>faq</h2>
             </div>
@@ -758,7 +932,80 @@
 
 
     <!-- FOOTER SECTION STARTS HERE -->
+    <footer class="footer">
+        <div class="container-fit">
+            <div class="footer-top">
+                <div class="footer-col flex flex-col gap-[70px] ">
+                    <div class="footer-logo">
+                        <a href="">
+                            <img src="./assets/images/logo/white-logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="flex gap-8 lg:gap-10">
+                        <a href=""><img src="./assets/images/Sewp.png" alt="image"></a>
+                        <a href=""><img src="./assets/images/GSA.png" alt="image"></a>
+                    </div>
+                    <ul class="footer-social-links">
+                        <li><a href=""><img src="./assets/images/icons/LinkedIn.png" alt="social media icons"></a></li>
+                        <li><a href=""><img src="./assets/images/icons/x.png" alt="social media icons"></a></li>
+                        <li><a href=""><img src="./assets/images/icons/Facebook.png" alt="social media icons"></a></li>
+                        <li><a href=""><img src="./assets/images/icons/Instagram.png" alt="social media icons"></a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Company</h4>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Quality & Compliance</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-menu">
+                        <li>
+                            1840 Gateway Dr., Suite 150
+                            San Mateo, CA 94404
+                        </li>
+                        <li>
+                            <a href="">+1 650-624-0525</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Testmart © 2025</p>
+                <p>Cage code: 1RPN6 · Tax ID: 94-3310442 · DODAAC: Q90079 · UIC: N3836 · D&B: 086438152 · UEI #:
+                    MCQUYM6GHNJ5</p>
+            </div>
+        </div>
+    </footer>
     <!-- FOOTER SECTION ENDS HERE -->
 
 
