@@ -94,5 +94,33 @@ li {
     text-align: center;
     text-transform: uppercase;
     color: #1D1E28;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
+/* TEXT HOVER STYLE GOES HERE */
+.hover-text {
+  transition: .3s all ease-in-out;
+
+  img {
+    transition: .3s all ease-in-out;
+  }
+
+  &:hover {
+    color: var(--color-brand-blue);
+    transition: .3s all ease-in-out;
+
+    img {
+      filter: brightness(0) saturate(100%) invert(31%) sepia(93%) saturate(1028%) hue-rotate(175deg) brightness(94%) contrast(108%);
+      transition: .3s all ease-in-out;
+    }
   }
 }

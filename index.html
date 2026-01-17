@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task</title>
+    <title>Testmart</title>
+
+    <!-- FAVICON LINK -->
+    <link rel="icon" type="image/png" href="./assets/images/logo/fav.png">
 
     <!-- LENIS SMOOTH SCROLL CSS LINK -->
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css" />
 
     <!-- SLICK SLIDER CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
 
     <!-- FONT STYLESHEET LINK -->
     <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
@@ -23,44 +26,60 @@
 </head>
 
 <body>
+
     <!-- HEADER SECTION STARTS HERE -->
     <header class="header">
-        <div class="py-[6px] bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]"">
-        <div class=" container">
-            <div class="flex items-center justify-between">
-                <ul
-                    class="header-menu flex gap-10 font-poppins font-medium text-[16px] leading-[100%] tracking-normal text-center text-white">
-                    <li>
-                        <a href="" class="flex items-center gap-2 transition-colors duration-300 hover:text-[#1D1E28]">
-                            Products
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="flex items-center gap-2 transition-colors duration-300 hover:text-[#1D1E28]">
-                            Brands
-                        </a>
-                    </li>
-                </ul>
+        <div class="py-[6px] bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between">
+                    <button id="mobile-menu-btn" class="lg:hidden text-white p-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
 
-                <a href=""
-                    class="h-[40px] px-5 py-2 rounded-[38px] flex items-center justify-center gap-[10px] bg-white text-[#0075BF] font-semibold transition-all duration-300 hover:bg-[#1D1E28] hover:text-white hover:shadow-lg">
-                    Catalog
-                </a>
+                    <ul id="nav-menu"
+                        class="hidden lg:flex header-menu gap-10 font-poppins font-medium text-[16px] leading-[100%] tracking-normal text-center text-white">
+                        <li>
+                            <a href=""
+                                class="flex items-center gap-2 transition-colors duration-300 hover:text-[#1D1E28]">
+                                Products
+                            </a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="flex items-center gap-2 transition-colors duration-300 hover:text-[#1D1E28]">
+                                Brands
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href=""
+                        class="h-[40px] px-5 py-2 rounded-[38px] flex items-center justify-center gap-[10px] bg-white text-[#0075BF] font-semibold transition-all duration-300 hover:bg-[#1D1E28] hover:text-white hover:shadow-lg">
+                        Catalog
+                    </a>
+                </div>
+
+                <ul id="mobile-dropdown"
+                    class="hidden flex-col gap-4 py-4 lg:hidden font-poppins font-medium text-white border-t border-blue-400 mt-2">
+                    <li><a href="#" class="block py-2">Products</a></li>
+                    <li><a href="#" class="block py-2">Brands</a></li>
+                </ul>
             </div>
         </div>
-        </div>
+
         <div class="py-[23px] border border-[#EEEEEE]">
             <div class="container mx-auto px-4">
-                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 lg:gap-0">
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-0">
 
-                    <!-- Logo -->
-                    <div class="max-w-[250px] w-full flex-shrink-0">
+                    <div class="max-w-[250px] w-full flex-shrink-0 flex justify-center lg:justify-start">
                         <a href="index.html">
                             <img src="./assets/images/logo/TestMart Logo.svg" alt="main logo" class="w-full h-auto">
                         </a>
                     </div>
 
-                    <!-- Search Bar -->
                     <div class="w-full max-w-[450px]">
                         <div
                             class="flex items-center h-[52px] bg-white border border-gray-300 rounded-full shadow-sm overflow-hidden">
@@ -80,16 +99,15 @@
                         </div>
                     </div>
 
-                    <!-- Contact Info -->
-                    <div class="flex flex-col gap-3 items-start lg:items-center">
-                        <a href="tel:8886652765" class="inline-flex items-center gap-1 py-[10px] px-5 rounded-full
-            bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]
-            text-white text-[28px] font-semibold leading-[22px] transition w-fit">
-                            <img src="./assets/images/phone-call.svg" class="w-[40px] h-[40px]" alt="phone icon">
+                    <div class="flex flex-col gap-3 items-center lg:items-start">
+                        <a href="tel:8886652765"
+                            class="inline-flex items-center gap-1 py-[10px] px-5 rounded-full bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)] text-white text-[22px] sm:text-[28px] font-semibold leading-[22px] transition w-fit">
+                            <img src="./assets/images/phone-call.svg" class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]"
+                                alt="phone icon">
                             <span>888-665-2765</span>
                         </a>
 
-                        <div class="flex items-center gap-1 text-lg font-semibold text-[#1E1E2F]">
+                        <div class="flex items-center gap-1 text-base sm:text-lg font-semibold text-[#1E1E2F]">
                             <img src="./assets/images/envelope.svg" alt="envelope icon">
                             <a href="mailto:salesteam@testmart.com" class="hover:underline">
                                 salesteam@testmart.com
@@ -97,15 +115,14 @@
                         </div>
                     </div>
 
-                    <div class="flex gap-[50px] max-w-[170px] w-full">
-                        <img src="./assets/images/GSA.png" alt="logo" class="w-full h-full">
-                        <img src="./assets/images/Sewp.png" alt="logo" class="w-full h-full">
+                    <div class="flex gap-6 lg:gap-[50px] max-w-[170px] w-full justify-center lg:justify-end">
+                        <img src="./assets/images/GSA.png" alt="logo" class="h-8 lg:h-auto">
+                        <img src="./assets/images/Sewp.png" alt="logo" class="h-8 lg:h-auto">
                     </div>
 
                 </div>
             </div>
         </div>
-
     </header>
     <!-- HEADER SECTION ENDS HERE -->
 
@@ -115,19 +132,19 @@
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./assets/images/Hero image.png" alt="hero image" />
+                        <img src="./assets/images/Hero image.png" class="rounded-2xl" alt="hero image" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/images/Property 1=Hero 2.png" alt="hero image" />
+                        <img src="./assets/images/Property 1=Hero 2.png" class="rounded-2xl" alt="hero image" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/images/Property 1=Hero 3.png" alt="hero image" />
+                        <img src="./assets/images/Property 1=Hero 3.png" class="rounded-2xl" alt="hero image" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/images/Property 1=Hero 4.png" alt="hero image" />
+                        <img src="./assets/images/Property 1=Hero 4.png" class="rounded-2xl" alt="hero image" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./assets/images/Property 1=Hero 5.png" alt="hero image" />
+                        <img src="./assets/images/Property 1=Hero 5.png" class="rounded-2xl" alt="hero image" />
                     </div>
                 </div>
 
@@ -143,8 +160,7 @@
                 <article
                     class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
-                        <div
-                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
                             <img src="./assets/images/icons/service.svg" alt="icons" class=" w-12 h-12">
                         </div>
                         <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
@@ -152,7 +168,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
                             64965.00
                         </h2>
                         <p
@@ -165,8 +181,7 @@
                 <article
                     class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
-                        <div
-                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
                             <img src="./assets/images/icons/shop.svg" alt="icons" class=" w-12 h-12">
                         </div>
                         <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
@@ -174,7 +189,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
                             440k
                         </h2>
                         <p
@@ -187,8 +202,7 @@
                 <article
                     class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
-                        <div
-                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
                             <img src="./assets/images/icons/dollar.svg" alt="icons" class=" w-12 h-12">
                         </div>
                         <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
@@ -196,7 +210,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
                             $2.4M
                         </h2>
                         <p
@@ -209,8 +223,7 @@
                 <article
                     class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
                     <div class="flex justify-between items-center self-stretch w-full">
-                        <div
-                            class="box-border flex overflow-hidden shrink-0 justify-center items-center  rounded-md max-sm:p-2.5 max-sm:w-11 max-sm:h-11">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
                             <img src="./assets/images/icons/delivery.svg" alt="icons" class=" w-12 h-12">
                         </div>
                         <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
@@ -218,7 +231,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col gap-2 items-start self-stretch w-full">
-                        <h2 class="self-stretch text-3xl font-semibold text-black max-md:text-2xl max-sm:text-2xl">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
                             91.26%
                         </h2>
                         <p
@@ -233,7 +246,7 @@
     </section>
     <!-- CARDS SECTION ENDS HERE -->
 
-
+    <!-- PRODUCT SLIDER SECTION STARTS HERE -->
     <section
         class="mt-[60px] overflow-hidden overflow-x-auto gap-10 items-start py-[60px] text-base font-medium text-black bg-[#FAFAFA]"
         role="region" aria-label="Product carousel" tabindex="0">
@@ -241,205 +254,511 @@
             <div class="section-title">
                 <h2>Featured Manufacturers section</h2>
             </div>
-            <div class="swiper product-carousel mt-8">
+            <div class="swiper product-carousel mt-8 px-[16px]">
                 <div class="swiper-wrapper">
-                    <article class=" swiper-slide">
-                        <img src="./assets/images/index/product Image (1).png" alt="product images">
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-1.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
                     </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-2.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-3.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-1.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-2.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-3.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-1.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-2.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class=" swiper-slide border border-[#E5E5E5] rounded-[20px]">
+                        <img src="./assets/images/index/pd-3.png" alt="product images" class="rounded-t-[20px]">
+                        <div class="py-3 px-4 flex flex-col gap-1">
+                            <p class="text-black opacity-70 text-base font-medium">Cable and Antenna Analyze</p>
+                            <div class="flex gap-[4px] items-center">
+                                <img src="./assets/images/icons/Star.svg" class="w-5 h-5" alt="star">
+                                <span class="font-medium text-base text-black opacity-50">5.0</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <div class="swiper-button-next group w-11 h-11 rounded-3xl bg-white p-[11px]
+         shadow-[0_0_10px_0_#00000029]
+         hover:bg-[#0075BF] transition-all duration-300">
+                        <img src="./assets/images/icons/arrow-right.svg" class="w-6 h-6 transition duration-300
+           group-hover:invert
+           group-hover:brightness-0
+           group-hover:contrast-200" alt="icon" />
+                    </div>
+                    <div class="swiper-button-prev group w-11 h-11 rounded-3xl bg-white p-[11px]
+         shadow-[0_0_10px_0_#00000029] left-0
+         hover:bg-[#0075BF] transition-all duration-300">
+                        <img src="./assets/images/icons/arrow-left.svg" class="w-6 h-6 transition duration-300
+           group-hover:invert
+           group-hover:brightness-0
+           group-hover:contrast-200" alt="icon" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex justify-end font-medium text-xl text-black max-md:text-lg mt-8">
+                <a href="#" class="flex items-center gap-[6px] hover-text">See All<img class="w-5 h-5"
+                        src="./assets/images/icons/black-arrow.svg" alt="icons"></a>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCT SLIDER SECTION ENDS HERE -->
+
+
+    <!-- TWO IMAGE BANNER SECTION STARTS HERE -->
+    <section class="mt-[60px]">
+        <div class="container">
+            <div class="grid grid-cols-2 gap-8
+                max-md:gap-6 max-md:items-center max-sm:gap-4 max-sm:px-4">
+                <figure
+                    class="relative shrink-0 h-[353px] max-md:h-auto max-md:aspect-[744/353] shadow-[0_4px_6px_0_#0000000A] border border-[#eeeeee]">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/70505abb307c74ea3caa99942d421a63782a89b2?width=1488"
+                        alt="Product catalogue advertisement featuring promotional content"
+                        class="block object-cover rounded-3xl h-full" />
+                    <button type="button"
+                        class="box-border inline-flex absolute gap-2.5 justify-center items-center px-5 py-3 h-12 bg-sky-600 border border-white border-solid cursor-pointer rounded-[38px] right-[24px] bottom-[24px] w-[201px] max-md:right-6 max-md:bottom-6 max-md:top-auto max-md:left-auto max-md:w-auto max-md:min-w-[180px] max-sm:right-4 max-sm:bottom-4 max-sm:px-4 max-sm:py-2.5 max-sm:w-auto max-sm:h-auto max-sm:min-w-40 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors duration-200"
+                        aria-label="Get a catalogue for our products">
+                        <span class="text-base font-medium text-white whitespace-nowrap max-sm:text-sm">
+                            Get a catalogue
+                        </span>
+                        <span aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="arrow-icon"
+                                style="width: 20px; height: 20px; flex-shrink: 0">
+                                <path
+                                    d="M2.91699 10.0013H16.667M16.667 10.0013L10.8337 4.16797M16.667 10.0013L10.8337 15.8346"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </figure>
+
+                <figure
+                    class="relative shrink-0 h-[353px] max-md:h-auto max-md:aspect-[744/353] shadow-[0_4px_6px_0_#0000000A] border border-[#eeeeee]">
+                    <img src="https://api.builder.io/api/v1/image/assets/TEMP/bf3e57227d2e93470fbed34b6922cb1f5bb99fa9?width=1488"
+                        alt="Product catalogue advertisement featuring promotional content"
+                        class="block object-cover rounded-3xl h-full" />
+                    <button type="button"
+                        class="box-border inline-flex absolute gap-2.5 justify-center items-center px-5 py-3 h-12 bg-sky-600 border border-white border-solid cursor-pointer rounded-[38px] right-[24px] bottom-[24px] w-[201px] max-md:right-6 max-md:bottom-6 max-md:top-auto max-md:left-auto max-md:w-auto max-md:min-w-[180px] max-sm:right-4 max-sm:bottom-4 max-sm:px-4 max-sm:py-2.5 max-sm:w-auto max-sm:h-auto max-sm:min-w-40 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors duration-200"
+                        aria-label="Get a catalogue for our products">
+                        <span class="text-base font-medium text-white whitespace-nowrap max-sm:text-sm">
+                            Get a catalogue
+                        </span>
+                        <span aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="arrow-icon"
+                                style="width: 20px; height: 20px; flex-shrink: 0">
+                                <path
+                                    d="M2.91699 10.0013H16.667M16.667 10.0013L10.8337 4.16797M16.667 10.0013L10.8337 15.8346"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- TWO IMAGE BANNER SECTION STARTS HERE -->
+
+    <!-- LOGOS SLIDER SECTION STARTS HERE -->
+    <section class="mt-[60px]">
+        <div class="container">
+            <div class="swiper logo-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 03.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 04.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 05.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 06.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 07.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 08.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 03.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide h-[96px]">
+                        <img src="./assets/images/index/Logo 04.png" class="h-full object-contain" alt="logo">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- LOGOS SLIDER SECTION ENDS HERE -->
 
-
-
-    <!-- FOOTER SECTION STARTS HERE -->
-    <footer
-        class="box-border flex justify-center items-center  pt-16 pb-8 w-full bg-neutral-800 rounded-[48px_48px_0_0]  max-md:pt-12 max-md:pb-6 max-md:rounded-[32px_32px_0_0] max-sm:pt-8 max-sm:pb-5 max-sm:rounded-[24px_24px_0_0]"
-        role="contentinfo" aria-label="Site footer">
+    <!-- WHITE PAPER SECTION STARTS HERE -->
+    <section class="bg-[#FAFAFA] mt-[60px] py-[60px]">
         <div class="container">
-            <div class="flex flex-col gap-8 items-center ">
-                <div
-                    class="flex gap-10 justify-between items-start w-full max-md:flex-wrap max-md:gap-12 max-sm:flex-col max-sm:gap-10">
-                    <div class="flex flex-col shrink-0 gap-16 items-start w-[391px] max-md:gap-12 max-md:w-full max-md:max-w-[391px] max-sm:gap-10 max-sm:items-start max-sm:w-full"
-                        aria-label="Company information and social media">
-                        <div class="relative h-10 w-[251px] max-sm:h-8 max-sm:w-[200px]">
-                            <img src="./assets/images/logo/white-logo.svg" alt="TestMart Logo"
-                                class="block h-10 w-[251px] max-sm:h-8 max-sm:w-[200px]" />
-                        </div>
-
-                        <div class="flex gap-10 items-center max-sm:flex-wrap max-sm:gap-6" aria-label="Certifications">
-                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/457ee3d212b9b20601326c4ec2918c2c9ae2224a?width=130"
-                                alt="GSA Logo" class="h-16 w-[65px] max-sm:h-[51px] max-sm:w-[52px]" />
-                            <img src="https://api.builder.io/api/v1/image/assets/TEMP/dbfcbdba6aae0b3b23f2d94886febb82dd6bb94a?width=96"
-                                alt="Certification Logo" class="w-12 h-16 max-sm:h-[51px] max-sm:w-[38px]" />
-                        </div>
-
-                        <nav class="flex gap-10 items-center max-sm:flex-wrap max-sm:gap-6"
-                            aria-label="Social media links">
-                            <a href="#" aria-label="LinkedIn" class="social-icon linkedin-icon">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="
-                    width: 44px;
-                    height: 44px;
-                    flex-shrink: 0;
-                    overflow: hidden;
-                  ">
-                                    <path
-                                        d="M38.5 2.75L5.49141 2.75C3.97891 2.75 2.75 3.99609 2.75 5.52578L2.75 38.4742C2.75 40.0039 3.97891 41.25 5.49141 41.25L38.5 41.25C40.0125 41.25 41.25 40.0039 41.25 38.4742L41.25 5.52578C41.25 3.99609 40.0125 2.75 38.5 2.75ZM14.3859 35.75H8.67969L8.67969 17.3766L14.3945 17.3766L14.3945 35.75H14.3859ZM11.5328 14.8672C9.70234 14.8672 8.22422 13.3805 8.22422 11.5586C8.22422 9.73672 9.70234 8.25 11.5328 8.25C13.3547 8.25 14.8414 9.73672 14.8414 11.5586C14.8414 13.3891 13.3633 14.8672 11.5328 14.8672ZM35.7758 35.75H30.0695V26.8125C30.0695 24.6812 30.0266 21.9398 27.1047 21.9398C24.1313 21.9398 23.6758 24.2602 23.6758 26.6578V35.75H17.9695L17.9695 17.3766L23.4438 17.3766V19.8859H23.5211C24.2859 18.4422 26.1508 16.9211 28.9266 16.9211C34.7016 16.9211 35.7758 20.7281 35.7758 25.6781V35.75Z"
-                                        fill="white"></path>
-                                </svg>
-                            </a>
-
-                            <a href="#" aria-label="Twitter" class="social-icon twitter-icon">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="
-                    width: 44px;
-                    height: 44px;
-                    flex-shrink: 0;
-                    overflow: hidden;
-                  ">
-                                    <path
-                                        d="M24.7993 19.0416L37.3097 4.80078H34.3473L23.4795 17.1637L14.8051 4.80078H4.7998L17.9187 23.4973L4.7998 38.4288H7.76407L19.2329 25.3714L28.3945 38.4288H38.3998M8.83367 6.98851H13.3865L34.3435 36.3474H29.7907"
-                                        fill="white"></path>
-                                </svg>
-                            </a>
-
-                            <a href="#" aria-label="Facebook" class="social-icon facebook-icon">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="
-                    width: 44px;
-                    height: 44px;
-                    flex-shrink: 0;
-                    overflow: hidden;
-                  ">
-                                    <g clip-path="url(#clip0_2079_3331)">
-                                        <path
-                                            d="M43.3125 22C43.3125 10.2266 33.7734 0.6875 22 0.6875C10.2266 0.6875 0.6875 10.2266 0.6875 22C0.6875 32.6373 8.48117 41.4545 18.6699 43.0547L18.6699 28.1609H13.2559L13.2559 22H18.6699V17.3044C18.6699 11.9634 21.8496 9.01312 26.7197 9.01312C29.052 9.01312 31.4909 9.42906 31.4909 9.42906V14.6713H28.8028C26.1559 14.6713 25.3301 16.3144 25.3301 17.9996V22H31.2409L30.2955 28.1609H25.3301L25.3301 43.0547C35.5188 41.4545 43.3125 32.6373 43.3125 22Z"
-                                            fill="white"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_2079_3331">
-                                            <rect width="44" height="44" fill="white"></rect>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </a>
-
-                            <a href="#" aria-label="Instagram" class="social-icon instagram-icon">
-                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" style="
-                    width: 44px;
-                    height: 44px;
-                    flex-shrink: 0;
-                    overflow: hidden;
-                  ">
-                                    <path
-                                        d="M22.0082 12.1166C16.5426 12.1166 12.134 16.5252 12.134 21.9908C12.134 27.4564 16.5426 31.865 22.0082 31.865C27.4738 31.865 31.8824 27.4564 31.8824 21.9908C31.8824 16.5252 27.4738 12.1166 22.0082 12.1166ZM22.0082 28.4104C18.4762 28.4104 15.5887 25.5314 15.5887 21.9908C15.5887 18.4502 18.4676 15.5713 22.0082 15.5713C25.5488 15.5713 28.4277 18.4502 28.4277 21.9908C28.4277 25.5314 25.5402 28.4104 22.0082 28.4104ZM34.5895 11.7127C34.5895 12.9932 33.5582 14.0158 32.2863 14.0158C31.0059 14.0158 29.9832 12.9846 29.9832 11.7127C29.9832 10.4408 31.0145 9.40957 32.2863 9.40957C33.5582 9.40957 34.5895 10.4408 34.5895 11.7127ZM41.1293 14.0502C40.9832 10.965 40.2785 8.23223 38.0184 5.98066C35.7668 3.7291 33.034 3.02441 29.9488 2.86973C26.7691 2.68926 17.2387 2.68926 14.059 2.86973C10.9824 3.01582 8.24961 3.72051 5.98945 5.97207C3.7293 8.22363 3.0332 10.9564 2.87852 14.0416C2.69805 17.2213 2.69805 26.7518 2.87852 29.9314C3.02461 33.0166 3.7293 35.7494 5.98945 38.001C8.24961 40.2525 10.9738 40.9572 14.059 41.1119C17.2387 41.2924 26.7691 41.2924 29.9488 41.1119C33.034 40.9658 35.7668 40.2611 38.0184 38.001C40.2699 35.7494 40.9746 33.0166 41.1293 29.9314C41.3098 26.7518 41.3098 17.2299 41.1293 14.0502ZM37.0215 33.3432C36.3512 35.0275 35.0535 36.3252 33.3605 37.0041C30.8254 38.0096 24.8098 37.7775 22.0082 37.7775C19.2066 37.7775 13.1824 38.001 10.6559 37.0041C8.97148 36.3338 7.67383 35.0361 6.99492 33.3432C5.98945 30.808 6.22148 24.7924 6.22148 21.9908C6.22148 19.1893 5.99805 13.165 6.99492 10.6385C7.66523 8.9541 8.96289 7.65645 10.6559 6.97754C13.191 5.97207 19.2066 6.2041 22.0082 6.2041C24.8098 6.2041 30.834 5.98066 33.3605 6.97754C35.0449 7.64785 36.3426 8.94551 37.0215 10.6385C38.027 13.1736 37.7949 19.1893 37.7949 21.9908C37.7949 24.7924 38.027 30.8166 37.0215 33.3432Z"
-                                        fill="white"></path>
-                                </svg>
-                            </a>
-                        </nav>
+            <div class="section-title">
+                <h2>whitepaper</h2>
+            </div>
+            <div class="mt-8">
+                <article
+                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
+                    role="article" aria-labelledby="whitepaper-title">
+                    <div>
+                        <h2 id="whitepaper-title"
+                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                            WHITEPAPER 1
+                        </h2>
                     </div>
 
-                    <nav class="flex flex-col shrink-0 gap-6 items-start w-[260px] max-md:min-w-[200px] max-md:w-[calc(50%_-_24px)] max-sm:gap-4 max-sm:w-full"
-                        aria-label="Customer Service">
-                        <h2 class="w-full text-2xl font-bold text-white max-sm:text-xl">
-                            Customer Service
-                        </h2>
-                        <div class="h-px bg-sky-600 opacity-30 w-[260px] max-sm:w-full"></div>
-                        <ul class="flex flex-col gap-4 items-start w-full max-sm:gap-3">
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    Help
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    Terms and Conditions
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                        role="img" aria-label="Whitepaper preview with download option">
+                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                            alt="Whitepaper 1 preview document"
+                            class="object-cover absolute top-0 left-0 blur size-full" />
 
-                    <nav class="flex flex-col shrink-0 gap-6 items-start w-[260px] max-md:min-w-[200px] max-md:w-[calc(50%_-_24px)] max-sm:gap-4 max-sm:w-full"
-                        aria-label="Our Company">
-                        <h2 class="w-full text-2xl font-bold text-white max-sm:text-xl">
-                            Our Company
-                        </h2>
-                        <div class="h-px bg-sky-600 opacity-30 w-[260px] max-sm:w-full"></div>
-                        <ul class="flex flex-col gap-4 items-start w-full max-sm:gap-3">
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-base text-white cursor-pointer max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    Quality &amp; Compliance
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                        <button type="button"
+                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                            aria-label="Download and read whitepaper 1" tabindex="0">
+                            <span
+                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                Read whitepaper
+                            </span>
+                        </button>
+                    </div>
+                </article>
 
-                    <div class="flex flex-col shrink-0 gap-6 items-start w-auto min-w-[260px] max-md:w-full max-md:max-w-[310px] max-md:min-w-[200px] max-sm:gap-4 max-sm:w-full"
-                        aria-label="Contact Information">
-                        <h2 class="w-full text-2xl font-bold text-white max-sm:text-xl">
-                            Contact
+                <article
+                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
+                    role="article" aria-labelledby="whitepaper-title">
+                    <div>
+                        <h2 id="whitepaper-title"
+                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                            WHITEPAPER 1
                         </h2>
-                        <div class="h-px bg-sky-600 opacity-30 w-[310px] max-sm:w-full"></div>
-                        <div class="flex flex-col gap-12 items-start max-sm:gap-8">
-                            <address class="flex flex-col gap-6 items-start w-full max-sm:gap-4 not-italic">
-                                <p class="text-base text-neutral-50 w-[310px] max-sm:w-full max-sm:text-sm">
-                                    1840 Gateway Dr., Suite 150 San Mateo, CA 94404
-                                </p>
-                                <a href="tel:+16506240525"
-                                    class="text-base text-white max-sm:text-sm hover:text-sky-400 focus:text-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-neutral-800">
-                                    +1 650-624-0525
-                                </a>
-                            </address>
+                    </div>
+
+                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                        role="img" aria-label="Whitepaper preview with download option">
+                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                            alt="Whitepaper 1 preview document"
+                            class="object-cover absolute top-0 left-0 blur size-full" />
+
+                        <button type="button"
+                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                            aria-label="Download and read whitepaper 1" tabindex="0">
+                            <span
+                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                Read whitepaper
+                            </span>
+                        </button>
+                    </div>
+                </article>
+
+                <article
+                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
+                    role="article" aria-labelledby="whitepaper-title">
+                    <div>
+                        <h2 id="whitepaper-title"
+                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                            WHITEPAPER 1
+                        </h2>
+                    </div>
+
+                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                        role="img" aria-label="Whitepaper preview with download option">
+                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                            alt="Whitepaper 1 preview document"
+                            class="object-cover absolute top-0 left-0 blur size-full" />
+
+                        <button type="button"
+                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                            aria-label="Download and read whitepaper 1" tabindex="0">
+                            <span
+                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                Read whitepaper
+                            </span>
+                        </button>
+                    </div>
+                </article>
+
+                <article
+                    class="box-border flex items-center flex-col gap-6 mx-auto my-0 w-full max-w-xs max-md:gap-5 max-md:max-w-[400px] max-sm:gap-5 max-sm:px-4 max-sm:py-0 max-sm:max-w-full"
+                    role="article" aria-labelledby="whitepaper-title">
+                    <div>
+                        <h2 id="whitepaper-title"
+                            class="self-stretch text-2xl font-medium text-center text-black uppercase max-md:text-2xl max-sm:text-xl">
+                            WHITEPAPER 1
+                        </h2>
+                    </div>
+
+                    <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-[400px] max-md:h-[450px] max-sm:h-[350px]"
+                        role="img" aria-label="Whitepaper preview with download option">
+                        <img src="https://api.builder.io/api/v1/image/assets/TEMP/97f0c6adc2372fde198d0569048cd389273aad39?width=640"
+                            alt="Whitepaper 1 preview document"
+                            class="object-cover absolute top-0 left-0 blur size-full" />
+
+                        <button type="button"
+                            class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 shadow-lg transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                            aria-label="Download and read whitepaper 1" tabindex="0">
+                            <span
+                                class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                Read whitepaper
+                            </span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- WHITE PAPER SECTION ENDS HERE -->
+
+    <!-- FAQ SECTION STARTS HERE -->
+    <section class="max:md-[mt-60px] mt-[120px]">
+        <div class="container">
+            <div class="section-title">
+                <h2>faq</h2>
+            </div>
+
+            <div class="mt-10 space-y-4 px-4 sm:px-0">
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span class="text-lg lg:text-2xl font-medium text-[#0075BF] transition-colors duration-300">
+                            What types of customers does TestMart serve?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-[#0075BF] transform rotate-180 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                        style="max-height: 1000px;">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                We primarily serve government agencies, defense organizations, educational institutions,
+                                research labs, and enterprise companies requiring test and measurement equipment.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-full h-px bg-sky-600 opacity-30" role="separator"></div>
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            Can I purchase equipment directly, or is this only for government procurement?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Yes, we support both direct commercial sales and official government procurement
+                                channels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
                 <div
-                    class="flex gap-5 justify-between items-center w-full max-md:flex-col max-md:gap-4 max-md:text-center max-sm:gap-3">
-                    <p class="text-base text-center text-white max-md:text-center max-sm:text-sm">
-                        Testmart © 2025
-                    </p>
-                    <p
-                        class="text-base text-center text-white max-md:text-sm max-md:text-center max-sm:text-xs max-sm:leading-snug">
-                        Cage code: 1RPN6 · Tax ID: 94-3310442 · DODAAC: Q90079 · UIC: N3836 ·
-                        D&amp;B: 086438152 · UEI #: MCQUYM6GHNJ5
-                    </p>
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            How long does delivery typically take?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            Are the products covered by warranty and manufacturer support?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            Does TestMart provide compliance and certification documentation?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            How long does delivery typically take?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] flex-shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div
+                        class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <!-- FAQ SECTION ENDS HERE -->
+
+
+    <!-- FOOTER SECTION STARTS HERE -->
+
     <!-- FOOTER SECTION ENDS HERE -->
 
 
