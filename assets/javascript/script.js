@@ -1,4 +1,17 @@
 /* ===================================== */
+/*          HEADER AND FOOTER            */
+/* ===================================== */
+
+["header", "footer"].forEach((part) => {
+  fetch(`${part}.html`)
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById(part).innerHTML = data;
+    });
+});
+
+
+/* ===================================== */
 /*             FADE SLIDER              */
 /* ===================================== */
 
@@ -239,23 +252,27 @@ dropdownToggles.forEach(toggle => {
 /* ===================================== */
 /*               MODAL SCRIPT            */
 /* ===================================== */
-// SOLUTION: All triggers open the same modal
-const modal = document.querySelector(".modal");
+// Get all triggers and modals
 const triggers = document.querySelectorAll(".trigger");
-const closeButton = modal.querySelector(".close-button");
+const modals = document.querySelectorAll(".modal");
 
 triggers.forEach(trigger => {
   trigger.addEventListener("click", function () {
+    const modalId = this.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
     modal.classList.add("show-modal");
   });
 });
 
-closeButton.addEventListener("click", function () {
-  modal.classList.remove("show-modal");
+modals.forEach(modal => {
+  const closeButton = modal.querySelector(".close-button");
+  closeButton.addEventListener("click", function () {
+    modal.classList.remove("show-modal");
+  });
 });
 
-modal.addEventListener("click", function (event) {
-  if (event.target === modal) {
-    modal.classList.remove("show-modal");
+window.addEventListener("click", function (event) {
+  if (event.target.classList.contains("modal")) {
+    event.target.classList.remove("show-modal");
   }
 });

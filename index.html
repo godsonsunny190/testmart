@@ -179,7 +179,7 @@
                         <!-- Catalog Button -->
                         <button
                             class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors trigger"
-                            aria-label="View catalog">
+                            aria-label="View catalog" data-modal="modal3">
                             <span class="text-base font-medium text-white max-md:text-sm">Catalog</span>
                         </button>
                     </nav>
@@ -288,7 +288,8 @@
                     <!-- Catalog Button -->
                     <div class="pt-2">
                         <button
-                            class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
+                            class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors trigger"
+                            data-modal="modal3">
                             Catalog
                         </button>
                     </div>
@@ -672,7 +673,7 @@
 
                             <button type="button"
                                 class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
-                                aria-label=" Download and read whitepaper 1" tabindex="0">
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
                                 <span
                                     class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
                                     Read whitepaper
@@ -928,91 +929,18 @@
     <!-- FAQ SECTION ENDS HERE -->
 
     <!-- FOOTER SECTION STARTS HERE -->
-    <footer class="footer">
-        <div class="container-fit">
-            <div class="footer-top">
-                <div class="footer-col flex flex-col gap-[30px] md:gap-[70px] ">
-                    <div class="footer-logo">
-                        <a href="">
-                            <img src="./assets/images/logo/white-logo.svg" alt="logo">
-                        </a>
-                    </div>
-                    <div class="flex items-center gap-8 lg:gap-10">
-                        <a href=""><img src="./assets/images/Sewp.png" class="max-md:w-8" alt="image"></a>
-                        <a href=""><img src="./assets/images/GSA.png" class="max-md:w-8" alt="image"></a>
-                    </div>
-                    <ul class="footer-social-links">
-                        <li><a href=""><img src="./assets/images/icons/LinkedIn.png" alt="social media icons"></a></li>
-                        <li><a href=""><img src="./assets/images/icons/x.png" alt="social media icons"></a></li>
-                        <li><a href=""><img src="./assets/images/icons/Facebook.png" alt="social media icons"></a></li>
-                        <li><a href=""><img src="./assets/images/icons/Instagram.png" alt="social media icons"></a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Customer Service</h4>
-                    <ul class="footer-menu">
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="">Help</a>
-                        </li>
-                        <li>
-                            <a href="">Terms and Conditions</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Our Company</h4>
-                    <ul class="footer-menu">
-                        <li>
-                            <a href="">About Us</a>
-                        </li>
-                        <li>
-                            <a href="">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Quality & Compliance</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul class="footer-menu">
-                        <li>
-                            1840 Gateway Dr., Suite 150
-                            San Mateo, CA 94404
-                        </li>
-                        <li>
-                            <a href="">+1 650-624-0525</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Testmart © 2025</p>
-                <p>Cage code: 1RPN6 · Tax ID: 94-3310442 · DODAAC: Q90079 · UIC: N3836 · D&B: 086438152 · UEI #:
-                    MCQUYM6GHNJ5</p>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
     <!-- FOOTER SECTION ENDS HERE -->
 
     <!-- WHITEPAPER FORM MODAL STARTS HERE -->
-    <div class="modal">
+    <div class="modal" id="modal1">
         <div class="modal-content max-w-[760px] w-full  bg-white rounded-3xl">
             <span class="close-button absolute top-5 right-5 cursor-pointer">
                 <img src="./assets/images/icons/close-btn.svg" alt="close button">
             </span>
             <form class="flex flex-col pb-6" role="form" aria-labelledby="form-title">
                 <div
-                    class="flex gap-2.5 justify-center items-center px-6 py-4 w-full text-xl md:text-2xl font-semibold text-center text-white uppercase bg-sky-600 rounded-[24px_24px_0_0] max-md:px-5 max-md:max-w-full">
+                    class="flex gap-2.5 justify-center items-center px-6 py-4 w-full text-xl md:text-2xl font-semibold text-center text-white uppercase bg-sky-600 rounded-[20px_20px_0_0] max-md:px-5 max-md:max-w-full">
                     <div
                         class="flex flex-col flex-1 shrink items-start self-stretch my-auto w-full basis-0 min-w-60 max-md:max-w-full">
                         <h2 id="form-title" class="text-white max-md:max-w-full">
@@ -1021,7 +949,7 @@
                     </div>
                 </div>
 
-                <div class="px-6 mt-6 w-full max-md:px-5 max-md:max-w-full">
+                <div class="px-6 mt-6 w-full max-md:px-5 max-md:max-w-full flex flex-col gap-5">
                     <div class="flex flex-wrap gap-3 items-center w-full font-medium max-md:max-w-full">
                         <label for="firstName"
                             class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-[94px] md:max-w-[124px] w-full">
@@ -1132,6 +1060,77 @@
         </div>
     </div>
     <!-- WHITEPAPER FORM MODAL STARTS HERE -->
+
+    <!-- Master Catelogue modal -->
+    <div class="modal" id="modal3">
+        <div class="modal-content max-sm:w-full max-sm:max-w-[calc(100%-20px)]">
+            <div class="flex justify-center items-center">
+                <div
+                    class="box-border inline-flex relative flex-col gap-4 items-center p-6 bg-white rounded-[20px] border border-gray-100 border-solid shadow-sm w-[466px] max-md:p-5 max-md:max-w-[466px] max-md:w-[90%] max-sm:p-5 max-sm:w-full max-sm:max-w-full">
+                    <div
+                        class="flex relative flex-col gap-6 items-start w-[418px] max-md:gap-5 max-md:w-full max-sm:gap-5 max-sm:w-full">
+                        <div class="flex relative justify-between items-start self-stretch">
+                            <h2
+                                class="flex-1 text-2xl font-semibold text-center text-zinc-800 max-md:text-2xl max-sm:text-xl">
+                                Master Catelogue
+                            </h2>
+                            <div>
+                                <button type="button" aria-label="Close modal" class="relative close-button">
+                                    <img src="./assets/images/icons/close-btn.svg" alt="close-btn">
+                                </button>
+                            </div>
+                        </div>
+
+                        <form class="flex relative flex-col gap-4 items-start self-stretch">
+                            <div class="flex relative flex-col gap-2 items-start self-stretch">
+                                <label for="fullName"
+                                    class="self-stretch text-base font-medium text-zinc-900 max-md:text-base max-sm:text-sm">
+                                    Full Name
+                                </label>
+                                <div
+                                    class="box-border flex relative gap-0.5 justify-center items-center self-stretch px-4 py-3.5 bg-white border border-gray-100 border-solid rounded-[50px] max-sm:px-3.5 max-sm:py-3">
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter name"
+                                        class="text-base font-medium text-black opacity-50 flex-[1_0_0] max-md:text-base max-sm:text-sm bg-transparent border-none outline-none placeholder:text-black placeholder:opacity-50" />
+                                </div>
+                            </div>
+
+                            <div class="flex relative flex-col gap-2 items-start self-stretch">
+                                <label for="email"
+                                    class="self-stretch text-base font-medium text-zinc-900 max-md:text-base max-sm:text-sm">
+                                    Email
+                                </label>
+                                <div
+                                    class="box-border flex relative gap-0.5 justify-center items-center self-stretch px-4 py-3.5 bg-white border border-gray-100 border-solid rounded-[50px] max-sm:px-3.5 max-sm:py-3">
+                                    <input type="email" id="email" name="email" placeholder="Enter email"
+                                        class="text-base font-medium text-black opacity-50 flex-[1_0_0] max-md:text-base max-sm:text-sm bg-transparent border-none outline-none placeholder:text-black placeholder:opacity-50" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <div
+                            class="flex relative gap-4 justify-between items-start self-stretch max-sm:flex-col max-sm:gap-3">
+                            <button type="button"
+                                class="btn-outline flex gap-2.5 justify-center items-center px-10 py-3.5 text-base font-medium text-black whitespace-nowrap bg-white border border-solid transition-all duration-200 cursor-pointer border-neutral-200 ease-[ease-in-out] rounded-[38px] max-md:px-8 max-md:py-3 max-md:text-base max-sm:px-6 max-sm:py-3 max-sm:w-full max-sm:text-sm">
+                                <span
+                                    class="text-base font-medium text-black whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Print Catelogue
+                                </span>
+                            </button>
+
+                            <button type="button"
+                                class="btn-primary flex gap-2.5 justify-center items-center px-10 py-3.5 text-base font-medium text-white whitespace-nowrap bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] max-md:px-8 max-md:py-3 max-md:text-base max-sm:px-6 max-sm:py-3 max-sm:w-full max-sm:text-sm">
+                                <span
+                                    class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Download PDF
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Master Catelogue modal -->
 
 
     <!-- JQUERY CDN -->

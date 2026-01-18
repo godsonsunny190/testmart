@@ -481,8 +481,6 @@ li {
 
 
 /* MODAL SECTION STYLE */
-
-
 .trigger:hover {
   background: #555;
 }
@@ -517,6 +515,7 @@ li {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    border-radius: 20px;
   }
 
   .close-button {
