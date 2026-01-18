@@ -138,11 +138,11 @@ var swiper = new Swiper(".whitepaper-carousel", {
 
   breakpoints: {
     0: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.5,
       spaceBetween: 16,
     },
     640: {
-      slidesPerView: 2.2,
+      slidesPerView: 2.5,
       spaceBetween: 16,
     },
     768: {
