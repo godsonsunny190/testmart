@@ -264,6 +264,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    bottom: 20px !important;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -271,6 +275,11 @@ li {
   height: 12px;
   background-color: #FFFFFF;
   opacity: 50%;
+
+  @media (max-width: 768px) {
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -278,7 +287,14 @@ li {
   height: 14px;
   background-color: #FFFFFF;
   opacity: 100%;
-  border: 3px solid #FFFFFF3D
+  border: 3px solid #FFFFFF3D;
+
+  @media (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+
+
 }
 
 .logo-carousel {
@@ -424,6 +440,12 @@ li {
     border-radius: 32px 32px 0 0;
     padding-top: 40px;
 
+    .footer-logo {
+      img {
+        max-width: 150px;
+      }
+    }
+
     .footer-top {
       flex-direction: column;
       gap: 32px;
@@ -443,6 +465,17 @@ li {
       gap: 16px;
       text-align: center;
     }
+
+    .footer-social-links {
+      gap: 20px;
+
+      img {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+
   }
 }
 
