@@ -79,7 +79,7 @@
                     <!-- Logo -->
                     <div class="flex-shrink-0">
                         <img src="./assets/images/logo/TestMart Logo.svg" alt="TestMart Logo"
-                            class="w-[250px] max-lg:w-[180px]" />
+                            class="w-[250px] max-lg:w-[180px] max-sm:w-[150px]" />
                     </div>
 
                     <!-- Search Bar -->
@@ -178,7 +178,7 @@
 
                         <!-- Catalog Button -->
                         <button
-                            class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                            class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors trigger"
                             aria-label="View catalog">
                             <span class="text-base font-medium text-white max-md:text-sm">Catalog</span>
                         </button>
@@ -193,109 +193,109 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <div id="mobileOverlay" class="mobile-overlay"></div>
+        <div id="mobileOverlay" class="mobile-overlay"></div>
 
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu">
-        <div class="p-6">
-            <!-- Close Button -->
-            <div class="flex justify-between items-center mb-6">
-                <h2 class="text-xl font-bold text-gray-800">Menu</h2>
-                <button id="mobileMenuClose"
-                    class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-lg p-1"
-                    aria-label="Close mobile menu">
-                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
-                            fill="currentColor" />
-                    </svg>
-                </button>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="p-6">
+                <!-- Close Button -->
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                    <button id="mobileMenuClose"
+                        class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-lg p-1"
+                        aria-label="Close mobile menu">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <nav class="space-y-4">
+                    <!-- Products Dropdown -->
+                    <div class="border-b border-gray-200">
+                        <button
+                            class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-sky-600 focus:outline-none"
+                            data-target="productsDropdown">
+                            Products
+                            <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                    fill="#0075BF" />
+                            </svg>
+                        </button>
+                        <div id="productsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+                            <ul>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Brands Dropdown -->
+                    <div class="border-b border-gray-200">
+                        <button
+                            class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-gray-800 focus:outline-none"
+                            data-target="brandsDropdown">
+                            Brands
+                            <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                        <div id="brandsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+                            <ul>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Catalog Button -->
+                    <div class="pt-2">
+                        <button
+                            class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
+                            Catalog
+                        </button>
+                    </div>
+                </nav>
             </div>
-
-            <!-- Mobile Navigation -->
-            <nav class="space-y-4">
-                <!-- Products Dropdown -->
-                <div class="border-b border-gray-200">
-                    <button
-                        class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-lg font-medium text-sky-600 focus:outline-none"
-                        data-target="productsDropdown">
-                        Products
-                        <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
-                                fill="#0075BF" />
-                        </svg>
-                    </button>
-                    <div id="productsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
-                        <ul>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Brands Dropdown -->
-                <div class="border-b border-gray-200">
-                    <button
-                        class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-lg font-medium text-gray-800 focus:outline-none"
-                        data-target="brandsDropdown">
-                        Brands
-                        <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
-                                fill="black" />
-                        </svg>
-                    </button>
-                    <div id="brandsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
-                        <ul>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                            <li><a href="">
-                                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
-                                    cable and antenna analyzer
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Catalog Button -->
-                <div class="pt-2">
-                    <button
-                        class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors">
-                        Catalog
-                    </button>
-                </div>
-            </nav>
         </div>
-    </div>
+    </header>
     <!-- HEADER SECTION ENDS HERE -->
 
     <!-- HERO SECTION STRTS HERE -->
@@ -555,7 +555,6 @@
     </section>
     <!-- PRODUCT SLIDER SECTION ENDS HERE -->
 
-
     <!-- TWO IMAGE BANNER SECTION STARTS HERE -->
     <section class="mt-[60px]">
         <div class="container-fit">
@@ -618,28 +617,28 @@
         <div class="container-fit">
             <div class="swiper logo-carousel">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 03.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 04.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 05.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 06.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 07.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 08.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 03.png" class="h-full object-contain" alt="logo">
                     </div>
-                    <div class="swiper-slide h-[96px]">
+                    <div class="swiper-slide md:h-[96px] h-[70px]">
                         <img src="./assets/images/index/Logo 04.png" class="h-full object-contain" alt="logo">
                     </div>
                 </div>
@@ -672,8 +671,8 @@
                                 class="object-cover absolute top-0 left-0 blur size-full" />
 
                             <button type="button"
-                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
-                                aria-label="Download and read whitepaper 1" tabindex="0">
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0">
                                 <span
                                     class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
                                     Read whitepaper
@@ -725,7 +724,7 @@
                                 class="object-cover absolute top-0 left-0 blur size-full" />
 
                             <button type="button"
-                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
                                 aria-label="Download and read whitepaper 1" tabindex="0">
                                 <span
                                     class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
@@ -752,7 +751,7 @@
                                 class="object-cover absolute top-0 left-0 blur size-full" />
 
                             <button type="button"
-                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-[1] max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
                                 aria-label="Download and read whitepaper 1" tabindex="0">
                                 <span
                                     class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
@@ -774,12 +773,12 @@
                 <h2>faq</h2>
             </div>
 
-            <div class="mt-10 space-y-4 px-4 sm:px-0">
+            <div class="mt-10 space-y-4">
                 <div
                     class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
                     <button
                         class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
-                        <span class="text-lg lg:text-2xl font-medium text-[#0075BF] transition-colors duration-300">
+                        <span class="text-base lg:text-2xl font-medium text-[#0075BF] transition-colors duration-300">
                             What types of customers does TestMart serve?
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -791,7 +790,7 @@
                     <div class="accordion-content overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
                         style="max-height: 1000px;">
                         <div class="px-4 pb-4 md:px-6 md:pb-6">
-                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
                                 We primarily serve government agencies, defense organizations, educational institutions,
                                 research labs, and enterprise companies requiring test and measurement equipment.
                             </p>
@@ -804,7 +803,7 @@
                     <button
                         class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
                         <span
-                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
                             Can I purchase equipment directly, or is this only for government procurement?
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -816,7 +815,7 @@
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
                         <div class="px-4 pb-4 md:px-6 md:pb-6">
-                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
                                 Yes, we support both direct commercial sales and official government procurement
                                 channels.
                             </p>
@@ -829,7 +828,7 @@
                     <button
                         class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
                         <span
-                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
                             How long does delivery typically take?
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -841,7 +840,7 @@
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
                         <div class="px-4 pb-4 md:px-6 md:pb-6">
-                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
                                 Delivery times vary by product and availability, but most in-stock items ship within
                                 24-48 hours.
                             </p>
@@ -854,7 +853,7 @@
                     <button
                         class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
                         <span
-                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
                             Are the products covered by warranty and manufacturer support?
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -866,7 +865,7 @@
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
                         <div class="px-4 pb-4 md:px-6 md:pb-6">
-                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
                                 Delivery times vary by product and availability, but most in-stock items ship within
                                 24-48 hours.
                             </p>
@@ -879,7 +878,7 @@
                     <button
                         class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
                         <span
-                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
                             Does TestMart provide compliance and certification documentation?
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -891,7 +890,7 @@
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
                         <div class="px-4 pb-4 md:px-6 md:pb-6">
-                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
                                 Delivery times vary by product and availability, but most in-stock items ship within
                                 24-48 hours.
                             </p>
@@ -904,7 +903,7 @@
                     <button
                         class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
                         <span
-                            class="text-lg lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
                             How long does delivery typically take?
                         </span>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -916,7 +915,7 @@
                     <div
                         class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]">
                         <div class="px-4 pb-4 md:px-6 md:pb-6">
-                            <p class="text-base lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
                                 Delivery times vary by product and availability, but most in-stock items ship within
                                 24-48 hours.
                             </p>
@@ -927,7 +926,6 @@
         </div>
     </section>
     <!-- FAQ SECTION ENDS HERE -->
-
 
     <!-- FOOTER SECTION STARTS HERE -->
     <footer class="footer">
@@ -1006,8 +1004,134 @@
     </footer>
     <!-- FOOTER SECTION ENDS HERE -->
 
+    <!-- WHITEPAPER FORM MODAL STARTS HERE -->
+    <div class="modal">
+        <div class="modal-content max-w-[760px] w-full  bg-white rounded-3xl">
+            <span class="close-button absolute top-5 right-5 cursor-pointer">
+                <img src="./assets/images/icons/close-btn.svg" alt="close button">
+            </span>
+            <form class="flex flex-col pb-6" role="form" aria-labelledby="form-title">
+                <div
+                    class="flex gap-2.5 justify-center items-center px-6 py-4 w-full text-xl md:text-2xl font-semibold text-center text-white uppercase bg-sky-600 rounded-[24px_24px_0_0] max-md:px-5 max-md:max-w-full">
+                    <div
+                        class="flex flex-col flex-1 shrink items-start self-stretch my-auto w-full basis-0 min-w-60 max-md:max-w-full">
+                        <h2 id="form-title" class="text-white max-md:max-w-full">
+                            Get the Full Whitepaper
+                        </h2>
+                    </div>
+                </div>
 
+                <div class="px-6 mt-6 w-full max-md:px-5 max-md:max-w-full">
+                    <div class="flex flex-wrap gap-4 items-center w-full font-medium max-md:max-w-full">
+                        <label for="firstName"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-[124px] w-full">
+                            <span class="whitespace-nowrap">
+                                First Name :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
 
+                    <div class="flex flex-wrap gap-4 items-center mt-5 w-full font-medium max-md:max-w-full">
+                        <label for="lastName"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-[124px] w-full">
+                            <span class="whitespace-nowrap">
+                                Last Name :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your lastname" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 items-center mt-5 w-full font-medium max-md:max-w-full">
+                        <label for="phone"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-[124px] w-full">
+                            <span class="whitespace-nowrap">
+                                Phone :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 items-center mt-5 w-full font-medium max-md:max-w-full">
+                        <label for="email"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-[124px] w-full">
+                            <span class="whitespace-nowrap">
+                                E-mail :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-5 my-auto text-base text-black whitespace-nowrap bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="email" id="email" name="email" value="jessica.hanson@example.com" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 items-center mt-5 w-full font-medium max-md:max-w-full">
+                        <label for="company"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-[124px] w-full">
+                            <span class="whitespace-nowrap">
+                                Company :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="text" id="company" name="company" placeholder="Enter your Company name"
+                                required aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2.5 items-start p-2.5 mt-5 w-full max-md:max-w-full">
+                        <div class="w-4">
+                            <input type="checkbox" id="terms" name="terms" required aria-required="true"
+                                aria-describedby="terms-text"
+                                class="flex shrink-0 w-4 h-4 bg-white rounded border border-solid border-neutral-800 focus:ring-2 focus:ring-sky-600 focus:ring-offset-2" />
+                        </div>
+                        <label for="terms" id="terms-text"
+                            class="md:text-xl text-base text-center text-neutral-800 w-[594px] max-md:max-w-full cursor-pointer">
+                            By sending your email you've agree to our
+                            <a href="#"
+                                class="underline hover:text-sky-600 focus:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2">Terms
+                                of Service</a>
+                            <br />
+                            and
+                            <a href="#"
+                                class="underline hover:text-sky-600 focus:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2">Privacy
+                                Policy.</a>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="flex gap-2.5 justify-center items-center self-center px-5 py-3.5 mt-6 max-w-full text-base font-medium text-white whitespace-nowrap bg-sky-600 rounded-[38px] w-[300px] hover:bg-sky-700 focus:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 transition-colors duration-200"
+                    aria-label="Submit whitepaper request form">
+                    <span class="self-stretch my-auto">Submit</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- WHITEPAPER FORM MODAL STARTS HERE -->
 
 
     <!-- JQUERY CDN -->

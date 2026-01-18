@@ -85,7 +85,7 @@ var swiper = new Swiper(".logo-carousel", {
 
   breakpoints: {
     0: {
-      slidesPerView: 2.2,
+      slidesPerView: 3,
       spaceBetween: 16,
     },
 
@@ -234,4 +234,28 @@ dropdownToggles.forEach(toggle => {
     dropdown.classList.toggle('active');
     icon.classList.toggle('rotated');
   });
+});
+
+/* ===================================== */
+/*               MODAL SCRIPT            */
+/* ===================================== */
+// SOLUTION: All triggers open the same modal
+const modal = document.querySelector(".modal");
+const triggers = document.querySelectorAll(".trigger");
+const closeButton = modal.querySelector(".close-button");
+
+triggers.forEach(trigger => {
+  trigger.addEventListener("click", function () {
+    modal.classList.add("show-modal");
+  });
+});
+
+closeButton.addEventListener("click", function () {
+  modal.classList.remove("show-modal");
+});
+
+modal.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    modal.classList.remove("show-modal");
+  }
 });
