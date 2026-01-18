@@ -103,16 +103,24 @@ li {
 .dropdown-list {
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.12);
   border: 1px solid #E5E5E5;
-  border-radius: 8px;
   display: none;
   position: absolute;
-  top: 100%;
   left: 0;
+  top: calc(100% + 8px);
   border-radius: 8px;
-  margin-top: 8px;
-  min-width: 250px;
+  min-width: 340px;
   z-index: 50;
   background-color: #ffffff;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: transparent;
+  }
 
   ul {
     li {
