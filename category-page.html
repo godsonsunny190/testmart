@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testmart</title>
+
+  <!-- FAVICON LINK -->
+  <link rel="icon" type="image/png" href="./assets/images/logo/fav.png">
+
+  <!-- LENIS SMOOTH SCROLL CSS LINK -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css" />
+
+  <!-- SLICK SLIDER CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+
+  <!-- FONT STYLESHEET LINK -->
+  <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+  <!-- EXTERNAL CSS LINK -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- TAILWIND CSS LINK -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- HEADER SECTION STARTS HERE -->
+  <header>
+    <!-- Top Contact Bar -->
+    <div class="bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]">
+      <div class="container-fit">
+        <div class="flex flex-col gap-0.5 items-start w-ful" role="banner">
+          <div
+            class="box-border flex gap-8 items-center py-1.5 w-full  max-md:gap-5 max-md:py-3 max-sm:flex-wrap max-sm:gap-3 max-sm:px-4"
+            aria-label="Contact information">
+            <!-- Phone Contact -->
+            <div class="flex gap-1 items-center max-sm:gap-1">
+              <div aria-hidden="true">
+                <img src="./assets/images/icons/fi-rr-phone-call.svg" alt="icon">
+              </div>
+              <a href="tel:888-665-2765"
+                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover-text"
+                aria-label="Call us at 888-665-2765">
+                888-665-2765
+              </a>
+            </div>
+
+            <!-- Email Contact -->
+            <div class="flex gap-1 items-center flex-[1_0_0] max-sm:gap-1">
+              <div aria-hidden="true">
+                <img src="./assets/images/icons/fi-rr-envelope.svg" alt="icon">
+              </div>
+              <a href="mailto:salesteam@testmart.com"
+                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover-text"
+                aria-label="Email us at salesteam@testmart.com">
+                salesteam@testmart.com
+              </a>
+            </div>
+
+            <!-- Flag Icon -->
+            <img src="./assets/images/Sewp.png" alt="Country flag"
+              class="shrink-0 h-9 w-[27px] max-sm:w-5 max-sm:h-[27px]" />
+
+            <!-- GSA Icon -->
+            <img src="./assets/images/GSA.png" alt="GSA certification"
+              class="shrink-0 h-9 w-[37px] max-sm:w-7 max-sm:h-[27px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="bg-white">
+      <div class="container-fit">
+        <div class="box-border flex justify-between items-center py-6 w-full border-b border-solid border-b-zinc-100
+                     max-md:py-6 max-xl:flex-wrap max-xl:gap-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <img src="./assets/images/logo/TestMart Logo.svg" alt="TestMart Logo"
+              class="w-[250px] max-lg:w-[180px] max-sm:w-[150px]" />
+          </div>
+
+          <!-- Search Bar -->
+          <div
+            class="box-border flex gap-4 justify-center items-center py-2 pr-2 pl-4 bg-white border border-solid border-neutral-200 rounded-[50px] w-[450px] max-xl:order-3 max-sm:gap-2 max-sm:px-3 max-sm:py-2 max-xl:w-full">
+            <div aria-hidden="true" class="w-5 h-5">
+              <img src="./assets/images/icons/search.svg" alt="search">
+            </div>
+            <input type="search" placeholder="What are you looking for?"
+              class="text-base leading-8 text-black opacity-50 flex-[1_0_0] max-lg:text-sm max-sm:leading-6 bg-transparent border-none outline-none focus:opacity-100"
+              aria-label="Search products" />
+            <button type="submit"
+              class="flex gap-2.5 justify-center items-center px-4 py-1 h-9 bg-sky-600 cursor-pointer rounded-[60px] max-sm:px-3 max-sm:py-1 max-sm:h-8 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+              aria-label="Search">
+              <span class="text-lg text-white capitalize max-lg:text-sm">Search</span>
+            </button>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="flex gap-10 items-center max-md:gap-6 max-xl:hidden" role="navigation"
+            aria-label="Main navigation">
+            <!-- Products Dropdown -->
+            <div class="flex gap-2 items-center cursor-pointer group relative">
+              <button class="text-base font-medium text-center max-md:text-sm hover-text" aria-expanded="false"
+                aria-haspopup="true" aria-label="Products menu">
+                Products
+              </button>
+              <div aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="dropdown-icon-products" style="width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="#000000" />
+                </svg>
+              </div>
+
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Brands Dropdown -->
+            <div class="flex gap-2 items-center cursor-pointer group relative">
+              <button class="text-base font-medium text-center text-black max-md:text-sm hover-text"
+                aria-expanded="false" aria-haspopup="true" aria-label="Brands menu">
+                Brands
+              </button>
+              <div aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="dropdown-icon-brands" style="width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Catalog Button -->
+            <button
+              class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors trigger"
+              aria-label="View catalog" data-modal="modal3">
+              <span class="text-base font-medium text-white max-md:text-sm">Catalog</span>
+            </button>
+          </nav>
+
+          <!-- Mobile Menu Toggle -->
+          <button id="mobileMenuToggle"
+            class="hidden text-3xl text-black cursor-pointer max-xl:block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+            aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+            <img src="./assets/images/icons/menu-icon.svg" class="w-7 h-7" alt="menu icon">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileOverlay" class="mobile-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="p-6">
+        <!-- Close Button -->
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+          <button id="mobileMenuClose"
+            class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-lg p-1"
+            aria-label="Close mobile menu">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="space-y-4">
+          <!-- Products Dropdown -->
+          <div class="border-b border-gray-200">
+            <button
+              class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-sky-600 focus:outline-none"
+              data-target="productsDropdown">
+              Products
+              <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                  fill="#0075BF" />
+              </svg>
+            </button>
+            <div id="productsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+              <ul>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Brands Dropdown -->
+          <div class="border-b border-gray-200">
+            <button
+              class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-gray-800 focus:outline-none"
+              data-target="brandsDropdown">
+              Brands
+              <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                  fill="black" />
+              </svg>
+            </button>
+            <div id="brandsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+              <ul>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Catalog Button -->
+          <div class="pt-2">
+            <button
+              class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors trigger"
+              data-modal="modal3">
+              Catalog
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER SECTION ENDS HERE -->
+
+  <section class="mt-[48px]">
+    <div class="container-fit">
+      <div
+        class="flex gap-8 items-start max-md:flex-col max-md:gap-6 max-sm:gap-4 ">
+        <!-- Categories Sidebar -->
+        <nav
+          class="flex overflow-hidden flex-col shrink-0 gap-4 items-start pt-4 rounded-none border-t border-r border-b border-solid border-b-neutral-200 border-r-neutral-200 border-t-neutral-200 w-[340px] max-md:w-full max-md:rounded-3xl max-md:border max-md:border-solid max-md:border-neutral-200 max-sm:gap-3 max-sm:pt-3 max-sm:rounded-2xl">
+          <h2 class="self-stretch text-2xl font-semibold text-center text-black uppercase max-sm:text-xl">
+            Categories
+          </h2>
+
+          <div class="flex flex-col items-start w-full">
+            <!-- Active Category Item -->
+            <div
+              class="flex gap-4 items-center px-5 py-3 cursor-pointer bg-zinc-100 duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Cable and Antenna Analyzer
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M11.1875 9.9088L7.0625 5.7838L8.24083 4.60547L13.5442 9.9088L8.24083 15.2121L7.0625 14.0338L11.1875 9.9088Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Category Items -->
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                DC Power Supply
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Digital Multimeter
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Digital Sourcemeter
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Function Generator
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Logic Analyzer
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Network Analyzer
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Oscilloscope
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Power Sensor
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Pxi Chassis
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Radio Test Set
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Signal Analyzer
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Signal Generator
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Spectrum Analyzer
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Thermo Hygrometer
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Waveform Generator
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Pipetting Systems
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Thermometers
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+
+            <div
+              class="flex gap-4 items-center px-5 py-3 bg-white cursor-pointer duration-[0.2s] ease-[ease] transition-[background] w-[340px] max-md:w-full max-sm:gap-3 max-sm:px-4 max-sm:py-2.5 hover:bg-zinc-50">
+              <div>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-icon" style="flex-shrink: 0; width: 16px; height: 16px">
+                  <path
+                    d="M9.85219 1.03125L3 9.5H7L6.01531 14.9134C6.01344 14.9241 6.01392 14.935 6.01671 14.9454C6.01951 14.9558 6.02456 14.9655 6.0315 14.9737C6.03844 14.982 6.04711 14.9886 6.0569 14.9931C6.06668 14.9977 6.07734 15 6.08813 15C6.0996 15 6.11092 14.9973 6.12117 14.9921C6.13142 14.987 6.14033 14.9795 6.14719 14.9703L13 6.5H9L9.98938 1.08594C9.99071 1.07515 9.98973 1.06421 9.9865 1.05383C9.98327 1.04345 9.97787 1.03388 9.97066 1.02575C9.96345 1.01762 9.95458 1.01112 9.94466 1.00668C9.93474 1.00224 9.92399 0.999963 9.91313 1C9.90123 1.00005 9.8895 1.0029 9.87892 1.00833C9.86833 1.01376 9.85917 1.02161 9.85219 1.03125Z"
+                    stroke="#4D4D4D" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <span
+                class="overflow-hidden text-base font-medium flex-[1_0_0] text-black text-opacity-70 text-ellipsis max-sm:text-sm">
+                Water Purification
+              </span>
+              <div>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="category-dropdown" style="flex-shrink: 0; width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" fill-opacity="0.7"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Product Information -->
+        <main class="flex flex-col shrink-0 gap-5 items-start w-[866px] max-md:w-full max-sm:gap-4">
+          <!-- Header with Link -->
+          <header class="flex gap-1.5 justify-end items-center self-stretch">
+            <a href="#"
+              class="text-xl font-semibold text-right text-blue-400 underline cursor-pointer max-sm:text-base hover:text-blue-500 transition-colors">
+              See Cable and Antenna Analyzer Products
+            </a>
+            <div>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="arrow-right-icon" style="width: 20px; height: 20px">
+                <path d="M2.91602 9.9974H16.666M16.666 9.9974L10.8327 4.16406M16.666 9.9974L10.8327 15.8307"
+                  stroke="#4D9FD3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div>
+          </header>
+
+          <h1 class="self-stretch text-xl font-semibold text-black uppercase max-sm:text-lg">
+            Cable and antenna analyzer
+          </h1>
+
+          <!-- Company & Products Section -->
+          <section class="flex flex-col gap-16 items-start self-stretch max-sm:gap-8">
+            <!-- Overview Section -->
+            <article class="flex gap-6 justify-center items-start self-stretch max-md:flex-col max-sm:gap-4">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/ad608ab9671af49b62b010c892faaf8b8b2c4d06?width=480"
+                alt="Cable and Antenna Analyzer"
+                class="object-cover overflow-hidden shrink-0 w-60 h-60 rounded-3xl border border-solid border-neutral-200 max-md:mx-auto max-md:my-0 max-md:w-full max-md:h-auto max-md:max-w-60">
+              <p
+                class="self-stretch text-xl font-medium leading-8 text-justify flex-[1_0_0] text-neutral-800 max-sm:text-base max-sm:leading-7">
+                Cable analyzers verify the electrical connections in a cable or other wired assembly. Cable analyzers
+                typically consist of a source of electric current, a volt meter and a switching matrix. The cable
+                analyzer
+                may also have a microcontroller along with a display that automates the process and shows testing
+                results.
+                An antenna analyzer is used for measuring the efficiency of antenna systems in radio electronics
+                applications. In amateur radio, an antenna analyzer troubleshoots antennas and feedlines and focuses on
+                improving the performance.
+              </p>
+            </article>
+
+            <!-- ANRITSU Section -->
+            <article
+              class="flex flex-col gap-6 items-end p-6 rounded-3xl border border-solid border-neutral-200 w-[865px] max-md:w-full max-sm:gap-4 max-sm:p-4">
+              <div class="flex gap-6 justify-center items-start self-stretch max-md:flex-col max-sm:gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/98d172929e862926d8f9f5ce8a63278f05ec712c?width=480"
+                  alt="Anritsu"
+                  class="object-cover shrink-0 w-60 h-60 rounded-3xl border border-solid border-neutral-200 max-md:mx-auto max-md:my-0 max-md:w-full max-md:h-auto max-md:max-w-60">
+                <div class="flex flex-col gap-4 items-start flex-[1_0_0]">
+                  <h2 class="self-stretch text-2xl font-semibold text-black uppercase max-sm:text-xl">
+                    ANRITSU
+                  </h2>
+                  <p
+                    class="self-stretch text-xl font-medium leading-8 text-justify text-neutral-800 max-sm:text-base max-sm:leading-7">
+                    Handheld Cable and Antenna Analyzers offer measurement capabilities including precision return
+                    loss/VSWR, cable loss and distance-to-fault (DTF) measurements. Handheld analyzers help field
+                    technicians perform field verification and fault location to detect problems before they become
+                    costly,
+                    time-consuming system failures. Site Master is the leading choice for installation, maintenance, and
+                    troubleshooting of microwave cables and communication systems in cellular and broadcast industries
+                    as
+                    well as aerospace and defense. Take your pick from our growing Site Master family for such
+                    applications
+                    as VHF, broadcasting, paging, cellular, GPS, PCS/GSM, 3G, ISM, WLAN, WLL.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Product Card -->
+              <div
+                class="flex flex-col gap-6 justify-center items-start self-stretch p-6 rounded-2xl bg-neutral-50 max-sm:gap-4 max-sm:p-4">
+                <div
+                  class="flex overflow-hidden flex-col items-start bg-white rounded-2xl border border-solid border-neutral-200 h-[321px] w-[259px] max-sm:w-full max-sm:h-auto max-sm:max-w-[259px]">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/1f4656cf932f20c02af2549e3e8b1552bbd03b8c?width=518"
+                    alt="LMR Master"
+                    class="object-cover overflow-hidden shrink-0 self-stretch border-b border-solid border-b-neutral-200 h-[200px] max-sm:h-[180px]">
+                  <div class="flex flex-col gap-1 justify-center items-start self-stretch px-4 py-3 bg-white">
+                    <h3
+                      class="overflow-hidden self-stretch h-24 text-xl font-medium leading-8 opacity-70 text-ellipsis text-neutral-800 max-sm:h-auto max-sm:text-base max-sm:leading-7 max-sm:min-h-[78px]">
+                      LMR Master; 500 kHz -1600 MHz Land Mobile Radio Modula..
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Keysight Technologies Section -->
+            <article class="flex gap-6 justify-center items-start self-stretch p-6 max-md:flex-col max-sm:gap-4">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/febce7d11052238a9cb18e61e0d41eee4238bae5?width=480"
+                alt="Keysight Technologies"
+                class="object-cover shrink-0 w-60 h-60 rounded-3xl border border-solid border-neutral-200 max-md:mx-auto max-md:my-0 max-md:w-full max-md:h-auto max-md:max-w-60">
+              <div class="flex flex-col gap-4 items-start flex-[1_0_0]">
+                <h2 class="self-stretch text-2xl font-semibold text-black uppercase max-sm:text-xl">
+                  Keysight Technologies Inc.
+                </h2>
+                <p
+                  class="self-stretch text-xl font-medium leading-8 text-justify text-neutral-800 max-sm:text-base max-sm:leading-7">
+                  The FieldFox family of RF and microwave analyzers are handheld analyzers designed to deliver precise,
+                  lab-grade measurements up to 50 GHz wherever you need to go. At only 6.6 to 7.1 lbs., they are
+                  all-in-one
+                  and antenna analyzers + vector network analyzers + spectrum analyzers and more. Offering more built-in
+                  capabilities than similar analyzers, you can replace the hassle of carrying multiple instruments with
+                  a
+                  single FieldFox.
+                </p>
+              </div>
+            </article>
+
+            <!-- Rohde & Schwarz Section -->
+            <article
+              class="flex flex-col gap-6 items-center p-6 rounded-3xl border border-solid border-neutral-200 w-[866px] max-md:w-full max-sm:gap-4 max-sm:p-4">
+              <div class="flex gap-6 justify-center items-start self-stretch max-md:flex-col max-sm:gap-4">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/ee60c2cef508906b02ae1c0113301552b83a1dc8?width=480"
+                  alt="Rohde & Schwarz"
+                  class="object-cover shrink-0 w-60 h-60 rounded-3xl border border-solid border-neutral-200 max-md:mx-auto max-md:my-0 max-md:w-full max-md:h-auto max-md:max-w-60">
+                <div class="flex flex-col gap-4 items-start flex-[1_0_0]">
+                  <h2 class="self-stretch text-2xl font-semibold text-black uppercase max-sm:text-xl">
+                    Rohde & Schwarz
+                  </h2>
+                  <p
+                    class="self-stretch text-xl font-medium leading-8 text-justify text-neutral-800 max-sm:text-base max-sm:leading-7">
+                    The R & S ® ZVH is a rugged, handy cable and antenna analyzer, designed for use in the field. Its
+                    low
+                    weight and simple operation make it indispensible for anyone who needs an efficient measuring
+                    instrument
+                    outdoors for the installation and maintenance of anetenna systems.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Products Section with Carousel -->
+              <div
+                class="flex overflow-hidden relative flex-col gap-6 justify-center items-start self-stretch p-6 rounded-2xl bg-neutral-50 max-sm:gap-4 max-sm:p-4">
+                <div
+                  class="flex gap-6 items-center max-md:overflow-x-auto max-md:flex-nowrap max-sm:flex-col max-sm:w-full">
+                  <!-- Product Card 1 -->
+                  <div
+                    class="flex overflow-hidden flex-col items-start bg-white rounded-2xl border border-solid border-neutral-200 h-[321px] w-[259px] max-sm:w-full max-sm:h-auto max-sm:max-w-[259px]">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/49b608b5844173870b427629730c2eb4b1d6dbfd?width=518"
+                      alt="ZVH4 Cable & Antenna Tester"
+                      class="object-cover overflow-hidden shrink-0 self-stretch border-b border-solid border-b-neutral-200 h-[200px] max-sm:h-[180px]">
+                    <div class="flex flex-col gap-1 justify-center items-start self-stretch px-4 py-3 bg-white">
+                      <h3
+                        class="overflow-hidden self-stretch h-24 text-xl font-medium leading-8 opacity-70 text-ellipsis text-neutral-800 max-sm:h-auto max-sm:text-base max-sm:leading-7 max-sm:min-h-[78px]">
+                        ZVH4 CABLE & ANT. TESTER 3.6GHZ
+                      </h3>
+                    </div>
+                  </div>
+
+                  <!-- Product Card 2 -->
+                  <div
+                    class="flex overflow-hidden flex-col items-start bg-white rounded-2xl border border-solid border-neutral-200 h-[321px] w-[259px] max-sm:w-full max-sm:h-auto max-sm:max-w-[259px]">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/fd620159eae3bb81aaea029d6d7e9838f3c7f610?width=518"
+                      alt="ZPH Cable Rider"
+                      class="object-cover overflow-hidden shrink-0 self-stretch border-b border-solid border-b-neutral-200 h-[200px] max-sm:h-[180px]">
+                    <div class="flex flex-col gap-1 justify-center items-start self-stretch px-4 py-3 bg-white">
+                      <h3
+                        class="overflow-hidden self-stretch h-24 text-xl font-medium leading-8 opacity-70 text-ellipsis text-neutral-800 max-sm:h-auto max-sm:text-base max-sm:leading-7 max-sm:min-h-[78px]">
+                        ZPH CABLE RIDER
+                      </h3>
+                    </div>
+                  </div>
+
+                  <!-- Product Card 3 -->
+                  <div
+                    class="flex overflow-hidden flex-col items-start bg-white rounded-2xl border border-solid border-neutral-200 h-[321px] w-[259px] max-sm:w-full max-sm:h-auto max-sm:max-w-[259px]">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/49b608b5844173870b427629730c2eb4b1d6dbfd?width=518"
+                      alt="ZVH8 Cable & Antenna Analyzer"
+                      class="object-cover overflow-hidden shrink-0 self-stretch border-b border-solid border-b-neutral-200 h-[200px] max-sm:h-[180px]">
+                    <div class="flex flex-col gap-1 justify-center items-start self-stretch px-4 py-3 bg-white">
+                      <h3
+                        class="overflow-hidden self-stretch h-24 text-xl font-medium leading-8 opacity-70 text-ellipsis text-neutral-800 max-sm:h-auto max-sm:text-base max-sm:leading-7 max-sm:min-h-[78px]">
+                        ZVH8 ZVH8 CABLE & ΑΝΤΕΝΝΑ ANALYZER
+                      </h3>
+                    </div>
+                  </div>
+
+                  <!-- Product Card 4 -->
+                  <div
+                    class="flex overflow-hidden flex-col items-start bg-white rounded-2xl border border-solid border-neutral-200 h-[321px] w-[259px] max-sm:w-full max-sm:h-auto max-sm:max-w-[259px]">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/49b608b5844173870b427629730c2eb4b1d6dbfd?width=518"
+                      alt="ZVH4 Cable & Antenna Analyzer"
+                      class="object-cover overflow-hidden shrink-0 self-stretch border-b border-solid border-b-neutral-200 h-[200px] max-sm:h-[180px]">
+                    <div class="flex flex-col gap-1 justify-center items-start self-stretch px-4 py-3 bg-white">
+                      <h3
+                        class="overflow-hidden self-stretch h-24 text-xl font-medium leading-8 opacity-70 text-ellipsis text-neutral-800 max-sm:h-auto max-sm:text-base max-sm:leading-7 max-sm:min-h-[78px]">
+                        ZVH4 ZVH4 CABLE & ΑΝΤΕΝΝΑ ANALYZER
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <div
+                  class="flex absolute left-6 justify-between items-center bottom-[164px] w-[770px] max-md:w-[calc(100%_-_48px)] max-sm:hidden">
+                  <button
+                    class="flex flex-col shrink-0 gap-2.5 justify-center items-center p-2.5 w-10 h-10 border border-sky-600 border-solid transition-all cursor-pointer bg-sky-600 bg-opacity-10 duration-[0.2s] ease-[ease] rounded-[32px] hover:bg-opacity-20">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      class="control-icon" style="flex-shrink: 0; width: 20px; height: 20px">
+                      <path
+                        d="M9.20898 10.3021L13.334 14.4271L12.1557 15.6055L6.85232 10.3021L12.1557 4.9988L13.334 6.17714L9.20898 10.3021Z"
+                        fill="#0075BF"></path>
+                    </svg>
+                  </button>
+                  <button
+                    class="flex flex-col shrink-0 gap-2.5 justify-center items-center p-2.5 w-10 h-10 border border-sky-600 border-solid transition-all cursor-pointer bg-sky-600 bg-opacity-10 duration-[0.2s] ease-[ease] rounded-[32px] hover:bg-opacity-20">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      class="control-icon" style="flex-shrink: 0; width: 20px; height: 20px">
+                      <path
+                        d="M10.791 9.69786L6.66602 5.57286L7.84435 4.39453L13.1477 9.69786L7.84435 15.0012L6.66602 13.8229L10.791 9.69786Z"
+                        fill="#0075BF"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+
+        <!-- PDFs Sidebar -->
+        <aside
+          class="flex relative flex-col shrink-0 gap-4 items-center px-2 pt-4 pb-2 rounded-3xl border border-solid bg-zinc-100 border-neutral-200 w-[250px] max-md:mx-auto max-md:my-0 max-md:w-full max-md:max-w-[250px] max-sm:gap-3 max-sm:px-2 max-sm:pt-3 max-sm:pb-2">
+          <h2 class="self-stretch text-base font-semibold text-center text-sky-600 uppercase max-sm:text-sm">
+            PDFS
+          </h2>
+
+          <div class="flex flex-col gap-3 items-start self-stretch">
+            <!-- PDF Item 1 -->
+            <article
+              class="flex overflow-hidden flex-col items-start bg-white rounded-3xl border border-solid border-neutral-200 w-[234px] max-sm:w-full">
+              <div class="flex gap-2.5 justify-center items-center p-2.5 w-[234px] max-sm:w-full">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/7ce354e13495e7d1cc3ba972e22d3511b9dce233?width=160"
+                  alt="PDF Icon" class="shrink-0 w-20 h-20 max-sm:h-[60px] max-sm:w-[60px]">
+              </div>
+              <div
+                class="flex flex-col gap-4 justify-center items-start self-stretch p-4 h-32 bg-white border-t border-solid border-t-neutral-200 max-sm:p-3 max-sm:h-auto max-sm:min-h-[100px]">
+                <h3
+                  class="overflow-hidden shrink-0 self-stretch text-base font-medium text-sky-600 h-[95px] text-ellipsis max-sm:h-auto max-sm:text-sm max-sm:min-h-[70px]">
+                  Anritsu S362E Site Master Cable & Antenna Analyzer, Spectrum Analyzer
+                </h3>
+              </div>
+            </article>
+
+            <!-- PDF Item 2 -->
+            <article
+              class="flex overflow-hidden flex-col items-start bg-white rounded-3xl border border-solid border-neutral-200 w-[234px] max-sm:w-full">
+              <div class="flex gap-2.5 justify-center items-center p-2.5 w-[234px] max-sm:w-full">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/7ce354e13495e7d1cc3ba972e22d3511b9dce233?width=160"
+                  alt="PDF Icon" class="shrink-0 w-20 h-20 max-sm:h-[60px] max-sm:w-[60px]">
+              </div>
+              <div
+                class="flex flex-col gap-4 justify-center items-start self-stretch p-4 h-32 bg-white border-t border-solid border-t-neutral-200 max-sm:p-3 max-sm:h-auto max-sm:min-h-[100px]">
+                <h3
+                  class="overflow-hidden shrink-0 self-stretch text-base font-medium text-sky-600 h-[95px] text-ellipsis max-sm:h-auto max-sm:text-sm max-sm:min-h-[70px]">
+                  Keysight Technologies Inc. N9912A FieldFox RF Analyzer
+                </h3>
+              </div>
+            </article>
+
+            <!-- PDF Item 3 -->
+            <article
+              class="flex overflow-hidden flex-col items-start bg-white rounded-3xl border border-solid border-neutral-200 w-[234px] max-sm:w-full">
+              <div class="flex gap-2.5 justify-center items-center p-2.5 w-[234px] max-sm:w-full">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/7ce354e13495e7d1cc3ba972e22d3511b9dce233?width=160"
+                  alt="PDF Icon" class="shrink-0 w-20 h-20 max-sm:h-[60px] max-sm:w-[60px]">
+              </div>
+              <div
+                class="flex flex-col gap-4 justify-center items-start self-stretch p-4 h-32 bg-white border-t border-solid border-t-neutral-200 max-sm:p-3 max-sm:h-auto max-sm:min-h-[100px]">
+                <h3
+                  class="overflow-hidden shrink-0 self-stretch text-base font-medium text-sky-600 h-[95px] text-ellipsis max-sm:h-auto max-sm:text-sm max-sm:min-h-[70px]">
+                  Rohde & Schwarz ZVH4 Handheld Cable and Antenna Analyzer
+                </h3>
+              </div>
+            </article>
+          </div>
+
+          <!-- Scroll Bar -->
+          <div class="absolute right-0 top-14 w-1 h-20 rounded-xl bg-zinc-400"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JQUERY CDN -->
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+  <!-- SLICK SLIDER CDN LINK -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <!-- LENIS SMOOTH SCROLL CDN LINK -->
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+
+  <!-- TAILWIND JS LINK -->
+  <script src="tailwind.config.js"></script>
+
+  <!-- BUNDLE JS LINK -->
+  <script src="./assets/javascript/bundle.js"></script>
+
+  <!-- LENIS JS LINK -->
+  <script src="./assets/javascript/lenis.js"></script>
+
+  <!-- CUSTOM JS LINK -->
+  <script src="./assets/javascript/script.js"></script>
+
+
+
+</body>
+
+</html>
