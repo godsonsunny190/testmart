@@ -109,18 +109,22 @@ var swiper = new Swiper(".logo-carousel", {
 
     768: {
       slidesPerView: 3.2,
+      spaceBetween: 20,
     },
 
     1024: {
       slidesPerView: 4.2,
+      spaceBetween: 30,
     },
 
     1280: {
       slidesPerView: 5,
+      spaceBetween: 40,
     },
 
     1440: {
       slidesPerView: 7,
+      spaceBetween: 80,
     }
   }
 });

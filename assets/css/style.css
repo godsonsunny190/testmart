@@ -350,6 +350,10 @@ li {
     gap: 40px;
     transition: all .3s ease-in-out;
 
+    @media (max-width: 1536px) {
+      gap: 24px;
+    }
+
 
     li {
       transition: all .3s ease-in-out;
@@ -357,6 +361,13 @@ li {
       &:hover {
         transform: rotate(380deg);
         transition: all .3s ease-in-out;
+      }
+
+      img {
+        @media (max-width: 1536px) {
+          width: 32px;
+          height: 32px;
+        }
       }
     }
   }
