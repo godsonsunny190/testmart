@@ -129,15 +129,6 @@ var swiper = new Swiper(".logo-carousel", {
   }
 });
 
-const marqueeEl = document.querySelector('.logo-carousel');
-marqueeEl.addEventListener('mouseenter', () => {
-  swiper.autoplay.stop();
-});
-
-marqueeEl.addEventListener('mouseleave', () => {
-  swiper.autoplay.start();
-});
-
 
 /* ===================================== */
 /*             PRODUCT SLIDER            */
@@ -178,6 +169,37 @@ var swiper = new Swiper(".whitepaper-carousel", {
   }
 });
 
+
+
+/* ===================================== */
+/*                 SLIDER - 1            */
+/* ===================================== */
+
+var swiper = new Swiper(".slider-1", {
+  spaceBetween: 24,
+  slidesPerView: 3,
+  loop: true,
+  // autoplay: {
+  //   delay: 1500,
+  //   disableOnInteraction: false,
+  // },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+      spaceBetween: 16,
+    },
+    640: {
+      slidesPerView: 2.5,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+
+  }
+});
 
 /* ===================================== */
 /*           ACCORDION SCRIPT            */

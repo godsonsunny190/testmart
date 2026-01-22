@@ -75,6 +75,10 @@ li {
     width: calc(100% - 150px);
   }
 
+  @media (min-width:1200px) {
+    width: calc(100% - 180px);
+  }
+
   @media (min-width:1600px) {
     width: calc(100% - 376px);
   }
