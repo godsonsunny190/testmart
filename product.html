@@ -28,811 +28,1178 @@
 <body>
 
   <!-- HEADER SECTION STARTS HERE -->
-  <header id="header"></header>
+  <header>
+    <!-- Top Contact Bar -->
+    <div class="bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]">
+      <div class="container-fit">
+        <div class="flex flex-col gap-0.5 items-start w-ful" role="banner">
+          <div
+            class="box-border flex gap-8 items-center py-1.5 w-full  max-md:gap-5 max-md:py-3 max-sm:flex-wrap max-sm:gap-3 max-sm:px-4"
+            aria-label="Contact information">
+            <!-- Phone Contact -->
+            <div class="flex gap-1 items-center max-sm:gap-1">
+              <div aria-hidden="true">
+                <img src="./assets/images/icons/fi-rr-phone-call.svg" alt="icon">
+              </div>
+              <a href="tel:888-665-2765"
+                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover-text"
+                aria-label="Call us at 888-665-2765">
+                888-665-2765
+              </a>
+            </div>
+
+            <!-- Email Contact -->
+            <div class="flex gap-1 items-center flex-[1_0_0] max-sm:gap-1">
+              <div aria-hidden="true">
+                <img src="./assets/images/icons/fi-rr-envelope.svg" alt="icon">
+              </div>
+              <a href="mailto:salesteam@testmart.com"
+                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover-text"
+                aria-label="Email us at salesteam@testmart.com">
+                salesteam@testmart.com
+              </a>
+            </div>
+
+            <!-- Flag Icon -->
+            <img src="./assets/images/Sewp.png" alt="Country flag"
+              class="shrink-0 h-9 w-[27px] max-sm:w-5 max-sm:h-[27px]" />
+
+            <!-- GSA Icon -->
+            <img src="./assets/images/GSA.png" alt="GSA certification"
+              class="shrink-0 h-9 w-[37px] max-sm:w-7 max-sm:h-[27px]" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="bg-white">
+      <div class="container-fit">
+        <div class="box-border flex justify-between items-center py-6 w-full border-b border-solid border-b-zinc-100
+                     max-md:py-6 max-xl:flex-wrap max-xl:gap-4">
+          <!-- Logo -->
+          <div class="flex-shrink-0">
+            <a href="index.html">
+              <img src="./assets/images/logo/TestMart Logo.svg" alt="TestMart Logo"
+                class="w-[250px] max-xl:w-[180px] max-sm:w-[150px]" />
+            </a>
+          </div>
+
+          <!-- Search Bar -->
+          <div
+            class="box-border flex gap-4 justify-center items-center py-2 pr-2 pl-4 bg-white border border-solid border-neutral-200 rounded-[50px] w-[450px] max-xl:order-3 max-sm:gap-2 max-sm:px-3 max-sm:py-2 max-xl:w-full">
+            <div aria-hidden="true" class="w-5 h-5">
+              <img src="./assets/images/icons/search.svg" alt="search">
+            </div>
+            <input type="search" placeholder="What are you looking for?"
+              class="text-base leading-8 text-black opacity-50 flex-[1_0_0] max-lg:text-sm max-sm:leading-6 bg-transparent border-none outline-none focus:opacity-100"
+              aria-label="Search products" />
+            <button type="submit"
+              class="flex gap-2.5 justify-center items-center px-4 py-1 h-9 bg-sky-600 cursor-pointer rounded-[60px] max-sm:px-3 max-sm:py-1 max-sm:h-8 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+              aria-label="Search">
+              <span class="text-lg text-white capitalize max-lg:text-sm">Search</span>
+            </button>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="flex gap-10 items-center max-md:gap-6 max-xl:hidden" role="navigation"
+            aria-label="Main navigation">
+            <!-- Products Dropdown -->
+            <div class="flex gap-2 items-center cursor-pointer group relative">
+              <button class="text-base font-medium text-center max-md:text-sm hover-text" aria-expanded="false"
+                aria-haspopup="true" aria-label="Products menu">
+                Products
+              </button>
+              <div aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="dropdown-icon-products" style="width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="#000000" />
+                </svg>
+              </div>
+
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="category-page.html">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="category-page.html">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="category-page.html">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="category-page.html">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Brands Dropdown -->
+            <div class="flex gap-2 items-center cursor-pointer group relative">
+              <button class="text-base font-medium text-center text-black max-md:text-sm hover-text"
+                aria-expanded="false" aria-haspopup="true" aria-label="Brands menu">
+                Brands
+              </button>
+              <div aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="dropdown-icon-brands" style="width: 20px; height: 20px">
+                  <path
+                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                    fill="black" />
+                </svg>
+              </div>
+              <div class="dropdown-list">
+                <ul>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                  <li><a href="">
+                      <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                      cable and antenna analyzer
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Catalog Button -->
+            <button
+              class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors trigger"
+              aria-label="View catalog" data-modal="modal3">
+              <span class="text-base font-medium text-white max-md:text-sm">Catalog</span>
+            </button>
+          </nav>
+
+          <!-- Mobile Menu Toggle -->
+          <button id="mobileMenuToggle"
+            class="hidden text-3xl text-black cursor-pointer max-xl:block hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+            aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+            <img src="./assets/images/icons/menu-icon.svg" class="w-7 h-7" alt="menu icon">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobileOverlay" class="mobile-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="p-6">
+        <!-- Close Button -->
+        <div class="flex justify-between items-center mb-6">
+          <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+          <button id="mobileMenuClose"
+            class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-lg p-1"
+            aria-label="Close mobile menu">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="space-y-4">
+          <!-- Products Dropdown -->
+          <div class="border-b border-gray-200">
+            <button
+              class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-sky-600 focus:outline-none"
+              data-target="productsDropdown">
+              Products
+              <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                  fill="#0075BF" />
+              </svg>
+            </button>
+            <div id="productsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+              <ul>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Brands Dropdown -->
+          <div class="border-b border-gray-200">
+            <button
+              class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-gray-800 focus:outline-none"
+              data-target="brandsDropdown">
+              Brands
+              <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                  fill="black" />
+              </svg>
+            </button>
+            <div id="brandsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+              <ul>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+                <li><a href="category-page.html">
+                    <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                    cable and antenna analyzer
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Catalog Button -->
+          <div class="pt-2">
+            <button
+              class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors trigger"
+              data-modal="modal3">
+              Catalog
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
   <!-- HEADER SECTION ENDS HERE -->
 
 
 
-  <main class="flex flex-col gap-14 items-center p-5 mx-auto my-0 w-full max-w-[1520px] max-sm:gap-8 max-sm:p-3">
-    <div class="flex gap-8 items-start w-full max-md:flex-col">
-      <!-- Filter Sidebar -->
-      <aside
-        class="flex flex-col shrink-0 gap-6 items-start p-4 bg-white border-r border-solid border-r-zinc-100 w-[300px] max-md:w-full max-md:border-b max-md:border-solid max-md:border-b-zinc-100 max-md:border-r-[none] max-sm:p-3">
-        <!-- Price Filter Section -->
-        <section class="flex flex-col gap-6 items-start pb-6 w-full border-b border-solid border-b-zinc-100">
-          <h2 class="w-full text-base font-semibold text-black uppercase max-sm:text-sm">Price Range</h2>
-          <div class="flex flex-col gap-6 items-start px-1 py-0 w-full">
-            <!-- Price Range Options -->
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$0 to $4,000</span>
-            </label>
+  <main class="mt-[34px] mb-14">
+    <div class="container-fit">
 
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" checked class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-sky-600 rounded"></div>
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="absolute left-1 top-1">
-                  <path
-                    d="M7.36852 0.154982C7.22749 0.0764548 7.0724 0.0265307 6.91211 0.00806062C6.75182 -0.0104095 6.58947 0.0029362 6.43432 0.0473356C6.27918 0.091735 6.13429 0.166318 6.00792 0.266825C5.88156 0.367333 5.77619 0.491795 5.69785 0.633104L3.41725 4.74483L2.11204 3.43723C1.99872 3.31968 1.86317 3.22593 1.71329 3.16143C1.56342 3.09693 1.40222 3.06298 1.23911 3.06156C1.076 3.06014 0.914241 3.09128 0.76327 3.15316C0.6123 3.21504 0.475142 3.30642 0.359801 3.42197C0.24446 3.53752 0.153244 3.67493 0.0914775 3.82618C0.0297106 3.97743 -0.00137101 4.13948 4.63818e-05 4.30289C0.00146377 4.4663 0.0353518 4.62779 0.099733 4.77794C0.164114 4.92809 0.257699 5.06389 0.375027 5.17742L2.8319 7.63879C3.06408 7.87201 3.37733 8 3.70041 8L3.87055 7.98769C4.05884 7.96131 4.23844 7.89149 4.39522 7.78375C4.55201 7.67602 4.68169 7.53329 4.77406 7.36681L7.84516 1.82872C7.92356 1.68747 7.97343 1.53213 7.99191 1.37157C8.01039 1.21101 7.99712 1.04837 7.95286 0.892949C7.9086 0.737527 7.83422 0.592361 7.73396 0.46574C7.6337 0.339119 7.50952 0.233523 7.36852 0.154982Z"
-                    fill="white"></path>
+      <!-- BREAD CRUMBS SECTION STARS HERE -->
+      <nav aria-label="breadcrumb" class="font-semibold text-base mt-9">
+        <ul class="breadcrumb flex items-center gap-[10px]">
+          <li class="breadcrumb-item opacity-70"><a href="index.html">TestMart</a></li>
+          <li><img src="./assets/images/icons/DropDown.svg" alt="arrow"></li>
+          <li class="breadcrumb-item active text-[#0075BF]" aria-current="page">Library</li>
+        </ul>
+      </nav>
+      <!-- BREAD CRUMBS SECTION ENDS HERE -->
+
+      <div class="flex flex-col gap-14 items-center mx-auto mt-[34px] max-sm:gap-8">
+        <div class="flex gap-8 items-start w-full max-lg:flex-col">
+          <!-- Filter Sidebar -->
+          <aside
+            class="flex flex-col shrink-0 gap-6 items-start p-4 ps-0 bg-white border-r border-solid border-r-zinc-100 w-[300px] max-lg:w-full max-md:border-b max-md:border-solid max-md:border-b-zinc-100 max-md:border-r-[none] max-sm:p-3">
+            <!-- Price Filter Section -->
+            <div class="flex flex-col gap-6 items-start pb-6 w-full border-b border-solid border-b-zinc-100">
+              <h2 class="w-full text-base font-semibold text-black uppercase max-sm:text-sm">Price Range</h2>
+              <div class="flex flex-col gap-6 items-start px-1 py-0 w-full">
+
+                <!-- Price Range Options -->
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    $0 to $4,000
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    $4,000 to $4,500
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    $4,500 to $5,000
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    $5,000 to $6,000
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    $6,000 to $7,000
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    $7,000 to $8,000
+                  </span>
+                </label>
+              </div>
+
+              <button class="text-base font-medium leading-6 text-sky-600 cursor-pointer max-sm:text-sm">Show
+                More</button>
+
+              <!-- Price Range Slider -->
+              <div class="relative w-full h-[123px] select-none">
+                <input type="range" min="0" max="50000" value="25000" id="rangeInput"
+                  class="absolute w-full h-3 top-[69px] opacity-0 cursor-pointer z-30" />
+
+                <div class="absolute w-full h-3 bg-blue-200 rounded-xl top-[69px] z-0"></div>
+
+                <div id="progressBar" class="absolute h-3 bg-sky-600 rounded-xl top-[69px] z-10" style="width: 50%;">
+                </div>
+
+                <div id="handle" class="absolute top-[63px] z-20 -translate-x-1/2 pointer-events-none"
+                  style="left: 50%;">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="9.5" fill="white" stroke="#0075BF" stroke-width="5"></circle>
+                  </svg>
+                </div>
+
+                <div id="tooltip" class="absolute top-0 -translate-x-1/2 w-[84px] z-20 pointer-events-none"
+                  style="left: 50%;">
+                  <div class="flex flex-col items-center">
+                    <div class="flex justify-center items-center bg-sky-600 h-[46px] rounded-[64px] px-4">
+                      <span id="tooltipText" class="text-base text-white font-medium">$25000</span>
+                    </div>
+                    <svg width="24" height="12" viewBox="0 0 24 12" fill="#0284c7" xmlns="http://www.w3.org/2000/svg"
+                      class="mt-[-2px]">
+                      <path d="M10.5052 11.355C11.3008 12.215 12.6992 12.215 13.4948 11.355L24 0H0L10.5052 11.355Z"
+                        fill="#0075BF"></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="flex absolute justify-between items-center w-full top-[99px]">
+                  <span class="text-base font-medium text-black uppercase">$0</span>
+                  <span class="text-base font-medium text-black uppercase">$50000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Manufacturers Filter Section -->
+            <div class="flex flex-col gap-6 items-start pb-6 w-full border-b border-solid border-b-zinc-100">
+              <h2 class="w-full text-base font-semibold text-black uppercase max-sm:text-sm">Manufacturers</h2>
+              <div class="flex flex-col gap-6 items-start w-full">
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Agilent Life Sciences (156)
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Agilent Technologies, Inc.
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Agilent Vacuum Technologies (2)
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Analytik Jena (5)
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Astronics Test Systems, Inc. (7)
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Bird Electronic Corporation (23)
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    California Instruments (1)
+                  </span>
+                </label>
+
+                <label class="inline-flex items-center gap-3 cursor-pointer group">
+                  <div class="relative flex items-center">
+                    <input type="checkbox" class="peer sr-only" checked />
+                    <div
+                      class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                    </div>
+                    <svg
+                      class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                    Fluke Amprobe (6)
+                  </span>
+                </label>
+
+                <button class="text-base font-medium leading-6 text-sky-600 cursor-pointer max-sm:text-sm">Show
+                  More</button>
+              </div>
+            </div>
+
+            <!-- In Stock Filter Section -->
+
+            <label class="inline-flex items-center gap-3 cursor-pointer group">
+              <div class="relative flex items-center">
+                <input type="checkbox" class="peer sr-only" checked />
+                <div
+                  class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                </div>
+                <svg
+                  class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
                 </svg>
               </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$4,000 to $4,500</span>
+              <span class="text-gray-700 font-medium select-none  line-clamp-1">
+                Yes (28)
+              </span>
             </label>
+          </aside>
 
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
+          <!-- Products Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2  min-[1280px]:grid-cols-3 2xl:grid-cols-3 4xl:grid-cols-4 gap-6 w-full">
+            <!-- Card 1 -->
+
+            <article class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/c4d0cf27323f31b91ca8aa2c6fb1e60472c3c86f?width=558"
+                alt="Rohde & Schwarz 1320.8070.78"
+                class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
+                <div class="flex flex-col gap-2 items-start w-full">
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Rohde & Schwarz 1320.8070.78</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Bio VWD Window Kit for Std. Cell</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 16 W</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$375.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
+                </div>
               </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$4,500 to $5,000</span>
-            </label>
+            </article>
 
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
+            <!-- Card 2 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/d094b25f28588da176455fa3c866b7a221c64474?width=558"
+                alt="Rohde & Schwarz 1320.8070.74"
+                class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
+                <div class="flex flex-col gap-2 items-start w-full">
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Rohde & Schwarz 1320.8070.74</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      ZVH4 ZVH4 CABLE & ANTENNA ANALYZER</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 22 W</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$9,685.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
+                </div>
               </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$5,000 to $6,000</span>
-            </label>
+            </article>
 
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
+            <!-- Card 3 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/46c9aa97bf5da602ca3ff09627e4ec6cb01bfa77?width=558"
+                alt="VIAVI Solutions, Inc. CAA06MA"
+                class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
+                <div class="flex flex-col gap-2 items-start w-full">
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        VIAVI Solutions, Inc. CAA06MA</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      6 GHz Cable and Antenna Analyzer Module</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$5,609.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
+                </div>
               </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$6,000 to $7,000</span>
-            </label>
+            </article>
 
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$7,000 to $8,000</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$8,000 to $9,000</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$9,000 to $10,000</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span class="flex-1 text-base font-medium leading-6 text-black max-sm:text-sm">$10,000 to $25,000</span>
-            </label>
-          </div>
-
-          <button class="text-base font-medium leading-6 text-sky-600 cursor-pointer max-sm:text-sm">Show More</button>
-
-          <!-- Price Range Slider -->
-          <div class="relative w-full h-[123px]">
-            <div class="absolute w-full h-3 bg-blue-200 rounded-xl top-[69px]"></div>
-            <div class="absolute w-6/12 h-3 bg-sky-600 rounded-xl top-[69px]"></div>
-            <div class="absolute left-[120px] top-[63px]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="9.5" fill="white" stroke="#0075BF" stroke-width="5"></circle>
-              </svg>
-            </div>
-            <div class="absolute top-0 h-[57px] left-[95px] w-[74px]">
+            <!-- Card 4 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
               <div
-                class="inline-flex gap-5 justify-center items-center px-2 py-10 bg-sky-600 h-[46px] rounded-[64px] w-[74px]">
-                <span class="text-base text-center text-white">$25000</span>
-              </div>
-              <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="absolute left-[25px] top-[45px]">
-                <path d="M10.5052 11.355C11.3008 12.215 12.6992 12.215 13.4948 11.355L24 0H0L10.5052 11.355Z"
-                  fill="#0075BF"></path>
-              </svg>
-            </div>
-            <div class="flex absolute justify-between items-center w-full top-[99px]">
-              <span class="text-base font-medium text-center text-black uppercase">$0</span>
-              <span class="text-base font-medium text-center text-black uppercase">$50000</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- Manufacturers Filter Section -->
-        <section class="flex flex-col gap-6 items-start pb-6 w-full border-b border-solid border-b-zinc-100">
-          <h2 class="w-full text-base font-semibold text-black uppercase max-sm:text-sm">Manufacturers</h2>
-          <div class="flex flex-col gap-6 items-start px-1 py-0 w-full">
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" checked class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-sky-600 rounded"></div>
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="absolute left-1 top-1">
-                  <path
-                    d="M7.36852 0.154982C7.22749 0.0764548 7.0724 0.0265307 6.91211 0.00806062C6.75182 -0.0104095 6.58947 0.0029362 6.43432 0.0473356C6.27918 0.091735 6.13429 0.166318 6.00792 0.266825C5.88156 0.367333 5.77619 0.491795 5.69785 0.633104L3.41725 4.74483L2.11204 3.43723C1.99872 3.31968 1.86317 3.22593 1.71329 3.16143C1.56342 3.09693 1.40222 3.06298 1.23911 3.06156C1.076 3.06014 0.914241 3.09128 0.76327 3.15316C0.6123 3.21504 0.475142 3.30642 0.359801 3.42197C0.24446 3.53752 0.153244 3.67493 0.0914775 3.82618C0.0297106 3.97743 -0.00137101 4.13948 4.63818e-05 4.30289C0.00146377 4.4663 0.0353518 4.62779 0.099733 4.77794C0.164114 4.92809 0.257699 5.06389 0.375027 5.17742L2.8319 7.63879C3.06408 7.87201 3.37733 8 3.70041 8L3.87055 7.98769C4.05884 7.96131 4.23844 7.89149 4.39522 7.78375C4.55201 7.67602 4.68169 7.53329 4.77406 7.36681L7.84516 1.82872C7.92356 1.68747 7.97343 1.53213 7.99191 1.37157C8.01039 1.21101 7.99712 1.04837 7.95286 0.892949C7.9086 0.737527 7.83422 0.592361 7.73396 0.46574C7.6337 0.339119 7.50952 0.233523 7.36852 0.154982Z"
-                    fill="white"></path>
+                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="opacity-20">
+                  <g opacity="0.2">
+                    <path
+                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
+                      fill="black"></path>
+                  </g>
                 </svg>
               </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Agilent
-                Life Sciences (156)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
+                <div class="flex flex-col gap-2 items-start w-full">
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        VIAVI Solutions, Inc. CAA06MA</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      6 GHz Cable and Antenna Analyzer Module</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
+                  </div>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$5,609.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
+                </div>
               </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Agilent
-                Technologies, Inc. - Diagnostics (2)</span>
-            </label>
+            </article>
 
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" checked class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-sky-600 rounded"></div>
-                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="absolute left-1 top-1">
-                  <path
-                    d="M7.36852 0.154982C7.22749 0.0764548 7.0724 0.0265307 6.91211 0.00806062C6.75182 -0.0104095 6.58947 0.0029362 6.43432 0.0473356C6.27918 0.091735 6.13429 0.166318 6.00792 0.266825C5.88156 0.367333 5.77619 0.491795 5.69785 0.633104L3.41725 4.74483L2.11204 3.43723C1.99872 3.31968 1.86317 3.22593 1.71329 3.16143C1.56342 3.09693 1.40222 3.06298 1.23911 3.06156C1.076 3.06014 0.914241 3.09128 0.76327 3.15316C0.6123 3.21504 0.475142 3.30642 0.359801 3.42197C0.24446 3.53752 0.153244 3.67493 0.0914775 3.82618C0.0297106 3.97743 -0.00137101 4.13948 4.63818e-05 4.30289C0.00146377 4.4663 0.0353518 4.62779 0.099733 4.77794C0.164114 4.92809 0.257699 5.06389 0.375027 5.17742L2.8319 7.63879C3.06408 7.87201 3.37733 8 3.70041 8L3.87055 7.98769C4.05884 7.96131 4.23844 7.89149 4.39522 7.78375C4.55201 7.67602 4.68169 7.53329 4.77406 7.36681L7.84516 1.82872C7.92356 1.68747 7.97343 1.53213 7.99191 1.37157C8.01039 1.21101 7.99712 1.04837 7.95286 0.892949C7.9086 0.737527 7.83422 0.592361 7.73396 0.46574C7.6337 0.339119 7.50952 0.233523 7.36852 0.154982Z"
-                    fill="white"></path>
+            <!-- Card 5 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <div
+                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="opacity-20">
+                  <g opacity="0.2">
+                    <path
+                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
+                      fill="black"></path>
+                  </g>
                 </svg>
               </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Agilent
-                Vacuum Technologies (2)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Analytik
-                Jena (5)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Astronics
-                Test Systems, Inc. (7)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Bird
-                Electronic Corporation (23)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Boonton
-                Electronics (4)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Bruker
-                Scientific, LLC (5)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">California
-                Instruments (1)</span>
-            </label>
-
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Fluke
-                Amprobe (6)</span>
-            </label>
-
-            <button class="text-base font-medium leading-6 text-sky-600 cursor-pointer max-sm:text-sm">Show
-              More</button>
-          </div>
-        </section>
-
-        <!-- In Stock Filter Section -->
-        <section class="flex flex-col gap-6 items-start w-full">
-          <h2 class="w-full text-base font-semibold text-black uppercase max-sm:text-sm">In Stock</h2>
-          <div class="flex flex-col gap-6 items-start px-1 py-0 w-full">
-            <label class="flex relative gap-2 items-center w-full cursor-pointer">
-              <input type="checkbox" class="sr-only">
-              <div class="relative shrink-0 w-4 h-4">
-                <div class="w-4 h-4 bg-white rounded border border-black border-solid"></div>
-              </div>
-              <span
-                class="overflow-hidden flex-1 text-base font-medium leading-6 text-black text-ellipsis max-sm:text-sm">Yes
-                (28)</span>
-            </label>
-          </div>
-        </section>
-      </aside>
-
-      <!-- Products Grid -->
-      <section class="flex flex-col flex-1 gap-6 items-start w-full">
-        <!-- Row 1 -->
-        <div class="flex gap-6 items-start w-full max-md:flex-wrap max-sm:flex-col">
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/c4d0cf27323f31b91ca8aa2c6fb1e60472c3c86f?width=558"
-              alt="Rohde & Schwarz 1320.8070.78"
-              class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Rohde & Schwarz 1320.8070.78</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu MS2085A</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Site Master Cable and Antenna Analyzer (Must be ordered with ONE Frequency...</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Bio VWD Window Kit for Std. Cell</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 16 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$375.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/d094b25f28588da176455fa3c866b7a221c64474?width=558"
-              alt="Rohde & Schwarz 1320.8070.74"
-              class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 6 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/b8b533da9fd66c8c14151eff9aeb350dfe217895?width=558"
+                alt="VIAVI Solutions, Inc. CAA06MB"
+                class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Rohde & Schwarz 1320.8070.74</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        VIAVI Solutions, Inc. CAA06MB</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      6 GHz Cable and Antenna Analyzer Module with Bias Power and Bias-Tee</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    ZVH4 ZVH4 CABLE & ANTENNA ANALYZER</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 22 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$657.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$9,685.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/46c9aa97bf5da602ca3ff09627e4ec6cb01bfa77?width=558"
-              alt="VIAVI Solutions, Inc. CAA06MA"
-              class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 7 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558"
+                alt="Anritsu MS2089A" class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      VIAVI Solutions, Inc. CAA06MA</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu MS2089A</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Site Master Cable and Antenna Analyzer with Spectrum Analyzer (Must be ordered...</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    6 GHz Cable and Antenna Analyzer Module</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$5,609.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <div
-              class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="opacity-20">
-                <g opacity="0.2">
-                  <path
-                    d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                    fill="black"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 8 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558"
+                alt="Anritsu MS2089A" class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      VIAVI Solutions, Inc. CAA06MA</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu MS2089A</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Site Master Cable and Antenna Analyzer with Spectrum Analyzer (Must be ordered...</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    6 GHz Cable and Antenna Analyzer Module</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$5,609.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
-        </div>
+            </article>
 
-        <!-- Row 2 -->
-        <div class="flex gap-6 items-start w-full max-md:flex-wrap max-sm:flex-col">
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <div
-              class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="opacity-20">
-                <g opacity="0.2">
-                  <path
-                    d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                    fill="black"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 9 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/013810dbbcba643e81799e6f05cbaae0bd3f8ef8?width=558"
+                alt="Anritsu S331L" class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu MS2085A</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu S331L</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Site Master; 2 MHz - 4 GHz; Cable and Antenna Analyzer with built-in Power...</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Site Master Cable and Antenna Analyzer (Must be ordered with ONE Frequency...</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$7,730.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/b8b533da9fd66c8c14151eff9aeb350dfe217895?width=558"
-              alt="VIAVI Solutions, Inc. CAA06MB"
-              class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 10 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/e83dbe09d466ad2572be83bbad508d5a9aa41306?width=558"
+                alt="Anritsu S331P" class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      VIAVI Solutions, Inc. CAA06MB</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu S331P</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Site Master; Ultraportable Cable and Antenna Analyzer (Must order ONE frequency...</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    6 GHz Cable and Antenna Analyzer Module with Bias Power and Bias-Tee</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$2,935.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$657.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558"
-              alt="Anritsu MS2089A" class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 11 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <div
+                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="opacity-20">
+                  <g opacity="0.2">
+                    <path
+                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
+                      fill="black"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu MS2089A</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu MW82119B-0331</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Option 331; Site Master Cable and Antenna Analyzer</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Site Master Cable and Antenna Analyzer with Spectrum Analyzer (Must be ordered...</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,890.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558"
-              alt="Anritsu MS2089A" class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 12 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <div
+                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="opacity-20">
+                  <g opacity="0.2">
+                    <path
+                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
+                      fill="black"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu MS2089A</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu MW82119B-0331</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Option 331; Site Master Cable and Antenna Analyzer</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Site Master Cable and Antenna Analyzer with Spectrum Analyzer (Must be ordered...</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,890.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
-        </div>
+            </article>
 
-        <!-- Row 3 -->
-        <div class="flex gap-6 items-start w-full max-md:flex-wrap max-sm:flex-col">
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/013810dbbcba643e81799e6f05cbaae0bd3f8ef8?width=558"
-              alt="Anritsu S331L" class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 13 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/704ba62bcbf46fe9053b39073ba544bb3da3272e?width=558"
+                alt="Anritsu MW82119B-1331"
+                class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu S331L</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Anritsu MW82119B-1331</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      Retrofit Option 331; Site Master Cable and Antenna Analyzer to MW82119B</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Site Master; 2 MHz - 4 GHz; Cable and Antenna Analyzer with built-in Power...</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,990.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$7,730.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e83dbe09d466ad2572be83bbad508d5a9aa41306?width=558"
-              alt="Anritsu S331P" class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 14 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/4f5e9cb216d7a8a7ce3401dec3c7b4a395de819b?width=558"
+                alt="Bird Electronic Corporation SK-9000-TC"
+                class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu S331P</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Bird Electronic Corporation SK-9000-TC</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      SiteHawk, 1 - 9000 MHz Cable and Antenna Analyzer</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Site Master; Ultraportable Cable and Antenna Analyzer (Must order ONE frequency...</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$7,140.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$2,935.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <div
-              class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="opacity-20">
-                <g opacity="0.2">
-                  <path
-                    d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                    fill="black"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu MW82119B-0331</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                  </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Option 331; Site Master Cable and Antenna Analyzer</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
-                </div>
-              </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,890.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <div
-              class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="opacity-20">
-                <g opacity="0.2">
-                  <path
-                    d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                    fill="black"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu MW82119B-0331</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                  </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Option 331; Site Master Cable and Antenna Analyzer</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
-                </div>
-              </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,890.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <!-- Row 4 -->
-        <div class="flex gap-6 items-start w-full max-md:flex-wrap max-sm:flex-col">
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/704ba62bcbf46fe9053b39073ba544bb3da3272e?width=558"
-              alt="Anritsu MW82119B-1331"
-              class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Anritsu MW82119B-1331</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                  </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    Retrofit Option 331; Site Master Cable and Antenna Analyzer to MW82119B</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
-                </div>
-              </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,990.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/4f5e9cb216d7a8a7ce3401dec3c7b4a395de819b?width=558"
-              alt="Bird Electronic Corporation SK-9000-TC"
-              class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Bird Electronic Corporation SK-9000-TC</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                  </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    SiteHawk, 1 - 9000 MHz Cable and Antenna Analyzer</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
-                </div>
-              </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$7,140.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/e94f347183d87b2888b28537c83aed9a85a4900e?width=558"
-              alt="Yokogawa M1244QM" class="object-cover w-full border-b border-solid border-b-neutral-200 h-[200px]">
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 15 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/e94f347183d87b2888b28537c83aed9a85a4900e?width=558"
+                alt="Yokogawa M1244QM" class="object-cover w-full border-b border-solid border-b-neutral-200">
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full min-h-[82px]">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Yokogawa M1244QM</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Yokogawa M1244QM</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      6 dBi Omni Antenna - NF Connector (requires antenna cable)</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 45 D</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    6 dBi Omni Antenna - NF Connector (requires antenna cable)</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 45 D</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$100.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$100.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
 
-          <article
-            class="flex overflow-hidden flex-col flex-1 items-start min-w-0 rounded-3xl border border-solid border-neutral-200 max-md:flex-[1_1_calc(50%_-_12px)] max-md:min-w-[280px] max-sm:w-full max-sm:flex-[1_1_100%]">
-            <div
-              class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="opacity-20">
-                <g opacity="0.2">
-                  <path
-                    d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                    fill="black"></path>
-                </g>
-              </svg>
-            </div>
-            <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-              <div class="flex flex-col gap-2 items-start w-full">
+            <!-- Card 16 -->
+            <article
+              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
+              <div
+                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  class="opacity-20">
+                  <g opacity="0.2">
+                    <path
+                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
+                      fill="black"></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
                 <div class="flex flex-col gap-2 items-start w-full min-h-[82px]">
-                  <div class="flex gap-2 justify-between items-center w-full">
-                    <h3
-                      class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm">
-                      Yokogawa M1244QM</h3>
-                    <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                  <div class="flex flex-col gap-2 items-start w-full">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <h3
+                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
+                        Yokogawa M1244QM</h3>
+                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
+                    </div>
+                    <p
+                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
+                      6 dBi Omni Antenna - NF Connector (requires antenna cable)</p>
+                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 45 D</p>
                   </div>
-                  <p
-                    class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs">
-                    6 dBi Omni Antenna - NF Connector (requires antenna cable)</p>
-                  <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 45 D</p>
+                </div>
+                <div class="flex gap-2 justify-between items-center w-full">
+                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$100.00</span>
+                  <button
+                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
+                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
+                  </button>
                 </div>
               </div>
-              <div class="flex gap-2 justify-between items-center w-full">
-                <span class="text-base font-semibold text-right text-black max-sm:text-sm">$100.00</span>
-                <button
-                  class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                </button>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <!-- Pagination -->
-    <nav class="flex gap-2.5 items-start mt-8 max-sm:flex-wrap max-sm:justify-center" aria-label="Pagination">
+    <nav class="flex gap-2.5 items-start mt-14 max-sm:flex-wrap justify-center" aria-label="Pagination">
       <button
         class="flex flex-col gap-2.5 justify-center items-center p-2.5 w-10 h-10 bg-white border border-solid cursor-pointer border-zinc-100 rounded-[32px]"
         aria-label="Previous page">
@@ -879,6 +1246,84 @@
       </button>
     </nav>
   </main>
+
+
+  <!-- FOOTER SECTION STARTS HERE -->
+  <footer class="footer">
+    <div class="container-fit">
+      <div class="footer-top">
+        <div class="footer-col flex flex-col gap-[30px] md:gap-[70px] ">
+          <div class="footer-logo">
+            <a href="">
+              <img src="./assets/images/logo/white-logo.svg" alt="logo">
+            </a>
+          </div>
+          <div class="flex items-center gap-8 lg:gap-10">
+            <a href=""><img src="./assets/images/Sewp.png" class="max-md:w-8" alt="image"></a>
+            <a href=""><img src="./assets/images/GSA.png" class="max-md:w-8" alt="image"></a>
+          </div>
+          <ul class="footer-social-links">
+            <li><a href=""><img src="./assets/images/icons/LinkedIn.png" alt="social media icons"></a></li>
+            <li><a href=""><img src="./assets/images/icons/x.png" alt="social media icons"></a></li>
+            <li><a href=""><img src="./assets/images/icons/Facebook.png" alt="social media icons"></a></li>
+            <li><a href=""><img src="./assets/images/icons/Instagram.png" alt="social media icons"></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul class="footer-menu">
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+            <li>
+              <a href="">FAQ</a>
+            </li>
+            <li>
+              <a href="">Help</a>
+            </li>
+            <li>
+              <a href="">Terms and Conditions</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Company</h4>
+          <ul class="footer-menu">
+            <li>
+              <a href="">About Us</a>
+            </li>
+            <li>
+              <a href="">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="">Quality & Compliance</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-menu">
+            <li>
+              1840 Gateway Dr., Suite 150
+              San Mateo, CA 94404
+            </li>
+            <li>
+              <a href="">+1 650-624-0525</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Testmart © 2025</p>
+        <p>Cage code: 1RPN6 · Tax ID: 94-3310442 · DODAAC: Q90079 · UIC: N3836 · D&B: 086438152 · UEI #:
+          MCQUYM6GHNJ5</p>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER SECTION ENDS HERE -->
 
 
 

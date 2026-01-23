@@ -17,7 +17,7 @@ tailwind.config = {
         xl: '1280px',
         '2xl': '1520px',
         '3xl': '1680px',
-        '4xl': '1920px',
+        '4xl': '1840px',
       },
 
       fontFamily: {

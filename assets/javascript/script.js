@@ -1,17 +1,4 @@
 /* ===================================== */
-/*          HEADER AND FOOTER            */
-/* ===================================== */
-
-["header", "footer"].forEach((part) => {
-  fetch(`${part}.html`)
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById(part).innerHTML = data;
-    });
-});
-
-
-/* ===================================== */
 /*             FADE SLIDER              */
 /* ===================================== */
 
@@ -302,3 +289,23 @@ window.addEventListener("click", function (event) {
     event.target.classList.remove("show-modal");
   }
 });
+
+
+
+  const rangeSlider = document.getElementById('rangeInput');
+  const progressBar = document.getElementById('progressBar');
+  const handle = document.getElementById('handle');
+  const tooltip = document.getElementById('tooltip');
+  const tooltipText = document.getElementById('tooltipText');
+
+  rangeSlider.addEventListener('input', (e) => {
+    const val = e.target.value;
+    const min = e.target.min;
+    const max = e.target.max;
+    const percent = ((val - min) / (max - min)) * 100;
+
+    progressBar.style.width = `${percent}%`;
+    handle.style.left = `${percent}%`;
+    tooltip.style.left = `${percent}%`;
+    tooltipText.innerText = `$${val}`;
+  });
