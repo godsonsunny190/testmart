@@ -23,6 +23,17 @@
 
   ul {
     li {
+
+      &.see-more {
+        a {
+          color: #0075BF;
+        }
+
+        img {
+          filter: brightness(0) saturate(100%) invert(23%) sepia(86%) saturate(2557%) hue-rotate(187deg) brightness(94%) contrast(102%);
+        }
+      }
+
       a {
         font-weight: 500;
         font-size: 14px;
@@ -43,6 +54,7 @@
           background-color: #F3F3F3;
           transition: all .3s ease-in-out;
         }
+
       }
     }
   }

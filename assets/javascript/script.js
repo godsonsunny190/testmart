@@ -335,3 +335,15 @@ gridViewBtn.addEventListener('click', () => {
   listViewBtn.classList.remove('bg-sky-600');
   listViewBtn.querySelector('svg').classList.remove('text-white');
 });
+
+
+/* ===================================== */
+/*          DETAILS ASIDE JS             */
+/* ===================================== */
+const yesButton = document.getElementById('yes-button');
+  const detailsAside = document.getElementById('details-aside');
+
+  yesButton.addEventListener('click', () => {
+    detailsAside.classList.remove('hidden');
+    detailsAside.scrollIntoView({ behavior: 'smooth' });
+});
