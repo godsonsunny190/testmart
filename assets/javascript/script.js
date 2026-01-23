@@ -290,22 +290,49 @@ window.addEventListener("click", function (event) {
   }
 });
 
+/* ===================================== */
+/*   PRODUCT LISTVIEW AND GRIDVIEW JS    */
+/* ===================================== */
+
+const rangeSlider = document.getElementById('rangeInput');
+const progressBar = document.getElementById('progressBar');
+const handle = document.getElementById('handle');
+const tooltip = document.getElementById('tooltip');
+const tooltipText = document.getElementById('tooltipText');
+
+rangeSlider.addEventListener('input', (e) => {
+  const val = e.target.value;
+  const min = e.target.min;
+  const max = e.target.max;
+  const percent = ((val - min) / (max - min)) * 100;
+
+  progressBar.style.width = `${percent}%`;
+  handle.style.left = `${percent}%`;
+  tooltip.style.left = `${percent}%`;
+  tooltipText.innerText = `$${val}`;
+});
 
 
-  const rangeSlider = document.getElementById('rangeInput');
-  const progressBar = document.getElementById('progressBar');
-  const handle = document.getElementById('handle');
-  const tooltip = document.getElementById('tooltip');
-  const tooltipText = document.getElementById('tooltipText');
+const listViewBtn = document.getElementById('listViewBtn');
+const gridViewBtn = document.getElementById('gridViewBtn');
+const productsContainer = document.getElementById('productsContainer');
 
-  rangeSlider.addEventListener('input', (e) => {
-    const val = e.target.value;
-    const min = e.target.min;
-    const max = e.target.max;
-    const percent = ((val - min) / (max - min)) * 100;
+listViewBtn.addEventListener('click', () => {
+  productsContainer.classList.remove('grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-3', 'gap-5');
+  productsContainer.classList.add('listView', 'flex', 'flex-col', 'gap-4');
 
-    progressBar.style.width = `${percent}%`;
-    handle.style.left = `${percent}%`;
-    tooltip.style.left = `${percent}%`;
-    tooltipText.innerText = `$${val}`;
-  });
+  listViewBtn.classList.add('bg-sky-600');
+  listViewBtn.querySelector('svg').classList.add('text-white');
+  gridViewBtn.classList.remove('bg-sky-600');
+  gridViewBtn.querySelector('svg').classList.remove('text-white');
+});
+
+gridViewBtn.addEventListener('click', () => {
+  productsContainer.classList.remove('listView.listView', 'flex', 'flex-col', 'gap-4');
+  productsContainer.classList.add('grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-3', 'gap-5');
+
+  gridViewBtn.classList.add('bg-sky-600');
+  gridViewBtn.querySelector('svg').classList.add('text-white');
+  listViewBtn.classList.remove('bg-sky-600');
+  listViewBtn.querySelector('svg').classList.remove('text-white');
+});

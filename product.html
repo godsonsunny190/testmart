@@ -317,14 +317,23 @@
           </ul>
         </nav>
         <div class="bg-[#F3F3F3] p-[6px] rounded-[60px] flex items-center gap-[8px]">
-          <button
-            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200 active:bg-sky-600">
-            <img class="w-5 h-5" src="./assets/images/icons/fi-rr-list.svg" alt="icon">
+          <button id="listViewBtn"
+            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="3" y="5" width="18" height="2" rx="1" />
+              <rect x="3" y="11" width="18" height="2" rx="1" />
+              <rect x="3" y="17" width="18" height="2" rx="1" />
+            </svg>
           </button>
 
-          <button
-            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200">
-            <img src="./assets/images/icons/fi-rr-apps.svg" alt="icon">
+          <button id="gridViewBtn"
+            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200 bg-sky-600">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <rect x="3" y="3" width="8" height="8" rx="1" />
+              <rect x="13" y="3" width="8" height="8" rx="1" />
+              <rect x="3" y="13" width="8" height="8" rx="1" />
+              <rect x="13" y="13" width="8" height="8" rx="1" />
+            </svg>
           </button>
         </div>
       </div>
@@ -666,7 +675,7 @@
           </aside>
 
           <!-- Products Grid -->
-          <div
+          <div id="productsContainer"
             class="grid grid-cols-1 sm:grid-cols-2 min-[1280px]:grid-cols-3 2xl:grid-cols-3 4xl:grid-cols-4 gap-5 min-[1280px]:gap-6 w-full">
             <!-- Card 1 -->
 

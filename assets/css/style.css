@@ -580,4 +580,22 @@ li {
   border-radius: 40px;
 }
 
+.listView .card {
+  display: flex;
+}
+.listView .card-image img {
+  border-radius: 24px 0px 0 24px;
+  height: 100%;
+}
+.listView .card-body {
+  width: 100%;
+  border-left: 1px solid #E5E5E5;
+  border-top: 0;
+}
+.listView .card-footer {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /*# sourceMappingURL=style.css.map */
