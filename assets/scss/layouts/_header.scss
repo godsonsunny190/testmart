@@ -1,0 +1,18 @@
+/* HEADER STYLE GOES HERE */
+.header {
+  .header-menu {
+    li {
+      a {
+        &::after {
+          content: '';
+          background-image: url(../images/DropDown.svg);
+          background-repeat: no-repeat;
+          background-position: right;
+          display: block;
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

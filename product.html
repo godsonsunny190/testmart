@@ -306,13 +306,28 @@
     <div class="container-fit">
 
       <!-- BREAD CRUMBS SECTION STARS HERE -->
-      <nav aria-label="breadcrumb" class="font-semibold text-base mt-9">
-        <ul class="breadcrumb flex items-center gap-[10px]">
-          <li class="breadcrumb-item opacity-70"><a href="index.html">TestMart</a></li>
-          <li><img src="./assets/images/icons/DropDown.svg" alt="arrow"></li>
-          <li class="breadcrumb-item active text-[#0075BF]" aria-current="page">Library</li>
-        </ul>
-      </nav>
+      <div class="flex items-center justify-between mt-9">
+        <nav aria-label="breadcrumb" class="font-semibold text-base">
+          <ul class="breadcrumb flex items-center gap-[10px]">
+            <li class="breadcrumb-item opacity-70"><a href="index.html">TestMart</a></li>
+            <li><img src="./assets/images/icons/DropDown.svg" alt="arrow"></li>
+            <li class="breadcrumb-item opacity-70"><a href="category-page.html">Categories</a></li>
+            <li><img src="./assets/images/icons/DropDown.svg" alt="arrow"></li>
+            <li class="breadcrumb-item active text-[#0075BF]" aria-current="page">Cable and antenna analyzer</li>
+          </ul>
+        </nav>
+        <div class="bg-[#F3F3F3] p-[6px] rounded-[60px] flex items-center gap-[8px]">
+          <button
+            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200 active:bg-sky-600">
+            <img class="w-5 h-5" src="./assets/images/icons/fi-rr-list.svg" alt="icon">
+          </button>
+
+          <button
+            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200">
+            <img src="./assets/images/icons/fi-rr-apps.svg" alt="icon">
+          </button>
+        </div>
+      </div>
       <!-- BREAD CRUMBS SECTION ENDS HERE -->
 
       <div class="flex flex-col gap-14 items-center mx-auto mt-[34px] max-sm:gap-8">
@@ -651,548 +666,298 @@
           </aside>
 
           <!-- Products Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2  min-[1280px]:grid-cols-3 2xl:grid-cols-3 4xl:grid-cols-4 gap-6 w-full">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 min-[1280px]:grid-cols-3 2xl:grid-cols-3 4xl:grid-cols-4 gap-5 min-[1280px]:gap-6 w-full">
             <!-- Card 1 -->
 
-            <article class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/c4d0cf27323f31b91ca8aa2c6fb1e60472c3c86f?width=558"
-                alt="Rohde & Schwarz 1320.8070.78"
-                class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Rohde & Schwarz 1320.8070.78</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Bio VWD Window Kit for Std. Cell</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 16 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$375.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/c4d0cf27323f31b91ca8aa2c6fb1e60472c3c86f?width=558"
+                  alt="Rohde & Schwarz 1320.8070.78">
               </div>
-            </article>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
 
-            <!-- Card 2 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/d094b25f28588da176455fa3c866b7a221c64474?width=558"
-                alt="Rohde & Schwarz 1320.8070.74"
-                class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Rohde & Schwarz 1320.8070.74</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      ZVH4 ZVH4 CABLE & ANTENNA ANALYZER</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 22 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$9,685.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 3 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/46c9aa97bf5da602ca3ff09627e4ec6cb01bfa77?width=558"
-                alt="VIAVI Solutions, Inc. CAA06MA"
-                class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        VIAVI Solutions, Inc. CAA06MA</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      6 GHz Cable and Antenna Analyzer Module</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$5,609.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/d094b25f28588da176455fa3c866b7a221c64474?width=558"
+                  alt="Rohde & Schwarz 1320.8070.74">
               </div>
-            </article>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
 
-            <!-- Card 4 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <div
-                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="opacity-20">
-                  <g opacity="0.2">
-                    <path
-                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                      fill="black"></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        VIAVI Solutions, Inc. CAA06MA</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      6 GHz Cable and Antenna Analyzer Module</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$5,609.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 5 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <div
-                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="opacity-20">
-                  <g opacity="0.2">
-                    <path
-                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                      fill="black"></path>
-                  </g>
-                </svg>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/46c9aa97bf5da602ca3ff09627e4ec6cb01bfa77?width=558">
               </div>
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu MS2085A</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Site Master Cable and Antenna Analyzer (Must be ordered with ONE Frequency...</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
                   </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
                 </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
-              </div>
-            </article>
 
-            <!-- Card 6 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/b8b533da9fd66c8c14151eff9aeb350dfe217895?width=558"
-                alt="VIAVI Solutions, Inc. CAA06MB"
-                class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        VIAVI Solutions, Inc. CAA06MB</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      6 GHz Cable and Antenna Analyzer Module with Bias Power and Bias-Tee</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 8 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$657.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 7 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558"
-                alt="Anritsu MS2089A" class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu MS2089A</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Site Master Cable and Antenna Analyzer with Spectrum Analyzer (Must be ordered...</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/b8b533da9fd66c8c14151eff9aeb350dfe217895?width=558">
               </div>
-            </article>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
 
-            <!-- Card 8 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558"
-                alt="Anritsu MS2089A" class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu MS2089A</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Site Master Cable and Antenna Analyzer with Spectrum Analyzer (Must be ordered...</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$1,355.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 9 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/013810dbbcba643e81799e6f05cbaae0bd3f8ef8?width=558"
-                alt="Anritsu S331L" class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu S331L</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Site Master; 2 MHz - 4 GHz; Cable and Antenna Analyzer with built-in Power...</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$7,730.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/b8b533da9fd66c8c14151eff9aeb350dfe217895?width=558">
               </div>
-            </article>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
 
-            <!-- Card 10 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e83dbe09d466ad2572be83bbad508d5a9aa41306?width=558"
-                alt="Anritsu S331P" class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu S331P</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Site Master; Ultraportable Cable and Antenna Analyzer (Must order ONE frequency...</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$2,935.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 11 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <div
-                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="opacity-20">
-                  <g opacity="0.2">
-                    <path
-                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                      fill="black"></path>
-                  </g>
-                </svg>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558">
               </div>
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu MW82119B-0331</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Option 331; Site Master Cable and Antenna Analyzer</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
                   </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
                 </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,890.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
-              </div>
-            </article>
 
-            <!-- Card 12 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <div
-                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="opacity-20">
-                  <g opacity="0.2">
-                    <path
-                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                      fill="black"></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu MW82119B-0331</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Option 331; Site Master Cable and Antenna Analyzer</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,890.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 13 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/704ba62bcbf46fe9053b39073ba544bb3da3272e?width=558"
-                alt="Anritsu MW82119B-1331"
-                class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Anritsu MW82119B-1331</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      Retrofit Option 331; Site Master Cable and Antenna Analyzer to MW82119B</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$4,990.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/0d86f26bfbec8f3341a28db332d20f9243b807d2?width=558">
               </div>
-            </article>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
 
-            <!-- Card 14 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/4f5e9cb216d7a8a7ce3401dec3c7b4a395de819b?width=558"
-                alt="Bird Electronic Corporation SK-9000-TC"
-                class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Bird Electronic Corporation SK-9000-TC</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      SiteHawk, 1 - 9000 MHz Cable and Antenna Analyzer</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">Open market / 6 W</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$7,140.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
 
-            <!-- Card 15 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/e94f347183d87b2888b28537c83aed9a85a4900e?width=558"
-                alt="Yokogawa M1244QM" class="object-cover w-full border-b border-solid border-b-neutral-200">
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full min-h-[82px]">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Yokogawa M1244QM</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      6 dBi Omni Antenna - NF Connector (requires antenna cable)</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 45 D</p>
-                  </div>
-                </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$100.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/013810dbbcba643e81799e6f05cbaae0bd3f8ef8?width=558">
               </div>
-            </article>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
 
-            <!-- Card 16 -->
-            <article
-              class="flex overflow-hidden flex-col items-start min-w-0 rounded-3xl border border-solid border-neutral-200">
-              <div
-                class="flex justify-center items-center w-full border-b border-solid bg-stone-50 border-b-neutral-200 h-[200px]">
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                  class="opacity-20">
-                  <g opacity="0.2">
-                    <path
-                      d="M39 6H9C7.40923 6.00174 5.88412 6.63444 4.75928 7.75928C3.63444 8.88412 3.00174 10.4092 3 12V36C3.00174 37.5908 3.63444 39.1159 4.75928 40.2407C5.88412 41.3656 7.40923 41.9983 9 42H39C40.5908 41.9983 42.1159 41.3656 43.2407 40.2407C44.3656 39.1159 44.9983 37.5908 45 36V12C44.9983 10.4092 44.3656 8.88412 43.2407 7.75928C42.1159 6.63444 40.5908 6.00174 39 6ZM31.5 12C32.39 12 33.26 12.2639 34.0001 12.7584C34.7401 13.2529 35.3169 13.9557 35.6575 14.7779C35.9981 15.6002 36.0872 16.505 35.9135 17.3779C35.7399 18.2508 35.3113 19.0526 34.682 19.682C34.0526 20.3113 33.2508 20.7399 32.3779 20.9135C31.505 21.0872 30.6002 20.9981 29.7779 20.6575C28.9557 20.3169 28.2529 19.7401 27.7584 19.0001C27.2639 18.26 27 17.39 27 16.5C27.0012 15.3069 27.4757 14.163 28.3194 13.3194C29.163 12.4757 30.3069 12.0012 31.5 12ZM9 39C8.20435 39 7.44129 38.6839 6.87868 38.1213C6.31607 37.5587 6 36.7956 6 36V29.6597L14.8912 21.7566C15.7491 20.9957 16.8648 20.5906 18.0109 20.6237C19.1571 20.6568 20.2475 21.1256 21.06 21.9347L27.1491 28.0106L16.1597 39H9ZM42 36C42 36.7956 41.6839 37.5587 41.1213 38.1213C40.5587 38.6839 39.7957 39 39 39H20.4028L31.7859 27.6169C32.5919 26.9315 33.6146 26.5539 34.6726 26.5512C35.7305 26.5484 36.7552 26.9207 37.5647 27.6019L42 31.2975V36Z"
-                      fill="black"></path>
-                  </g>
-                </svg>
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
+                </div>
               </div>
-              <div class="box-border flex flex-col gap-4 justify-center items-start p-4 w-full bg-white">
-                <div class="flex flex-col gap-2 items-start w-full min-h-[82px]">
-                  <div class="flex flex-col gap-2 items-start w-full">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <h3
-                        class="overflow-hidden flex-1 min-w-0 text-base font-medium text-black text-ellipsis max-sm:text-sm line-clamp-1">
-                        Yokogawa M1244QM</h3>
-                      <span class="text-sm font-medium leading-6 text-green-500 whitespace-nowrap">In stock</span>
-                    </div>
-                    <p
-                      class="overflow-hidden w-full text-sm font-medium text-black opacity-70 text-ellipsis max-sm:text-xs line-clamp-2">
-                      6 dBi Omni Antenna - NF Connector (requires antenna cable)</p>
-                    <p class="text-sm font-medium text-black text-opacity-70 max-sm:text-xs">GSA Schedule / 45 D</p>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/e83dbe09d466ad2572be83bbad508d5a9aa41306?width=558">
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
                   </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
                 </div>
-                <div class="flex gap-2 justify-between items-center w-full">
-                  <span class="text-base font-semibold text-right text-black max-sm:text-sm">$100.00</span>
-                  <button
-                    class="flex gap-2.5 justify-center items-center px-5 py-2 whitespace-nowrap bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-4 max-sm:py-1.5">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Request quote</span>
-                  </button>
+
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
                 </div>
               </div>
-            </article>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/704ba62bcbf46fe9053b39073ba544bb3da3272e?width=558">
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
+
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/4f5e9cb216d7a8a7ce3401dec3c7b4a395de819b?width=558">
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
+
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/e94f347183d87b2888b28537c83aed9a85a4900e?width=558">
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
+
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/e94f347183d87b2888b28537c83aed9a85a4900e?width=558">
+              </div>
+              <div class="card-body">
+                <div class="card-info">
+                  <div class="card-header">
+                    <h3>Rohde & Schwarz 1320.8070.78</h3>
+                    <span>In stock</span>
+                  </div>
+                  <p>Bio VWD Window Kit for Std. Cell</p>
+                  <p>Open market / 16 W</p>
+                </div>
+
+                <div class="card-footer">
+                  <span>$9,685.00</span>
+                  <button>Request quote</button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

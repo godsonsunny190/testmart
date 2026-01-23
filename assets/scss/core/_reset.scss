@@ -1,0 +1,85 @@
+:root {
+  --color-brand-blue: #0075bf;
+  --color-brand-black: #000000;
+}
+
+
+/* CSS RESET  */
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+}
+
+section {
+  max-width: 100vw;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+  margin: 0px;
+}
+
+/* RESET CONTAINER WIDTH */
+.container-fit {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 8px;
+
+  @media (min-width:578px) {
+    width: calc(100% - 40px);
+  }
+
+  @media (min-width:992px) {
+    width: calc(100% - 150px);
+  }
+
+  @media (min-width:1200px) {
+    width: calc(100% - 180px);
+  }
+
+  @media (min-width:1600px) {
+    width: calc(100% - 376px);
+  }
+}
