@@ -223,6 +223,41 @@ input[type=checkbox] {
   transition-timing-function: linear !important;
 }
 
+.breadcrumb {
+  margin-top: 48px;
+}
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  opacity: 70%;
+}
+.breadcrumb-item:not(:last-child)::after {
+  content: "";
+  background-image: url(../images/icons/DropDown.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center right;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 5px;
+}
+.breadcrumb-item.active {
+  color: #0075BF;
+  opacity: 100%;
+}
+.breadcrumb-item a {
+  text-transform: capitalize;
+}
+
 :root {
   --color-brand-blue: #0075bf;
   --color-brand-black: #000000;
@@ -505,6 +540,7 @@ li {
 }
 .card-image img {
   border-radius: 24px 24px 0 0;
+  padding: 24px;
 }
 .card-body {
   padding: 16px;
@@ -579,6 +615,13 @@ li {
   line-height: 100%;
   border-radius: 40px;
 }
+.card-footer a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #0075BF;
+  display: none;
+}
 
 .listView .card {
   display: flex;
@@ -596,6 +639,9 @@ li {
   align-items: flex-start;
   flex-direction: column;
   gap: 16px;
+}
+.listView .card-footer a {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
