@@ -628,24 +628,24 @@ li {
   color: #0075BF;
   display: none;
 }
-.products .listView .card {
+.products.listView .card {
   display: flex;
 }
-.products .listView .card-image img {
+.products.listView .card-image img {
   border-radius: 24px 0px 0 24px;
   height: 100%;
 }
-.products .listView .card-body {
+.products.listView .card-body {
   width: 100%;
   border-left: 1px solid #E5E5E5;
   border-top: 0;
 }
-.products .listView .card-footer {
+.products.listView .card-footer {
   align-items: flex-start;
   flex-direction: column;
   gap: 16px;
 }
-.products .listView .card-footer a {
+.products.listView .card-footer a {
   display: block;
 }
 
