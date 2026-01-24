@@ -340,10 +340,16 @@ gridViewBtn.addEventListener('click', () => {
 /* ===================================== */
 /*          DETAILS ASIDE JS             */
 /* ===================================== */
-const yesButton = document.getElementById('yes-button');
-  const detailsAside = document.getElementById('details-aside');
 
-  yesButton.addEventListener('click', () => {
-    detailsAside.classList.remove('hidden');
-    detailsAside.scrollIntoView({ behavior: 'smooth' });
-});
+(function() {
+  const yesBtn = document.getElementById('yes-button');
+  const asidePrimary = document.querySelector('.aside-primary');
+  const asideSecondary = document.querySelector('.aside-secondery');
+
+  if (yesBtn) {
+    yesBtn.addEventListener('click', function() {
+      asidePrimary.classList.add('hidden');
+      asideSecondary.classList.remove('hidden');
+    });
+  }
+})();

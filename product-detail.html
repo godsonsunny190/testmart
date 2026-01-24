@@ -120,77 +120,82 @@
               </div>
             </article>
 
-            <aside
-              class=" flex flex-col shrink-0 gap-4 items-center p-4 bg-white rounded-3xl border border-gray-100 border-solid shadow-[0px_4px_8px_1px_rgba(0,0,0,0.12)] max-md:my-0 max-md:w-full max-md:max-w-full max-sm:p-3 max-sm:rounded-2xl">
+            <aside class="aside-primary">
               <div
-                class="flex flex-col gap-6 items-start w-[268px] max-md:w-full max-md:max-w-[300px] max-sm:w-full max-sm:max-w-full">
-                <div class="flex flex-col gap-3 items-center w-full">
-                  <img
-                    src="https://api.builder.io/api/v1/image/assets/TEMP/21ecb739bb0223505922fd0feb8c92340e727c3e?width=128"
-                    alt="US Government flag"
-                    class="w-16 h-16 rounded-lg shadow-sm aspect-[1/1] max-sm:w-12 max-sm:h-12" />
-                  <div class="flex flex-col gap-3 items-start w-full">
-                    <h2 class="w-full text-base font-semibold text-center text-zinc-800 max-sm:text-sm">
-                      U.S. Government, Military and Contractors Only
-                    </h2>
-                    <div class="w-full text-center">
-                      <p class="text-base font-semibold text-zinc-800 max-sm:text-sm">Price:</p>
-                      <p class="text-base font-medium text-zinc-800 max-sm:text-sm">Do you qualify for</p>
-                      <p class="text-base font-semibold text-sky-600 max-sm:text-sm">GSA Schedule?</p>
+                class=" flex flex-col shrink-0 gap-4 items-center p-4 bg-white rounded-3xl border border-gray-100 border-solid shadow-[0px_4px_8px_1px_rgba(0,0,0,0.12)] max-md:my-0 max-md:w-full max-md:max-w-full max-sm:p-3 max-sm:rounded-2xl">
+                <div
+                  class="flex flex-col gap-6 items-start w-[268px] max-md:w-full max-md:max-w-[300px] max-sm:w-full max-sm:max-w-full">
+                  <div class="flex flex-col gap-3 items-center w-full">
+                    <img
+                      src="https://api.builder.io/api/v1/image/assets/TEMP/21ecb739bb0223505922fd0feb8c92340e727c3e?width=128"
+                      alt="US Government flag"
+                      class="w-16 h-16 rounded-lg shadow-sm aspect-[1/1] max-sm:w-12 max-sm:h-12" />
+                    <div class="flex flex-col gap-3 items-start w-full">
+                      <h2 class="w-full text-base font-semibold text-center text-zinc-800 max-sm:text-sm">
+                        U.S. Government, Military and Contractors Only
+                      </h2>
+                      <div class="w-full text-center">
+                        <p class="text-base font-semibold text-zinc-800 max-sm:text-sm">Price:</p>
+                        <p class="text-base font-medium text-zinc-800 max-sm:text-sm">Do you qualify for</p>
+                        <p class="text-base font-semibold text-sky-600 max-sm:text-sm">GSA Schedule?</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="flex gap-6 items-start w-full max-sm:gap-3">
-                  <button
-                    class="flex flex-1 gap-2.5 justify-center items-center px-10 py-3.5 border border-solid cursor-pointer border-neutral-200 rounded-[38px] max-sm:px-6 max-sm:py-3 hover:bg-gray-50 transition-colors">
-                    <span class="text-base font-medium text-black max-sm:text-sm">No</span>
-                  </button>
-                  <button id="yes-button"
-                    class="flex flex-1 gap-2.5 justify-center items-center px-10 py-3.5 bg-sky-600 cursor-pointer border-[none] rounded-[38px] max-sm:px-6 max-sm:py-3 hover:bg-sky-700 transition-colors">
-                    <span class="text-base font-medium text-white max-sm:text-sm">Yes</span>
-                  </button>
+                  <div class="flex gap-6 items-start w-full max-sm:gap-3">
+                    <button
+                      class="flex flex-1 gap-2.5 justify-center items-center px-10 py-3.5 border border-solid cursor-pointer border-neutral-200 rounded-[38px] max-sm:px-6 max-sm:py-3 hover:bg-gray-50 transition-colors">
+                      <span class="text-base font-medium text-black max-sm:text-sm">No</span>
+                    </button>
+                    <button id="yes-button"
+                      class="flex flex-1 gap-2.5 justify-center items-center px-10 py-3.5 bg-sky-600 cursor-pointer border-[none] rounded-[38px] max-sm:px-6 max-sm:py-3 hover:bg-sky-700 transition-colors">
+                      <span class="text-base font-medium text-white max-sm:text-sm">Yes</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </aside>
 
-            <aside id="details-aside"
-              class="hidden flex flex-col gap-4 items-center p-4 bg-white rounded-3xl border border-gray-100 border-solid shadow-sm w-[400px] max-md:w-full max-md:max-w-[400px] max-sm:p-3 max-sm:w-full max-sm:max-w-full">
-              <div class="flex flex-col gap-6 items-start self-stretch w-full">
-                <div class="flex flex-col gap-3 items-start self-stretch w-full">
-                  <dl class="flex gap-6 items-center self-stretch w-full">
-                    <dt class="text-base font-semibold text-right flex-[1_0_0] text-zinc-800 max-sm:text-sm">
-                      Price:
-                    </dt>
-                    <dd class="text-base font-semibold text-red-500 flex-[1_0_0] max-sm:text-sm">
-                      $1,355.00
-                    </dd>
-                  </dl>
-
-                  <div class="flex flex-col gap-1.5 items-start self-stretch w-full">
+            <aside class="hidden aside-secondery">
+              <div
+                class="flex flex-col gap-4 items-center p-4 bg-white rounded-3xl border border-gray-100 border-solid shadow-sm w-[400px] max-md:w-full max-md:max-w-[400px] max-sm:p-3 max-sm:w-full max-sm:max-w-full">
+                <div class=" flex flex-col gap-6 items-start self-stretch w-full">
+                  <div class="flex flex-col gap-3 items-start self-stretch w-full">
                     <dl class="flex gap-6 items-center self-stretch w-full">
                       <dt class="text-base font-semibold text-right flex-[1_0_0] text-zinc-800 max-sm:text-sm">
-                        Open Market Price:
+                        Price:
                       </dt>
-                      <dd class="text-base font-semibold flex-[1_0_0] text-zinc-800 max-sm:text-sm">
+                      <dd class="text-base font-semibold text-red-500 flex-[1_0_0] max-sm:text-sm">
                         $1,355.00
                       </dd>
                     </dl>
 
-                    <div class="flex gap-6 items-center self-stretch w-full">
-                      <p class="text-sm font-medium text-right text-zinc-800 w-[172px] max-sm:w-auto max-sm:text-xs">
-                        (valid in USA only)
-                      </p>
+                    <div class="flex flex-col gap-1.5 items-start self-stretch w-full">
+                      <dl class="flex gap-6 items-center self-stretch w-full">
+                        <dt class="text-base font-semibold text-right flex-[1_0_0] text-zinc-800 max-sm:text-sm">
+                          Open Market Price:
+                        </dt>
+                        <dd class="text-base font-semibold flex-[1_0_0] text-zinc-800 max-sm:text-sm">
+                          $1,355.00
+                        </dd>
+                      </dl>
+
+                      <div class="flex gap-6 items-center self-stretch w-full">
+                        <p class="text-sm font-medium text-right text-zinc-800 w-[172px] max-sm:w-auto max-sm:text-xs">
+                          (valid in USA only)
+                        </p>
+                      </div>
                     </div>
                   </div>
+
+                  <a href="#" class="self-stretch w-full text-base font-medium text-center text-sky-600 max-sm:text-sm">
+                    Get quote
+                  </a>
+
+                  <a href="#"
+                    class="self-stretch w-full text-base font-semibold text-center text-sky-600 max-sm:text-sm">
+                    MS2089A - Anritsu data sheet
+                  </a>
                 </div>
-
-                <a href="#" class="self-stretch w-full text-base font-medium text-center text-sky-600 max-sm:text-sm">
-                  Get quote
-                </a>
-
-                <a href="#" class="self-stretch w-full text-base font-semibold text-center text-sky-600 max-sm:text-sm">
-                  MS2089A - Anritsu data sheet
-                </a>
               </div>
             </aside>
           </div>
