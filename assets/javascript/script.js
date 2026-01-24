@@ -286,32 +286,11 @@ window.addEventListener("click", function (event) {
   }
 });
 
-/* ===================================== */
-/*         PRODUCT RANEG SLIDER JS       */
-/* ===================================== */
-
-const rangeSlider = document.getElementById('rangeInput');
-const progressBar = document.getElementById('progressBar');
-const handle = document.getElementById('handle');
-const tooltip = document.getElementById('tooltip');
-const tooltipText = document.getElementById('tooltipText');
-
-rangeSlider.addEventListener('input', (e) => {
-  const val = e.target.value;
-  const min = e.target.min;
-  const max = e.target.max;
-  const percent = ((val - min) / (max - min)) * 100;
-
-  progressBar.style.width = `${percent}%`;
-  handle.style.left = `${percent}%`;
-  tooltip.style.left = `${percent}%`;
-  tooltipText.innerText = `$${val}`;
-});
-
 
 /* ===================================== */
 /*   PRODUCT LISTVIEW AND GRIDVIEW JS    */
 /* ===================================== */
+(function() {
 const listViewBtn = document.getElementById('listViewBtn');
 const gridViewBtn = document.getElementById('gridViewBtn');
 const productsContainer = document.getElementById('productsContainer');
@@ -335,7 +314,7 @@ gridViewBtn.addEventListener('click', () => {
   listViewBtn.classList.remove('bg-sky-600');
   listViewBtn.querySelector('svg').classList.remove('text-white');
 });
-
+})();
 
 /* ===================================== */
 /*          DETAILS ASIDE JS             */
@@ -353,3 +332,26 @@ gridViewBtn.addEventListener('click', () => {
     });
   }
 })();
+
+
+/* ===================================== */
+/*         PRODUCT RANEG SLIDER JS       */
+/* ===================================== */
+
+const rangeSlider = document.getElementById('rangeInput');
+const progressBar = document.getElementById('progressBar');
+const handle = document.getElementById('handle');
+const tooltip = document.getElementById('tooltip');
+const tooltipText = document.getElementById('tooltipText');
+
+rangeSlider.addEventListener('input', (e) => {
+  const val = e.target.value;
+  const min = e.target.min;
+  const max = e.target.max;
+  const percent = ((val - min) / (max - min)) * 100;
+
+  progressBar.style.width = `${percent}%`;
+  handle.style.left = `${percent}%`;
+  tooltip.style.left = `${percent}%`;
+  tooltipText.innerText = `$${val}`;
+});
