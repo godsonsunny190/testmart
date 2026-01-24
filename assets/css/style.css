@@ -801,6 +801,8 @@ li {
   border-style: solid;
   border-color: #E5E5E5;
   border-radius: 24px;
+  height: max-content;
+  padding-bottom: 200px;
 }
 .tab_panel {
   flex: 1;
