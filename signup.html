@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testmart</title>
+
+  <!-- FAVICON LINK -->
+  <link rel="icon" type="image/png" href="./assets/images/logo/fav.png">
+
+  <!-- LENIS SMOOTH SCROLL CSS LINK -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css" />
+
+  <!-- SLICK SLIDER CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+
+  <!-- FONT STYLESHEET LINK -->
+  <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+  <!-- EXTERNAL CSS LINK -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!-- TAILWIND CSS LINK -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- HEADER SECTION STARTS HERE -->
+  <header id="header"></header>
+  <!-- HEADER SECTION ENDS HERE -->
+
+
+  <section class="lg:my-[118px] sm:my-14 my-10">
+    <div class="container-fit">
+      <form
+        class="flex flex-col gap-12 items-start bg-white rounded-3xl border border-solid border-neutral-200 w-[648px] max-md:gap-10 d:max-w-[600px] max-md:w-[90%] max-sm:gap-8 max-sm:w-full max-sm:max-w-full max-sm:rounded-2xl p-6 mx-auto">
+        <div class="flex flex-col gap-4 items-center w-full ">
+          <h2 class="w-full text-5xl font-bold text-center text-neutral-800 max-md:text-4xl max-sm:text-3xl">
+            Sign in
+          </h2>
+          <div class="w-full text-lg text-center max-md:text-base max-sm:text-sm">
+            <p class="text-lg text-neutral-800 max-md:text-base max-sm:text-sm">
+              Don't have an account?
+            </p>
+            <a href="#" class="text-lg font-medium text-sky-600 underline max-md:text-base max-sm:text-sm">
+              Create now
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 items-start w-full">
+
+          <!-- Email Field -->
+          <div class="flex flex-col gap-6 items-start w-full">
+            <label for="email"
+              class="w-full text-lg font-semibold leading-5 text-neutral-800 max-md:text-base max-sm:text-base">
+              E-mail
+            </label>
+            <div
+              class="box-border flex gap-2.5 items-center px-6 py-3.5 w-full bg-sky-50 h-[52px] rounded-[30px] max-sm:px-5 max-sm:py-3 max-sm:h-12">
+              <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                class="text-lg font-medium opacity-70 flex-[1_0_0] text-neutral-800 max-md:text-base max-sm:text-base bg-transparent border-none outline-none placeholder-neutral-800" />
+            </div>
+          </div>
+
+          <!-- Password Field -->
+          <div class="flex flex-col gap-6 items-start w-full">
+            <label for="password"
+              class="w-full text-lg font-semibold leading-5 text-neutral-800 max-md:text-base max-sm:text-base">
+              Password
+            </label>
+            <div
+              class="flex gap-2.5 items-center py-1.5 pr-3 pl-6 w-full bg-sky-50 rounded-[30px] max-sm:py-1.5 max-sm:pr-3 max-sm:pl-5">
+              <input type="password" id="password" name="password" placeholder="Password"
+                class="text-lg font-medium opacity-70 flex-[1_0_0] text-neutral-800 max-md:text-base max-sm:text-base bg-transparent border-none outline-none placeholder-neutral-800" />
+              <button type="button" class="flex gap-3.5 items-center pr-4 rounded-none" onclick="togglePassword()">
+                <div class="w-px h-10 bg-sky-600"></div>
+                <div>
+                  <svg id="eye-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="eye-icon" style="width: 24px; height: 24px">
+                    <path
+                      d="M9.28065 12C9.28065 12.6962 9.55721 13.3639 10.0495 13.8562C10.5418 14.3484 11.2095 14.625 11.9057 14.625C12.6018 14.625 13.2695 14.3484 13.7618 13.8562C14.2541 13.3639 14.5307 12.6962 14.5307 12C14.5307 11.3038 14.2541 10.6361 13.7618 10.1438C13.2695 9.65156 12.6018 9.375 11.9057 9.375C11.2095 9.375 10.5418 9.65156 10.0495 10.1438C9.55721 10.6361 9.28065 11.3038 9.28065 12ZM22.0822 11.3953C19.8603 6.71484 16.5017 4.35938 11.9994 4.35938C7.49472 4.35938 4.13847 6.71484 1.91659 11.3977C1.82747 11.5864 1.78125 11.7925 1.78125 12.0012C1.78125 12.2099 1.82747 12.416 1.91659 12.6047C4.13847 17.2852 7.49706 19.6406 11.9994 19.6406C16.5041 19.6406 19.8603 17.2852 22.0822 12.6023C22.2627 12.2227 22.2627 11.782 22.0822 11.3953ZM11.9057 16.125C9.62753 16.125 7.78065 14.2781 7.78065 12C7.78065 9.72188 9.62753 7.875 11.9057 7.875C14.1838 7.875 16.0307 9.72188 16.0307 12C16.0307 14.2781 14.1838 16.125 11.9057 16.125Z"
+                      fill="#0075BF" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Remember Me and Forgot Password -->
+          <div class="flex justify-between items-center w-full max-sm:flex-col max-sm:gap-3 max-sm:items-start">
+            <label class="flex gap-3 items-center cursor-pointer">
+              <input type="checkbox" id="remember" name="remember"
+                class="w-4 h-4 rounded border border-solid border-neutral-800 opacity-100 relative">
+              <span class="text-base text-neutral-800 max-md:text-sm max-sm:text-sm">
+                Remember me
+              </span>
+            </label>
+            <a href="#"
+              class="text-base font-medium text-sky-600 underline decoration-auto decoration-solid underline-offset-auto max-md:text-sm max-sm:self-end max-sm:text-sm">
+              Forgot Password?
+            </a>
+          </div>
+        </div>
+        <button type="submit"
+          class="box-border flex gap-2.5 justify-center items-center px-5 py-3.5 w-full bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-5 max-sm:py-3 hover:bg-sky-700 transition-colors">
+          <span class="text-base font-medium text-white max-md:text-sm max-sm:text-sm">
+            Sign in
+          </span>
+        </button>
+        <div class="flex gap-5 items-center w-full opacity-75">
+          <div class="flex-1 h-px bg-[#222222] neutral-800"></div>
+          <span class="text-xs font-medium text-[222222] max-sm:text-xs">OR</span>
+          <div class="flex-1 h-px bg-[#222222]"></div>
+        </div>
+        <div class="flex flex-col gap-6 items-start w-full max-sm:gap-4">
+          <button type="button"
+            class="box-border flex gap-2.5 justify-center items-center px-6 py-3.5 w-full bg-white border border-solid cursor-pointer border-neutral-200 rounded-[30px] max-sm:px-5 max-sm:py-3 hover:bg-gray-50 transition-colors">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/698e401a3fcff0153b0f4bfdefa676a1a3cc8693?width=64"
+              alt="Google" class="w-8 h-8 max-sm:w-7 max-sm:h-7" />
+            <span class="text-lg font-medium text-neutral-800 max-md:text-base max-sm:text-base">
+              Continue with Google
+            </span>
+          </button>
+          <button type="button"
+            class="box-border flex gap-2.5 justify-center items-center px-6 py-3.5 w-full bg-white border border-solid cursor-pointer border-neutral-200 rounded-[30px] max-sm:px-5 max-sm:py-3 hover:bg-gray-50 transition-colors">
+            <img src="https://api.builder.io/api/v1/image/assets/TEMP/cd4b8d57ce23787d80e96af82da83ea6189aae7d?width=64"
+              alt="Facebook" class="w-8 h-8 max-sm:w-7 max-sm:h-7" />
+            <span class="text-lg font-medium text-neutral-800 max-md:text-base max-sm:text-base">
+              Continue with Facebook
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER SECTION STARTS HERE -->
+  <footer class="footer" id="footer"></footer>
+  <!-- FOOTER SECTION ENDS HERE -->
+
+
+
+
+  <!-- JQUERY CDN -->
+  <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+  <!-- LENIS SMOOTH SCROLL CDN LINK -->
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+
+  <!-- TAILWIND JS LINK -->
+  <script src="tailwind.config.js"></script>
+
+  <!-- BUNDLE JS LINK -->
+  <script src="./assets/javascript/bundle.js"></script>
+
+  <!-- LENIS JS LINK -->
+  <script src="./assets/javascript/lenis.js"></script>
+
+  <!-- CUSTOM JS LINK -->
+  <script src="./assets/javascript/script.js"></script>
