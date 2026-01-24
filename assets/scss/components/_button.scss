@@ -1,0 +1,22 @@
+.viewall {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: .3s all ease-in-out;
+
+  &::after {
+    content: '';
+    background-image: url(../images/icons/view-all.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    color: #0075BF;
+    transition: .3s all ease-in-out;
+  }
+}

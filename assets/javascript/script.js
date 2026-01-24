@@ -288,44 +288,45 @@ window.addEventListener("click", function (event) {
 
 
 /* ===================================== */
-/*   PRODUCT LISTVIEW AND GRIDVIEW JS    */
+/* PRODUCT LISTVIEW AND GRIDVIEW JS    */
 /* ===================================== */
 (function() {
-const listViewBtn = document.getElementById('listViewBtn');
-const gridViewBtn = document.getElementById('gridViewBtn');
-const productsContainer = document.getElementById('productsContainer');
+  const listViewBtn = document.getElementById('listViewBtn');
+  const gridViewBtn = document.getElementById('gridViewBtn');
+  const productsContainer = document.getElementById('productsContainer');
 
-listViewBtn.addEventListener('click', () => {
-  productsContainer.classList.remove('grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-3', 'gap-5');
-  productsContainer.classList.add('listView', 'flex', 'flex-col', 'gap-4');
+  if (listViewBtn && gridViewBtn && productsContainer) {
+    listViewBtn.addEventListener('click', () => {
+      productsContainer.classList.remove('grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-3', 'gap-5');
+      productsContainer.classList.add('listView', 'flex', 'flex-col', 'gap-4');
 
-  listViewBtn.classList.add('bg-sky-600');
-  listViewBtn.querySelector('svg').classList.add('text-white');
-  gridViewBtn.classList.remove('bg-sky-600');
-  gridViewBtn.querySelector('svg').classList.remove('text-white');
-});
+      listViewBtn.classList.add('bg-sky-600');
+      listViewBtn.querySelector('svg')?.classList.add('text-white');
+      gridViewBtn.classList.remove('bg-sky-600');
+      gridViewBtn.querySelector('svg')?.classList.remove('text-white');
+    });
 
-gridViewBtn.addEventListener('click', () => {
-  productsContainer.classList.remove('listView', 'flex', 'flex-col', 'gap-4');
-  productsContainer.classList.add('grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-3', 'gap-5');
+    gridViewBtn.addEventListener('click', () => {
+      productsContainer.classList.remove('listView', 'flex', 'flex-col', 'gap-4');
+      productsContainer.classList.add('grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-3', 'gap-5');
 
-  gridViewBtn.classList.add('bg-sky-600');
-  gridViewBtn.querySelector('svg').classList.add('text-white');
-  listViewBtn.classList.remove('bg-sky-600');
-  listViewBtn.querySelector('svg').classList.remove('text-white');
-});
+      gridViewBtn.classList.add('bg-sky-600');
+      gridViewBtn.querySelector('svg')?.classList.add('text-white');
+      listViewBtn.classList.remove('bg-sky-600');
+      listViewBtn.querySelector('svg')?.classList.remove('text-white');
+    });
+  }
 })();
 
 /* ===================================== */
-/*          DETAILS ASIDE JS             */
+/* DETAILS ASIDE JS            */
 /* ===================================== */
-
 (function() {
   const yesBtn = document.getElementById('yes-button');
   const asidePrimary = document.querySelector('.aside-primary');
   const asideSecondary = document.querySelector('.aside-secondery');
 
-  if (yesBtn) {
+  if (yesBtn && asidePrimary && asideSecondary) {
     yesBtn.addEventListener('click', function() {
       asidePrimary.classList.add('hidden');
       asideSecondary.classList.remove('hidden');
@@ -333,25 +334,39 @@ gridViewBtn.addEventListener('click', () => {
   }
 })();
 
-
 /* ===================================== */
-/*         PRODUCT RANEG SLIDER JS       */
+/* PRODUCT RANGE SLIDER JS        */
 /* ===================================== */
+(function() {
+  const rangeSlider = document.getElementById('rangeInput');
+  const progressBar = document.getElementById('progressBar');
+  const handle = document.getElementById('handle');
+  const tooltip = document.getElementById('tooltip');
+  const tooltipText = document.getElementById('tooltipText');
 
-const rangeSlider = document.getElementById('rangeInput');
-const progressBar = document.getElementById('progressBar');
-const handle = document.getElementById('handle');
-const tooltip = document.getElementById('tooltip');
-const tooltipText = document.getElementById('tooltipText');
+  if (rangeSlider && progressBar && handle) {
+    rangeSlider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      const min = e.target.min || 0;
+      const max = e.target.max || 100;
+      const percent = ((val - min) / (max - min)) * 100;
 
-rangeSlider.addEventListener('input', (e) => {
-  const val = e.target.value;
-  const min = e.target.min;
-  const max = e.target.max;
-  const percent = ((val - min) / (max - min)) * 100;
+      progressBar.style.width = `${percent}%`;
+      handle.style.left = `${percent}%`;
+      if (tooltip) tooltip.style.left = `${percent}%`;
+      if (tooltipText) tooltipText.innerText = `$${val}`;
+    });
+  }
+})();
 
-  progressBar.style.width = `${percent}%`;
-  handle.style.left = `${percent}%`;
-  tooltip.style.left = `${percent}%`;
-  tooltipText.innerText = `$${val}`;
+$(".tab_item").on("click", function(e) {
+    var $this = $(this),
+        target = $this.data("target");
+
+    $this.addClass("tab_item-active")
+         .siblings(".tab_item")
+         .removeClass("tab_item-active");
+
+    $(".tab_content").hide().removeClass("tab_content-active");
+    $(target).show().addClass("tab_content-active");
 });

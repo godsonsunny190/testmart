@@ -265,6 +265,27 @@
   text-transform: capitalize;
 }
 
+.viewall {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s all ease-in-out;
+}
+.viewall::after {
+  content: "";
+  background-image: url(../images/icons/view-all.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.viewall:hover {
+  color: #0075BF;
+  transition: 0.3s all ease-in-out;
+}
+
 :root {
   --color-brand-blue: #0075bf;
   --color-brand-black: #000000;
@@ -743,6 +764,104 @@ li {
   -webkit-box-orient: vertical;
   max-width: 252px;
   width: 100%;
+}
+
+.catelogue-card {
+  border: 1px solid #E5E5E5;
+  border-radius: 24px;
+}
+.catelogue-card-image img {
+  border-radius: 24px 24px 0 0;
+}
+.catelogue-card-content {
+  padding: 16px;
+  background-color: #0075BF;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 24px 24px;
+}
+.catelogue-card-content p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.tab_wrapper {
+  display: flex;
+  gap: 32px;
+}
+.tab_nav {
+  max-width: 340px;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #E5E5E5;
+  border-radius: 24px;
+}
+.tab_panel {
+  flex: 1;
+}
+.tab_item {
+  padding: 12px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.tab_item::after {
+  content: "";
+  background-image: url(../images/icons/arrow-down.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+  margin-left: auto;
+  transition: 0.3s all ease-in-out;
+}
+.tab_item span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6980392157);
+}
+.tab_item:hover {
+  background-color: #F3F3F3;
+  transition: 0.3s all ease-in-out;
+}
+.tab_item:hover::after {
+  transform: rotate(-90deg);
+  transition: 0.3s all ease-in-out;
+}
+.tab_item:first-child {
+  border-radius: 24px 24px 0 0;
+}
+.tab_item:last-child {
+  border-radius: 0 0 24px 24px;
+}
+.tab_content {
+  display: none;
+}
+.tab_item-active {
+  background-color: #F3F3F3;
+}
+.tab_item-active .tab_title {
+  color: #1c2a51;
+}
+.tab_content-active {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
