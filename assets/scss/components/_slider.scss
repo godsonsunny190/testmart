@@ -47,3 +47,14 @@
     transition-timing-function: linear !important;
   }
 }
+
+.gallery-slider {
+
+  .swiper-slide {
+    opacity: 60%;
+
+    &-active {
+      opacity: 100%;
+    }
+  }
+}

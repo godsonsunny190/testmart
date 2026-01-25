@@ -228,6 +228,13 @@
   transition-timing-function: linear !important;
 }
 
+.gallery-slider .swiper-slide {
+  opacity: 60%;
+}
+.gallery-slider .swiper-slide-active {
+  opacity: 100%;
+}
+
 .breadcrumb {
   margin-top: 48px;
 }

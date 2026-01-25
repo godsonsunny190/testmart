@@ -335,7 +335,7 @@ window.addEventListener("click", function (event) {
 })();
 
 /* ===================================== */
-/* PRODUCT RANGE SLIDER JS        */
+/*        PRODUCT RANGE SLIDER JS        */
 /* ===================================== */
 (function() {
   const rangeSlider = document.getElementById('rangeInput');
@@ -359,6 +359,10 @@ window.addEventListener("click", function (event) {
   }
 })();
 
+/* ===================================== */
+/*                   TAB JS              */
+/* ===================================== */
+
 $(".tab_item").on("click", function(e) {
     var $this = $(this),
         target = $this.data("target");
@@ -370,3 +374,24 @@ $(".tab_item").on("click", function(e) {
     $(".tab_content").hide().removeClass("tab_content-active");
     $(target).show().addClass("tab_content-active");
 });
+
+/* ===================================== */
+/*             THUMB SLIDER              */
+/* ===================================== */
+
+  var swiper = new Swiper(".gallery-slider", {
+    spaceBetween: 20,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".thumb-slider", {
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
