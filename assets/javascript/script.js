@@ -261,7 +261,6 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ===================================== */
 /*               MODAL SCRIPT            */
 /* ===================================== */
-// Get all triggers and modals
 const triggers = document.querySelectorAll(".trigger");
 const modals = document.querySelectorAll(".modal");
 
@@ -363,16 +362,16 @@ window.addEventListener("click", function (event) {
 /*                   TAB JS              */
 /* ===================================== */
 
-$(".tab_item").on("click", function(e) {
+$(".tabBtn").on("click", function(e) {
     var $this = $(this),
         target = $this.data("target");
 
-    $this.addClass("tab_item-active")
-         .siblings(".tab_item")
-         .removeClass("tab_item-active");
+    $this.addClass("active")
+         .siblings(".tabBtn")
+         .removeClass("active");
 
-    $(".tab_content").hide().removeClass("tab_content-active");
-    $(target).show().addClass("tab_content-active");
+    $(".tabContent").hide().removeClass("active");
+    $(target).show().addClass("active");
 });
 
 /* ===================================== */
@@ -402,7 +401,7 @@ $(".tab_item").on("click", function(e) {
 /* ===================================== */
 
 const contentSlider = new Swiper('.content-block-slider', {
-  slidesPerView: 3, // Show 3 slides at once
+  slidesPerView: 3,
   spaceBetween: 20,
   loop: false,
   grabCursor: true,
@@ -412,11 +411,11 @@ const contentSlider = new Swiper('.content-block-slider', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 2.2,
       spaceBetween: 15,
     },
     1024: {
