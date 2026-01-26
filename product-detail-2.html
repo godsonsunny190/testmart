@@ -222,13 +222,11 @@
       <div class="flex flex-col gap-10 max-md:gap-8 max-sm:gap-6">
 
         <!-- Description Section -->
-        <div class="flex flex-col gap-6 items-start w-full">
-          <h1 class="w-full text-2xl font-semibold text-black uppercase max-md:text-2xl max-sm:text-xl">DESCRIPTION</h1>
+        <div class="flex flex-col gap-6 items-start w-full border-b border-[#E5E5E5] pb-10">
+          <h2 class="w-full text-2xl font-semibold text-black uppercase max-md:text-2xl max-sm:text-xl">DESCRIPTION</h2>
           <div
             class="w-full text-xl font-medium leading-8 text-neutral-800 max-md:text-lg max-md:leading-7 max-sm:text-base max-sm:leading-6">
             Agilent Vacuum Technologies TV 2300 TWISTORR CFF 12in PUMP
-            <br />
-            <br />
             The Turbo-V 2300 TwisTorr pump offers the highest pumping speeds in its category for N2. Utilizing
             leading-edge
             Twistorr technology, the pump achieves higher compression ratios for light gases in a commercially available
@@ -238,97 +236,86 @@
         </div>
 
         <!-- Additional Details Section -->
-        <div class="flex flex-col gap-6 items-start w-full">
+        <div class="flex flex-col gap-6 items-start w-full border-b border-[#E5E5E5] pb-10">
           <h2 class="w-full text-2xl font-semibold text-black uppercase max-md:text-2xl max-sm:text-xl">ADDITIONAL
             DETAILS
           </h2>
-          <div
-            class="w-full text-xl font-medium leading-8 whitespace-pre-line text-neutral-800 max-md:text-lg max-md:leading-7 max-sm:text-base max-sm:leading-6">
-            Type: New commercial
-            <br />
-            Calibration: New
+          <div class="w-full text-xl font-medium text-neutral-800 max-md:text-lg max-sm:text-base flex flex-col">
+            <span> Type: New commercial</span>
+            <span>Calibration: New</span>
           </div>
         </div>
 
         <!-- Product Comparison Table -->
-        <div
-          class="flex overflow-hidden items-center w-full rounded-3xl border border-solid border-neutral-200 max-md:flex-col max-md:rounded-2xl max-sm:rounded-xl">
-          <!-- Type Column Header (Hidden on mobile) -->
-          <div
-            class="flex flex-col items-start w-56 border-r border-solid border-r-neutral-200 max-md:hidden max-md:w-full max-md:border-b max-md:border-solid max-md:border-b-neutral-200 max-md:border-r-[none]">
-            <div
-              class="box-border flex gap-2.5 items-center p-6 w-full border-b border-solid border-b-neutral-200 max-sm:p-4">
-              <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Type</h3>
-            </div>
-          </div>
+        <div class="overflow-hidden w-full rounded-3xl border border-solid border-neutral-200">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b border-solid border-neutral-200">
+                <th class="hidden md:table-cell w-56 p-6 text-left border-r border-solid border-neutral-200">
+                  <h3 class="text-xl font-medium text-black">Type</h3>
+                </th>
+                <th class="p-6 text-left border-r border-solid border-neutral-200 max-sm:p-4">
+                  <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Type</h3>
+                </th>
+                <th class="p-6 text-left border-r border-solid border-neutral-200 max-sm:p-4">
+                  <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Price</h3>
+                </th>
+                <th class="p-6 text-left max-sm:p-4">
+                  <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Price</h3>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="hidden md:table-cell p-6 border-r border-solid border-neutral-200"></td>
+                <td class="p-6 border-r border-solid border-neutral-200 max-sm:p-4 align-top">
+                  <div class="flex flex-col gap-2">
+                    <h4 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">
+                      Agilent Life Sciences G4294B
+                    </h4>
 
-          <!-- Main Content Column -->
-          <div
-            class="flex flex-col items-start border-r border-solid border-r-neutral-200 w-[724px] max-md:w-full max-md:border-b max-md:border-solid max-md:border-b-neutral-200 max-md:border-r-[none]">
-            <div
-              class="box-border flex gap-2.5 items-center p-6 w-full border-b border-solid border-b-neutral-200 max-sm:p-4">
-              <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Type</h3>
-            </div>
-            <div class="box-border flex gap-2.5 items-center p-6 w-full max-sm:p-4">
-              <div class="flex flex-col gap-2 justify-center items-start w-full">
-                <h4 class="w-full text-xl font-medium text-black max-md:text-lg max-sm:text-base">Agilent Life Sciences
-                  G4294B</h4>
-                <div class="flex gap-1.5 items-center">
-                  <div>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      class="check-icon" style="width: 20px; height: 20px; flex-shrink: 0">
-                      <path
-                        d="M7.5 8.33073L10.215 10.3674C10.3832 10.4935 10.5929 10.5514 10.802 10.5295C11.0111 10.5076 11.2042 10.4074 11.3425 10.2491L16.6667 4.16406"
-                        stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
-                      <path
-                        d="M17.5 9.99987C17.5 11.567 17.0092 13.0947 16.0964 14.3685C15.1836 15.6424 13.8947 16.5983 12.4108 17.102C10.9268 17.6057 9.32237 17.6319 7.82275 17.177C6.32314 16.7221 5.00369 15.8088 4.04973 14.5656C3.09577 13.3223 2.55522 11.8114 2.50401 10.2451C2.45279 8.67884 2.89348 7.13587 3.76419 5.83291C4.63489 4.52996 5.89186 3.53247 7.35855 2.98055C8.82525 2.42862 10.428 2.34999 11.9417 2.7557"
-                        stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
-                    </svg>
+                    <div class="flex gap-1.5 items-center">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0">
+                        <path
+                          d="M7.5 8.33073L10.215 10.3674C10.3832 10.4935 10.5929 10.5514 10.802 10.5295C11.0111 10.5076 11.2042 10.4074 11.3425 10.2491L16.6667 4.16406"
+                          stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
+                        <path
+                          d="M17.5 9.99987C17.5 11.567 17.0092 13.0947 16.0964 14.3685C15.1836 15.6424 13.8947 16.5983 12.4108 17.102C10.9268 17.6057 9.32237 17.6319 7.82275 17.177C6.32314 16.7221 5.00369 15.8088 4.04973 14.5656C3.09577 13.3223 2.55522 11.8114 2.50401 10.2451C2.45279 8.67884 2.89348 7.13587 3.76419 5.83291C4.63489 4.52996 5.89186 3.53247 7.35855 2.98055C8.82525 2.42862 10.428 2.34999 11.9417 2.7557"
+                          stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                      <span class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Base Model</span>
+                    </div>
+
+                    <div class="flex gap-1.5 items-center">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="shrink-0">
+                        <path
+                          d="M7.5 8.33073L10.215 10.3674C10.3832 10.4935 10.5929 10.5514 10.802 10.5295C11.0111 10.5076 11.2042 10.4074 11.3425 10.2491L16.6667 4.16406"
+                          stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
+                        <path
+                          d="M17.5 9.99987C17.5 11.567 17.0092 13.0947 16.0964 14.3685C15.1836 15.6424 13.8947 16.5983 12.4108 17.102C10.9268 17.6057 9.32237 17.6319 7.82275 17.177C6.32314 16.7221 5.00369 15.8088 4.04973 14.5656C3.09577 13.3223 2.55522 11.8114 2.50401 10.2451C2.45279 8.67884 2.89348 7.13587 3.76419 5.83291C4.63489 4.52996 5.89186 3.53247 7.35855 2.98055C8.82525 2.42862 10.428 2.34999 11.9417 2.7557"
+                          stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                      <a href="#"
+                        class="text-xl font-medium text-sky-600 underline max-md:text-lg max-sm:text-base">more
+                        details</a>
+                    </div>
                   </div>
-                  <span class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Base Model</span>
-                </div>
-                <div class="flex gap-1.5 items-center">
-                  <div>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                      class="check-icon" style="width: 20px; height: 20px; flex-shrink: 0">
-                      <path
-                        d="M7.5 8.33073L10.215 10.3674C10.3832 10.4935 10.5929 10.5514 10.802 10.5295C11.0111 10.5076 11.2042 10.4074 11.3425 10.2491L16.6667 4.16406"
-                        stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
-                      <path
-                        d="M17.5 9.99987C17.5 11.567 17.0092 13.0947 16.0964 14.3685C15.1836 15.6424 13.8947 16.5983 12.4108 17.102C10.9268 17.6057 9.32237 17.6319 7.82275 17.177C6.32314 16.7221 5.00369 15.8088 4.04973 14.5656C3.09577 13.3223 2.55522 11.8114 2.50401 10.2451C2.45279 8.67884 2.89348 7.13587 3.76419 5.83291C4.63489 4.52996 5.89186 3.53247 7.35855 2.98055C8.82525 2.42862 10.428 2.34999 11.9417 2.7557"
-                        stroke="#0075BF" stroke-width="2" stroke-linecap="round"></path>
-                    </svg>
+                </td>
+                <td class="p-6 text-center align-middle border-r border-solid border-neutral-200 max-sm:p-4">
+                  <div class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">
+
                   </div>
-                  <a href="#"
-                    class="text-xl font-medium text-sky-600 underline cursor-pointer max-md:text-lg max-sm:text-base">more
-                    details</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Price Column Header (Hidden on mobile) -->
-          <div
-            class="flex flex-col items-start border-r border-solid border-r-neutral-200 w-[286px] max-md:hidden max-md:w-full max-md:border-b max-md:border-solid max-md:border-b-neutral-200 max-md:border-r-[none]">
-            <div
-              class="box-border flex gap-2.5 items-center p-6 w-full border-b border-solid border-b-neutral-200 max-sm:p-4">
-              <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Price</h3>
-            </div>
-          </div>
-
-          <!-- Price Column Content -->
-          <div
-            class="flex flex-col items-start border-r border-solid border-r-neutral-200 w-[286px] max-md:w-full max-md:border-b max-md:border-solid max-md:border-b-neutral-200 max-md:border-r-[none]">
-            <div
-              class="box-border flex gap-2.5 items-center p-6 w-full border-b border-solid border-b-neutral-200 max-sm:p-4">
-              <h3 class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">Price</h3>
-            </div>
-            <div class="box-border flex gap-2.5 justify-center items-start p-6 w-full max-sm:p-4">
-              <div class="flex-1 text-xl font-medium text-center text-black max-md:text-lg max-sm:text-base">16 Week
-                From
-                United States</div>
-            </div>
-          </div>
+                </td>
+                <td class="p-6 text-center align-middle max-sm:p-4">
+                  <div class="text-xl font-medium text-black max-md:text-lg max-sm:text-base">
+                    16 Week From <br> United States
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         <!-- Related Keywords Section -->
@@ -349,145 +336,164 @@
             </div>
           </div>
         </div>
-
-        <!-- Get Quote Section -->
-        <div class="flex gap-6 items-start w-full">
-          <article
-            class="box-border flex flex-col flex-1 gap-6 items-start p-6 rounded-3xl border border-solid border-neutral-200 max-w-[760px] max-md:max-w-full max-sm:p-4 max-sm:rounded-xl">
-            <h2 class="w-full text-2xl font-semibold text-black uppercase max-md:text-2xl max-sm:text-xl">GET QUOTE</h2>
-
-            <div class="flex flex-col gap-5 items-start w-full">
-              <!-- Contact Information -->
-              <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                <label
-                  class="shrink-0 text-xl font-medium leading-8 text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base max-sm:leading-6">Toll
-                  free:</label>
-                <div
-                  class="text-xl font-medium leading-8 text-neutral-800 max-md:text-lg max-sm:text-base max-sm:leading-6">
-                  Toll free: 888-665-2765</div>
-              </div>
-
-              <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                <label
-                  class="shrink-0 text-xl font-medium leading-8 text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base max-sm:leading-6">Outside
-                  US:</label>
-                <div
-                  class="text-xl font-medium leading-8 text-neutral-800 max-md:text-lg max-sm:text-base max-sm:leading-6">
-                  Outside US: +1 650-624-0525</div>
-              </div>
-
-              <!-- Quote Form -->
-              <form class="flex flex-col gap-5 items-start w-full">
-                <!-- First Name -->
-                <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                  <label for="firstName"
-                    class="shrink-0 text-xl font-medium text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base">
-                    First Name<span class="text-rose-600">*</span>:
-                  </label>
-                  <div
-                    class="box-border flex flex-1 gap-2.5 items-center px-4 py-5 bg-white rounded-lg border border-solid border-neutral-200 max-sm:px-3 max-sm:py-3.5">
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required
-                      class="w-full text-xl font-medium border-[none] text-neutral-800 max-md:text-lg max-sm:text-base bg-transparent outline-none" />
-                  </div>
-                </div>
-
-                <!-- Last Name -->
-                <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                  <label for="lastName"
-                    class="shrink-0 text-xl font-medium text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base">
-                    Last Name<span class="text-rose-600">*</span>:
-                  </label>
-                  <div
-                    class="box-border flex flex-1 gap-2.5 items-center px-4 py-5 bg-white rounded-lg border border-solid border-neutral-200 max-sm:px-3 max-sm:py-3.5">
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required
-                      class="w-full text-xl font-medium border-[none] text-neutral-800 max-md:text-lg max-sm:text-base bg-transparent outline-none" />
-                  </div>
-                </div>
-
-                <!-- Email -->
-                <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                  <label for="email"
-                    class="shrink-0 text-xl font-medium text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base">
-                    E-mail<span class="text-rose-600">*</span>:
-                  </label>
-                  <div
-                    class="box-border flex flex-1 gap-2.5 items-center px-4 py-5 bg-white rounded-lg border border-solid border-neutral-200 max-sm:px-3 max-sm:py-3.5">
-                    <input type="email" id="email" name="email" placeholder="E-mail" required
-                      class="w-full text-xl font-medium border-[none] text-neutral-800 max-md:text-lg max-sm:text-base bg-transparent outline-none" />
-                  </div>
-                </div>
-
-                <!-- Phone -->
-                <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                  <label for="phone"
-                    class="shrink-0 text-xl font-medium text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base">
-                    Phone<span class="text-rose-600">*</span>:
-                  </label>
-                  <div
-                    class="box-border flex flex-1 gap-2.5 items-center px-4 py-5 bg-white rounded-lg border border-solid border-neutral-200 max-sm:px-3 max-sm:py-3.5">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone" required
-                      class="w-full text-xl font-medium border-[none] text-neutral-800 max-md:text-lg max-sm:text-base bg-transparent outline-none" />
-                  </div>
-                </div>
-
-                <!-- Country -->
-                <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                  <label for="country"
-                    class="shrink-0 text-xl font-medium text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base">
-                    Country<span class="text-rose-600">*</span>:
-                  </label>
-                  <div
-                    class="box-border flex flex-1 gap-2.5 items-center px-4 py-4 bg-white rounded-lg border border-solid cursor-pointer border-neutral-200 max-sm:px-3 max-sm:py-3.5 relative">
-                    <select id="country" name="country" required
-                      class="flex-1 text-xl font-medium text-neutral-800 max-md:text-lg max-sm:text-base bg-transparent border-none outline-none appearance-none cursor-pointer">
-                      <option value="">Select Country</option>
-                      <option value="US">United States</option>
-                      <option value="CA">Canada</option>
-                      <option value="UK">United Kingdom</option>
-                      <option value="DE">Germany</option>
-                      <option value="FR">France</option>
-                      <option value="JP">Japan</option>
-                      <option value="AU">Australia</option>
-                      <option value="other">Other</option>
-                    </select>
-                    <div class="pointer-events-none">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="dropdown-icon" style="width: 20px; height: 20px; flex-shrink: 0">
-                        <path
-                          d="M10.3021 10.793L14.4271 6.66797L15.6055 7.8463L10.3021 13.1496L4.9988 7.8463L6.17714 6.66797L10.3021 10.793Z"
-                          fill="black"></path>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Quantity -->
-                <div class="flex gap-4 items-center w-full max-sm:flex-col max-sm:gap-2 max-sm:items-start">
-                  <label for="quantity"
-                    class="shrink-0 text-xl font-medium text-neutral-800 w-[124px] max-md:text-lg max-md:w-[110px] max-sm:w-full max-sm:text-base">
-                    Quantity<span class="text-rose-600">*</span>:
-                  </label>
-                  <div
-                    class="box-border flex flex-1 gap-2.5 items-center px-4 py-5 bg-white rounded-lg border border-solid border-neutral-200 max-sm:px-3 max-sm:py-3.5">
-                    <input type="number" id="quantity" name="quantity" value="1" min="1" required
-                      class="w-full text-xl font-medium border-[none] text-neutral-800 max-md:text-lg max-sm:text-base bg-transparent outline-none" />
-                  </div>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit"
-                  class="box-border flex gap-2.5 justify-center items-center px-5 py-3.5 bg-sky-600 cursor-pointer rounded-[38px] w-[300px] max-md:w-full max-sm:px-4 max-sm:py-3 max-sm:w-full hover:bg-sky-700 transition-colors">
-                  <span class="text-base font-medium text-white max-sm:text-sm">Send me Quote</span>
-                </button>
-              </form>
-            </div>
-          </article>
-        </div>
       </div>
     </div>
   </section>
   <!-- DESCRIPTION SECTION ENDS HERE -->
 
+  <!-- FORM SECTION STARTS HERE -->
+  <section class="mb-[268px]">
+    <div class="container-fit">
+      <div
+        class="modal-content mt-[40px] inline-flex relative flex-col gap-4 items-center p-6 bg-white rounded-3xl border border-gray-100 border-solid shadow-sm w-[760px] max-md:p-5 max-md:max-w-[760px] max-md:w-[90%] max-sm:p-4 max-sm:w-full max-sm:rounded-2xl">
+        <div class="flex relative flex-col gap-6 items-start w-[712px] max-md:w-full max-sm:gap-5 max-sm:w-full">
+          <div class="flex flex-col relative justify-between gap-5 w-full">
+            <h2 class="flex-1 text-2xl font-semibold  text-zinc-800 max-md:text-2xl max-sm:text-xl uppercase">
+              Get quote
+            </h2>
+          </div>
+
+          <div class="flex flex-col gap-5 items-start self-stretch w-full max-sm:gap-4">
+            <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+              <span
+                class="text-xl font-medium leading-8 text-neutral-800 w-[124px] max-md:text-lg max-md:leading-7 max-sm:w-full max-sm:text-base max-sm:leading-6">
+                Toll free:
+              </span>
+              <a href="tel:888-665-2765"
+                class="text-xl font-medium leading-8 text-neutral-800 max-md:text-lg max-md:leading-7 max-sm:text-base max-sm:leading-6">
+                Toll free: 888-665-2765
+              </a>
+            </div>
+
+            <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+              <span
+                class="text-xl font-medium leading-8 text-neutral-800 w-[124px] max-md:text-lg max-md:leading-7 max-sm:w-full max-sm:text-base max-sm:leading-6">
+                Outside US:
+              </span>
+              <a href="tel:+16506240525"
+                class="text-xl font-medium leading-8 text-neutral-800 max-md:text-lg max-md:leading-7 max-sm:text-base max-sm:leading-6">
+                Outside US: +1 650-624-0525
+              </a>
+            </div>
+
+            <form class="flex flex-col gap-5 items-start self-stretch w-full max-sm:gap-4">
+              <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+                <label for="firstName"
+                  class="text-xl font-medium max-md:text-lg max-sm:w-full max-sm:text-base flex gap-[4px]">
+                  <span class="text-neutral-800 w-[124px]">First Name</span>
+                  <span class="text-rose-600 order-2">*</span>
+                  <span class="text-neutral-800">:</span>
+                </label>
+                <div
+                  class="flex gap-2.5 items-center px-4 py-3 bg-white rounded-lg border border-solid border-neutral-200 flex-[1_0_0] max-sm:px-3.5  max-sm:w-full">
+                  <input type="text" id="firstName" name="firstName" placeholder="First Name" required
+                    class="text-xl font-medium text-black max-md:text-lg max-sm:text-base w-full border-none outline-none bg-transparent" />
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+                <label for="lastName"
+                  class="text-xl font-medium max-md:text-lg max-sm:w-full max-sm:text-base flex gap-[4px]">
+                  <span class="text-neutral-800 w-[124px]">Last Name</span>
+                  <span class="text-rose-600 order-2 ">*</span>
+                  <span class="text-neutral-800">:</span>
+                </label>
+                <div
+                  class="flex gap-2.5 items-center px-4 py-3 bg-white rounded-lg border border-solid border-neutral-200 flex-[1_0_0] max-sm:px-3.5  max-sm:w-full">
+                  <input type="text" id="lastName" name="lastName" placeholder="Last Name" required
+                    class="text-xl font-medium text-black max-md:text-lg max-sm:text-base w-full border-none outline-none bg-transparent" />
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+                <label for="email"
+                  class="text-xl font-medium max-md:text-lg max-sm:w-full max-sm:text-base flex gap-[4px]">
+                  <span class="text-neutral-800 w-[124px]">E-mail</span>
+                  <span class="text-rose-600 order-2">*</span>
+                  <span class="text-neutral-800">:</span>
+                </label>
+                <div
+                  class="flex gap-2.5 items-center px-4 py-3 bg-white rounded-lg border border-solid border-neutral-200 flex-[1_0_0] max-sm:px-3.5  max-sm:w-full">
+                  <input type="email" id="email" name="email" placeholder="E-mail" required
+                    class="text-xl font-medium text-black max-md:text-lg max-sm:text-base w-full border-none outline-none bg-transparent" />
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+                <label for="phone"
+                  class="text-xl font-medium max-md:text-lg max-sm:w-full max-sm:text-base flex gap-[4px]">
+                  <span class="text-neutral-800 w-[124px]">Phone</span>
+                  <span class="text-rose-600 order-2">*</span>
+                  <span class="text-neutral-800">:</span>
+                </label>
+                <div
+                  class="flex gap-2.5 items-center px-4 py-3 bg-white rounded-lg border border-solid border-neutral-200 flex-[1_0_0] max-sm:px-3.5  max-sm:w-full">
+                  <input type="tel" id="phone" name="phone" placeholder="Phone" required
+                    class="text-xl font-medium text-black max-md:text-lg max-sm:text-base w-full border-none outline-none bg-transparent" />
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+                <label for="country"
+                  class="text-xl font-medium max-md:text-lg max-sm:w-full max-sm:text-base flex gap-[4px]">
+                  <span class="text-neutral-800 w-[124px]">Country</span>
+                  <span class="text-rose-600 order-2">*</span>
+                  <span class="text-neutral-800">:</span>
+                </label>
+                <div
+                  class="flex gap-2.5 items-center px-4 py-4 bg-white rounded-lg border border-solid border-neutral-200 flex-[1_0_0] max-sm:px-3.5 max-sm:py-4 max-sm:w-full">
+                  <select id="country" name="country" required
+                    class="text-xl font-medium flex-[1_0_0] text-neutral-800 max-md:text-lg max-sm:text-base w-full border-none outline-none bg-transparent appearance-none">
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                    <option value="DE">Germany</option>
+                    <option value="FR">France</option>
+                    <option value="JP">Japan</option>
+                    <option value="CN">China</option>
+                    <option value="IN">India</option>
+                    <option value="BR">Brazil</option>
+                  </select>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="dropdown-icon pointer-events-none" style="width: 20px; height: 20px">
+                    <path
+                      d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                      fill="black"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-center self-stretch max-sm:flex-col max-sm:gap-2 max-sm:items-start">
+                <label for="quantity"
+                  class="text-xl font-medium max-md:text-lg max-sm:w-full max-sm:text-base flex gap-[4px]">
+                  <span class="text-neutral-800 w-[124px]">Quantity</span>
+                  <span class="text-rose-600 order-2">*</span>
+                  <span class="text-neutral-800">:</span>
+                </label>
+                <div
+                  class="flex gap-2.5 items-center px-4 py-3 bg-white rounded-lg border border-solid border-neutral-200 flex-[1_0_0] max-sm:px-3.5  max-sm:w-full">
+                  <input type="number" id="quantity" name="quantity" value="1" min="1" required
+                    class="text-xl font-medium flex-[1_0_0] text-neutral-800 max-md:text-lg max-sm:text-base w-full border-none outline-none bg-transparent" />
+                </div>
+              </div>
+
+              <div class="flex justify-between items-start self-stretch max-sm:flex-col max-sm:gap-3 max-sm:w-full">
+                <button type="submit"
+                  class="flex gap-2.5 justify-center items-center px-10 py-3.5 bg-sky-600 cursor-pointer rounded-[38px] max-sm:px-8 max-sm:py-3 max-sm:w-full hover:bg-sky-700 transition-colors">
+                  <span class="text-base font-medium text-white max-md:text-base max-sm:text-sm">
+                    Send me Quote
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FORM SECTION ENDS HERE -->
 
 
 

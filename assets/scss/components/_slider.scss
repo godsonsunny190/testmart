@@ -99,6 +99,7 @@
 
     img {
       height: 104px;
+      border-radius: 4px;
 
       @media (max-width: 768px) {
         height: 80px;
@@ -110,3 +111,4 @@
     }
   }
 }
+

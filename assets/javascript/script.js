@@ -395,3 +395,33 @@ $(".tab_item").on("click", function(e) {
       swiper: swiper,
     },
   });
+
+
+  /* ===================================== */
+/*             PRODUCT SLIDER            */
+/* ===================================== */
+
+const contentSlider = new Swiper('.content-block-slider', {
+  slidesPerView: 3, // Show 3 slides at once
+  spaceBetween: 20,
+  loop: false,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+});
