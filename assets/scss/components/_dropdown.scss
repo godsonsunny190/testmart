@@ -148,3 +148,60 @@
 .mobile-dropdown-icon.rotated {
   transform: rotate(180deg);
 }
+
+
+
+// SEARCH DROPDOWN
+.custom-select {
+  position: relative;
+
+  .custom-select-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 450px;
+    max-height: 250px;
+    padding: 8px;
+    display: none;
+    overflow: auto;
+    z-index: 9;
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 24px;
+    box-shadow: 0px 5px 10px 0px #0000001F;
+  }
+
+
+  .custom-select-list li {
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        background-image: url(../images/icons/search.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left center;
+        width: 13px;
+        height: 13px;
+        display: block;
+      }
+    }
+  }
+
+  .custom-select-list li:hover {
+    background-color: #f2f2f2;
+  }
+
+  .custom-select-empty {
+    cursor: default;
+  }
+}

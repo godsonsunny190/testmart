@@ -396,7 +396,7 @@ $(".tabBtn").on("click", function(e) {
   });
 
 
-  /* ===================================== */
+/* ===================================== */
 /*             PRODUCT SLIDER            */
 /* ===================================== */
 
@@ -423,4 +423,68 @@ const contentSlider = new Swiper('.content-block-slider', {
       spaceBetween: 20,
     },
   },
+});
+
+
+/* ===================================== */
+/*             SEARCH SCRIPT             */
+/* ===================================== */
+
+$(document).ready(function () {
+  function initializeSelect(selectBox) {
+    const searchInput = selectBox.find(".custom-select-input");
+    const listBox = selectBox.find(".custom-select-list");
+    const items = listBox.find("li:not(.custom-select-empty)");
+    const emptyItem = listBox.find(".custom-select-empty");
+
+    function filterItems(value) {
+      let count = 0;
+      items.each(function () {
+        const match = $(this).text().toLowerCase().includes(value);
+        $(this).toggle(match && count++ < 10);
+      });
+      return count;
+    }
+
+    function toggleList(value, count) {
+      listBox.toggle(value.length > 0);
+      emptyItem.toggle(value.length > 0 && count === 0);
+    }
+
+    function selectItem(item) {
+      searchInput.val(item.text());
+      listBox.hide();
+      console.log("Selected:", item.text(), "ID:", item.data("id"));
+    }
+
+    searchInput.on("input focus", function () {
+      const value = $(this).val().toLowerCase();
+      toggleList(value, filterItems(value));
+    });
+
+    searchInput.on("blur", function () {
+      const value = $(this).val().toLowerCase();
+      if (!items.filter((_, el) => $(el).text().toLowerCase() === value).length) {
+        $(this).val("");
+      }
+    });
+
+    listBox.on("mousedown", "li:not(.custom-select-empty)", function () {
+      selectItem($(this));
+    });
+
+    searchInput.on("keydown", function (e) {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const firstItem = listBox.find("li:not(.custom-select-empty):visible").first();
+        if (firstItem.length) selectItem(firstItem);
+      } else if (e.key === "Escape") {
+        $(this).val("");
+        listBox.hide();
+      }
+    });
+  }
+
+  initializeSelect($("#vendor_select"));
+  initializeSelect($("#customer_select"));
 });
