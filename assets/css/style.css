@@ -1125,6 +1125,11 @@ li {
   height: max-content;
   padding-bottom: 200px;
 }
+@media (max-width: 991px) {
+  .tab_nav {
+    max-width: 100%;
+  }
+}
 .tab_panel {
   flex: 1;
 }
