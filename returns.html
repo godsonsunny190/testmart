@@ -36,7 +36,8 @@
     <div class="container-fit">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-item opacity-70"><a href="index.html">TestMart</a></li>
-        <li class="breadcrumb-item active text-[#0075BF]" aria-current="page">Terms and conditions</li>
+        <li class="breadcrumb-item opacity-70"><a href="index.html">Help</a></li>
+        <li class="breadcrumb-item active text-[#0075BF]" aria-current="page">Return Policy</li>
       </ul>
     </div>
   </nav>
@@ -44,173 +45,176 @@
 
 
   <!-- RETURN POLICY SECTION STARTS HERE -->
-  <section class="flex flex-wrap gap-8 items-start font-medium">
-    <div class="flex-1 shrink text-base leading-6 basis-0 text-neutral-800 max-md:max-w-full">
-      <p>
-        As a leading authorized distributor, TestMart follows industry best
-        practices to ensure safe and compliant delivery. Products are professionally
-        packaged using commercial-grade materials. Orders ship via TestMart's
-        preferred government-approved carriers unless the purchaser specifies an
-        alternative and provides a valid carrier account number. Freight charges are
-        prepaid and added to the invoice. Title and risk of loss transfer to the
-        purchaser upon delivery to the carrier. Purchasers are responsible for
-        obtaining appropriate shipping insurance to cover loss or damage in transit.
-        Delivery schedules are provided with quotations and reflect realistic lead
-        times based on manufacturer commitments and carrier availability.
-      </p>
-    </div>
+  <section class="mt-12 mb-[269px]">
+    <div class="container-fit">
+      <div class="flex flex-wrap gap-8 items-start font-medium">
+        <div class="flex-1 shrink text-base leading-6 basis-0 text-neutral-800 max-md:max-w-full">
+          <p>
+            As a leading authorized distributor, TestMart follows industry best
+            practices to ensure safe and compliant delivery. Products are professionally
+            packaged using commercial-grade materials. Orders ship via TestMart's
+            preferred government-approved carriers unless the purchaser specifies an
+            alternative and provides a valid carrier account number. Freight charges are
+            prepaid and added to the invoice. Title and risk of loss transfer to the
+            purchaser upon delivery to the carrier. Purchasers are responsible for
+            obtaining appropriate shipping insurance to cover loss or damage in transit.
+            Delivery schedules are provided with quotations and reflect realistic lead
+            times based on manufacturer commitments and carrier availability.
+          </p>
+        </div>
+        <div
+          class="flex flex-col pb-6 rounded-3xl border border-solid border-neutral-200 min-w-60 w-[760px] max-md:max-w-full">
+          <div
+            class="flex gap-2.5 justify-center items-center px-6 py-4 w-full text-2xl font-semibold text-black uppercase border-b border-neutral-200 max-md:px-5 max-md:max-w-full">
+            <h2 class="flex-1 shrink self-stretch my-auto text-black basis-0 max-md:max-w-full">
+              Request an RMA Number
+            </h2>
+          </div>
 
-    <div
-      class="flex flex-col pb-6 rounded-3xl border border-solid border-neutral-200 min-w-60 w-[760px] max-md:max-w-full">
-      <div
-        class="flex gap-2.5 justify-center items-center px-6 py-4 w-full text-2xl font-semibold text-black uppercase border-b border-neutral-200 max-md:px-5 max-md:max-w-full">
-        <h2 class="flex-1 shrink self-stretch my-auto text-black basis-0 max-md:max-w-full">
-          Request an RMA Number
-        </h2>
+          <form class="px-6 mt-6 w-full text-xl max-md:px-5 max-md:max-w-full">
+            <div class="flex flex-wrap gap-4 items-center w-full max-md:max-w-full">
+              <label for="firstName" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  First Name
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="text" id="firstName" name="firstName" placeholder="Name" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="lastName" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  Last Name
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="text" id="lastName" name="lastName" placeholder="Name" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="companyName" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  Company Name
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="text" id="companyName" name="companyName" placeholder="Phone" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="email" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  E-mail
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="email" id="email" name="email" placeholder="Email" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="telephone" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  Telephone
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="tel" id="telephone" name="telephone" placeholder="Phone" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="serialNumber" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  Equipment Serial Number
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="text" id="serialNumber" name="serialNumber" placeholder="Title" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="equipmentDescription" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  Equipment Description
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="text" id="equipmentDescription" name="equipmentDescription" placeholder="Company" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
+              <label for="problemDescription" class="self-stretch my-auto text-neutral-800 w-[285px]">
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  Description of Problem
+                </span>
+                <span
+                  style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
+                  *
+                </span>
+                <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
+                  :
+                </span>
+              </label>
+              <input type="text" id="problemDescription" name="problemDescription" placeholder="Company" required
+                class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
+            </div>
+
+            <button type="submit"
+              class="flex gap-2.5 justify-center items-center self-center px-5 py-3.5 mt-6 max-w-full text-base text-white whitespace-nowrap bg-sky-600 rounded-[38px] w-[300px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors">
+              <span class="self-stretch my-auto">Submit</span>
+            </button>
+          </form>
+        </div>
       </div>
-
-      <form class="px-6 mt-6 w-full text-xl max-md:px-5 max-md:max-w-full">
-        <div class="flex flex-wrap gap-4 items-center w-full max-md:max-w-full">
-          <label for="firstName" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              First Name
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="text" id="firstName" name="firstName" placeholder="Name" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="lastName" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              Last Name
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="text" id="lastName" name="lastName" placeholder="Name" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="companyName" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              Company Name
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="text" id="companyName" name="companyName" placeholder="Phone" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="email" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              E-mail
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="email" id="email" name="email" placeholder="Email" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="telephone" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              Telephone
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="tel" id="telephone" name="telephone" placeholder="Phone" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="serialNumber" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              Equipment Serial Number
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="text" id="serialNumber" name="serialNumber" placeholder="Title" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="equipmentDescription" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              Equipment Description
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="text" id="equipmentDescription" name="equipmentDescription" placeholder="Company" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <div class="flex flex-wrap gap-4 items-center mt-5 w-full max-md:max-w-full">
-          <label for="problemDescription" class="self-stretch my-auto text-neutral-800 w-[273px]">
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              Description of Problem
-            </span>
-            <span
-              style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif; color: rgba(226, 0, 65, 1);">
-              *
-            </span>
-            <span style="font-family: Poppins, -apple-system, Roboto, Helvetica, sans-serif;">
-              :
-            </span>
-          </label>
-          <input type="text" id="problemDescription" name="problemDescription" placeholder="Company" required
-            class="flex-1 shrink px-4 py-5 my-auto text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full" />
-        </div>
-
-        <button type="submit"
-          class="flex gap-2.5 justify-center items-center self-center px-5 py-3.5 mt-6 max-w-full text-base text-white whitespace-nowrap bg-sky-600 rounded-[38px] w-[300px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors">
-          <span class="self-stretch my-auto">Submit</span>
-        </button>
-      </form>
     </div>
   </section>
   <!-- RETURN POLICY SECTION ENDS HERE -->
