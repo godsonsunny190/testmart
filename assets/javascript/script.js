@@ -127,14 +127,15 @@ var swiper = new Swiper(".logo-carousel", {
 /* ===================================== */
 
 var swiper = new Swiper(".whitepaper-carousel", {
-  spaceBetween: 50,
+  spaceBetween: 30,
   slidesPerView: 4,
   centerSlide: true,
   loop: true,
-  // autoplay: {
-  //   delay: 1500,
-  //   disableOnInteraction: false,
-  // },
+  speed: 1000,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
 
   breakpoints: {
     0: {
@@ -156,7 +157,7 @@ var swiper = new Swiper(".whitepaper-carousel", {
 
     1280: {
       slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
   }
 });
