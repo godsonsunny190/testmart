@@ -237,27 +237,39 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.getElementById('mobileMenu');
   const mobileOverlay = document.getElementById('mobileOverlay');
 
-  // Only run if the main toggle exists
   if (mobileMenuToggle) {
-    mobileMenuToggle.addEventListener('click', openMobileMenu);
-    mobileMenuClose?.addEventListener('click', closeMobileMenu);
-    mobileOverlay?.addEventListener('click', closeMobileMenu);
+    const toggleMenu = (isOpen) => {
+      mobileMenu?.classList.toggle('active', isOpen);
+      mobileOverlay?.classList.toggle('active', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+      mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+    };
+
+    mobileMenuToggle.addEventListener('click', () => toggleMenu(true));
+    mobileMenuClose?.addEventListener('click', () => toggleMenu(false));
+    mobileOverlay?.addEventListener('click', () => toggleMenu(false));
   }
 
-  function openMobileMenu() {
-    mobileMenu?.classList.add('active');
-    mobileOverlay?.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    mobileMenuToggle.setAttribute('aria-expanded', 'true');
-  }
+  document.querySelectorAll('.mobile-dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const dropdown = document.getElementById(this.dataset.target);
+      const icon = this.querySelector('.mobile-dropdown-icon');
+      const isActive = dropdown.classList.contains('active');
 
-  function closeMobileMenu() {
-    mobileMenu?.classList.remove('active');
-    mobileOverlay?.classList.remove('active');
-    document.body.style.overflow = '';
-    mobileMenuToggle.setAttribute('aria-expanded', 'false');
-  }
+      document.querySelectorAll('.mobile-dropdown-content').forEach(d => d.classList.remove('active'));
+      document.querySelectorAll('.mobile-dropdown-icon').forEach(i => i.classList.remove('rotated'));
+
+      if (!isActive) {
+        dropdown.classList.add('active');
+        icon?.classList.add('rotated');
+        this.setAttribute('aria-expanded', 'true');
+      } else {
+        this.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 });
+
 
 /* ===================================== */
 /*               MODAL SCRIPT            */
