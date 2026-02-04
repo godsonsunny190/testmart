@@ -273,6 +273,9 @@
   .top-\[99px\] {
     top: 99px;
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
@@ -438,11 +441,17 @@
   .mb-52 {
     margin-bottom: calc(var(--spacing) * 52);
   }
+  .mb-57 {
+    margin-bottom: calc(var(--spacing) * 57);
+  }
   .mb-67 {
     margin-bottom: calc(var(--spacing) * 67);
   }
   .mb-67\.25 {
     margin-bottom: calc(var(--spacing) * 67.25);
+  }
+  .mb-100 {
+    margin-bottom: calc(var(--spacing) * 100);
   }
   .mb-\[198px\] {
     margin-bottom: 198px;
@@ -565,6 +574,9 @@
   .h-28 {
     height: calc(var(--spacing) * 28);
   }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
   .h-\[46px\] {
     height: 46px;
   }
@@ -667,14 +679,23 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
+  }
   .w-31 {
     width: calc(var(--spacing) * 31);
   }
   .w-34 {
     width: calc(var(--spacing) * 34);
   }
+  .w-43 {
+    width: calc(var(--spacing) * 43);
+  }
   .w-56 {
     width: calc(var(--spacing) * 56);
+  }
+  .w-67 {
+    width: calc(var(--spacing) * 67);
   }
   .w-71 {
     width: calc(var(--spacing) * 71);
@@ -685,8 +706,14 @@
   .w-75 {
     width: calc(var(--spacing) * 75);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-162 {
     width: calc(var(--spacing) * 162);
+  }
+  .w-178 {
+    width: calc(var(--spacing) * 178);
   }
   .w-190 {
     width: calc(var(--spacing) * 190);
@@ -1280,6 +1307,9 @@
   }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
+  }
+  .pt-10 {
+    padding-top: calc(var(--spacing) * 10);
   }
   .pt-\[40px\] {
     padding-top: 40px;
@@ -2000,6 +2030,21 @@
       width: 100%;
     }
   }
+  .max-md\:max-w-75 {
+    @media (width < 48rem) {
+      max-width: calc(var(--spacing) * 75);
+    }
+  }
+  .max-md\:max-w-100 {
+    @media (width < 48rem) {
+      max-width: calc(var(--spacing) * 100);
+    }
+  }
+  .max-md\:max-w-190 {
+    @media (width < 48rem) {
+      max-width: calc(var(--spacing) * 190);
+    }
+  }
   .max-md\:max-w-\[300px\] {
     @media (width < 48rem) {
       max-width: 300px;
@@ -2709,9 +2754,19 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .xl\:h-62\.5 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 62.5);
+    }
+  }
   .xl\:h-\[250px\] {
     @media (width >= 80rem) {
       height: 250px;
+    }
+  }
+  .xl\:w-62\.5 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 62.5);
     }
   }
   .xl\:w-\[250px\] {
