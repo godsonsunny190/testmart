@@ -33,7 +33,7 @@
   <!-- HEADER SECTION ENDS HERE -->
 
 
-  <section class="mt-[34px] mb-14">
+  <section class="mt-8.5 mb-14">
     <div class="container-fit">
 
       <!-- BREAD CRUMBS SECTION STARS HERE -->
@@ -45,9 +45,9 @@
             <li class="breadcrumb-item active" aria-current="page">Cable and antenna analyzer</li>
           </ul>
         </nav>
-        <div class="bg-[#F3F3F3] p-[6px] rounded-[60px] flex items-center gap-[8px]">
+        <div class="bg-[#F3F3F3] p-1.5 rounded-[60px] flex items-center gap-2">
           <button id="listViewBtn"
-            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200">
+            class="w-10 h-10 rounded-[50%] p-2.5 flex items-center justify-center transition-colors duration-200 hover:bg-gray-200">
             <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
               <rect x="3" y="5" width="18" height="2" rx="1" />
               <rect x="3" y="11" width="18" height="2" rx="1" />
@@ -56,7 +56,7 @@
           </button>
 
           <button id="gridViewBtn"
-            class="w-10 h-10 rounded-[50%] p-[10px] flex items-center justify-center transition-colors duration-200 hover:bg-gray-200 bg-sky-600">
+            class="w-10 h-10 rounded-[50%] p-2.5 flex items-center justify-center transition-colors duration-200 hover:bg-gray-200 bg-sky-600">
             <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
               <rect x="3" y="3" width="8" height="8" rx="1" />
               <rect x="13" y="3" width="8" height="8" rx="1" />
@@ -68,11 +68,11 @@
       </div>
       <!-- BREAD CRUMBS SECTION ENDS HERE -->
 
-      <div class="flex flex-col gap-14 items-center mx-auto mt-[34px] max-sm:gap-8">
+      <div class="flex flex-col gap-14 items-center mx-auto mt-8.5 max-sm:gap-8">
         <div class="flex gap-8 items-start w-full max-lg:flex-col">
           <!-- Filter Sidebar -->
           <aside
-            class="flex flex-col shrink-0 gap-6 items-start p-4 ps-0 bg-white border-r border-solid border-r-zinc-100 w-[300px] max-lg:w-full max-md:border-b max-md:border-solid max-md:border-b-zinc-100 max-md:border-r-[none] max-sm:p-3">
+            class="flex flex-col shrink-0 gap-6 items-start p-4 ps-0 bg-white border-r border-solid border-r-zinc-100 w-75 max-lg:w-full max-md:border-b max-md:border-solid max-md:border-b-zinc-100 max-md:border-r-[none] max-sm:p-3">
             <!-- Price Filter Section -->
             <div class="flex flex-col gap-6 items-start pb-6 w-full border-b border-solid border-b-zinc-100">
               <h2 class="w-full text-base font-semibold text-black uppercase max-sm:text-sm">Price Range</h2>
@@ -192,37 +192,37 @@
                 More</button>
 
               <!-- Price Range Slider -->
-              <div class="relative w-full h-[123px] select-none hidden">
+              <div class="relative w-full h-30.75 select-none hidden">
                 <input type="range" min="0" max="50000" value="25000" id="rangeInput"
-                  class="absolute w-full h-3 top-[69px] opacity-0 cursor-pointer z-30" />
+                  class="absolute w-full h-3 top-17.25 opacity-0 cursor-pointer z-30" />
 
-                <div class="absolute w-full h-3 bg-blue-200 rounded-xl top-[69px] z-0"></div>
+                <div class="absolute w-full h-3 bg-blue-200 rounded-xl top-17.25 z-0"></div>
 
-                <div id="progressBar" class="absolute h-3 bg-sky-600 rounded-xl top-[69px] z-10" style="width: 50%;">
+                <div id="progressBar" class="absolute h-3 bg-sky-600 rounded-xl top-17.25 z-10" style="width: 50%;">
                 </div>
 
-                <div id="handle" class="absolute top-[63px] z-20 -translate-x-1/2 pointer-events-none"
+                <div id="handle" class="absolute top-15.75 z-20 -translate-x-1/2 pointer-events-none"
                   style="left: 50%;">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="9.5" fill="white" stroke="#0075BF" stroke-width="5"></circle>
                   </svg>
                 </div>
 
-                <div id="tooltip" class="absolute top-0 -translate-x-1/2 w-[84px] z-20 pointer-events-none"
+                <div id="tooltip" class="absolute top-0 -translate-x-1/2 w-21 z-20 pointer-events-none"
                   style="left: 50%;">
                   <div class="flex flex-col items-center">
-                    <div class="flex justify-center items-center bg-sky-600 h-[46px] rounded-[64px] px-4">
+                    <div class="flex justify-center items-center bg-sky-600 h-11.5 rounded-[64px] px-4">
                       <span id="tooltipText" class="text-base text-white font-medium">$25000</span>
                     </div>
                     <svg width="24" height="12" viewBox="0 0 24 12" fill="#0284c7" xmlns="http://www.w3.org/2000/svg"
-                      class="mt-[-2px]">
+                      class="-mt-0.5">
                       <path d="M10.5052 11.355C11.3008 12.215 12.6992 12.215 13.4948 11.355L24 0H0L10.5052 11.355Z"
                         fill="#0075BF"></path>
                     </svg>
                   </div>
                 </div>
 
-                <div class="flex absolute justify-between items-center w-full top-[99px]">
+                <div class="flex absolute justify-between items-center w-full top-24.75">
                   <span class="text-base font-medium text-black uppercase">$0</span>
                   <span class="text-base font-medium text-black uppercase">$50000</span>
                 </div>
@@ -776,15 +776,15 @@
 
   <dialog id="modal1" class="modal">
     <div
-      class="modal-content box-border inline-flex relative flex-col gap-4 items-center p-6 bg-white rounded-3xl border border-gray-100 border-solid shadow-sm w-[760px] max-md:p-5 max-md:max-w-[760px] max-md:w-[90%] max-sm:p-4 max-sm:w-full max-sm:rounded-2xl">
-      <div class="flex relative flex-col gap-6 items-start w-[712px] max-md:w-full max-sm:gap-5 max-sm:w-full">
+      class="modal-content box-border inline-flex relative flex-col gap-4 items-center p-6 bg-white rounded-3xl border border-gray-100 border-solid shadow-sm w-190 max-md:p-5 max-md:max-w-190 max-md:w-[90%] max-sm:p-4 max-sm:w-full max-sm:rounded-2xl">
+      <div class="flex relative flex-col gap-6 items-start w-178 max-md:w-full max-sm:gap-5 max-sm:w-full">
         <div class="flex flex-col relative justify-between gap-5 w-full">
           <h2 class="flex-1 text-2xl font-semibold text-center text-zinc-800 max-md:text-2xl max-sm:text-xl">
             Request Custom Quote
           </h2>
           <button type="button" aria-label="Close modal" class="close-button">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
-              class="close-icon w-8 h-8 absolute right-[0px] top-[0px] opacity-50 cursor-pointer">
+              class="close-icon w-8 h-8 absolute right-0 top-0 opacity-50 cursor-pointer">
               <g opacity="0.5">
                 <path
                   d="M15.9993 28.3346C22.8109 28.3346 28.3327 22.8128 28.3327 16.0013C28.3327 9.18979 22.8109 3.66797 15.9993 3.66797C9.18784 3.66797 3.66602 9.18979 3.66602 16.0013C3.66602 22.8128 9.18784 28.3346 15.9993 28.3346Z"
