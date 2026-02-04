@@ -1,0 +1,7 @@
+# Node / Tailwind
+node_modules/
+package.json
+package-lock.json
+
+# Optional
+npm-debug.log*
