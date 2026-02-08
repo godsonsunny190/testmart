@@ -3,6 +3,7 @@ $(function () {
   $("#footer").load("footer.html");
 });
 
+
 /* ===================================== */
 /*             FADE SLIDER              */
 /* ===================================== */
@@ -11,6 +12,12 @@ var swiper = new Swiper(".hero-banner", {
   spaceBetween: 30,
   effect: "fade",
   loop: true,
+  speed: 1000,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: ".swiper-button-next",
