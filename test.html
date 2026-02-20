@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testmart</title>
+
+    <!-- FAVICON LINK -->
+    <link rel="icon" type="image/png" href="./assets/images/logo/fav.png">
+
+    <!-- LENIS SMOOTH SCROLL CSS LINK -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css" />
+
+    <!-- SLICK SLIDER CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+
+    <!-- FONT STYLESHEET LINK -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- TAILWIND CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+
+    <!-- EXTERNAL CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <!-- HEADER SECTION STARTS HERE -->
+    <div class="header">
+        <!-- Top Contact Bar -->
+        <div class="bg-[linear-gradient(180deg,#67C0FF_0%,#0075BF_100%)]">
+            <div class="container-fit">
+                <div class="flex flex-col gap-0.5 items-start w-ful" role="banner">
+                    <div class="box-border flex gap-8 items-center py-1.5 w-full  max-md:gap-5 max-md:py-3 max-sm:flex-wrap max-sm:gap-3 max-sm:px-4"
+                        aria-label="Contact information">
+                        <!-- Phone Contact -->
+                        <div class="flex gap-1 items-center max-sm:gap-1">
+                            <div aria-hidden="true">
+                                <img src="./assets/images/icons/fi-rr-phone-call.svg" alt="icon">
+                            </div>
+                            <a href="tel:888-665-2765"
+                                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover-text"
+                                aria-label="Call us at 888-665-2765">
+                                888-665-2765
+                            </a>
+                        </div>
+
+                        <!-- Email Contact -->
+                        <div class="flex gap-1 items-center flex-[1_0_0] max-sm:gap-1">
+                            <div aria-hidden="true">
+                                <img src="./assets/images/icons/fi-rr-envelope.svg" alt="icon">
+                            </div>
+                            <a href="mailto:salesteam@testmart.com"
+                                class="text-base font-semibold leading-6 text-neutral-50 max-sm:text-xs max-sm:leading-5 hover-text"
+                                aria-label="Email us at salesteam@testmart.com">
+                                salesteam@testmart.com
+                            </a>
+                        </div>
+
+                        <!-- Flag Icon -->
+                        <img src="./assets/images/Sewp.png" alt="Country flag"
+                            class="shrink-0 h-9 w-6.75 max-sm:w-5 max-sm:h-6.75" />
+
+                        <!-- GSA Icon -->
+                        <img src="./assets/images/GSA.png" alt="GSA certification"
+                            class="shrink-0 h-9 w-9.25 max-sm:w-7 max-sm:h-6.75" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="bg-white">
+            <div class="container-fit">
+                <div class="box-border flex justify-between items-center py-6 w-full border-b border-solid border-b-zinc-100
+                     max-md:py-6 max-xl:flex-wrap max-xl:gap-4">
+                    <!-- Logo -->
+                    <div class="shrink-0">
+                        <a href="index.html">
+                            <img src="./assets/images/logo/TestMart Logo.svg" alt="TestMart Logo"
+                                class="w-62.5 max-3xl:w-50 max-xl:w-45 max-sm:w-37.5" />
+                        </a>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="flex gap-4 justify-center items-center py-2 pr-2 pl-4 bg-white border border-solid border-neutral-200 rounded-[50px] w-112.5 max-xl:order-3 max-sm:gap-2 max-sm:px-3 max-sm:py-2 max-xl:w-full custom-select"
+                        id="customer_select">
+                        <div aria-hidden="true" class="w-5 h-5">
+                            <img src="./assets/images/icons/search.svg" alt="search">
+                        </div>
+                        <input type="text" placeholder="Search..."
+                            class="text-base leading-8 text-black opacity-50 flex-[1_0_0] max-lg:text-sm max-sm:leading-6 bg-transparent border-none outline-none focus:opacity-100 custom-select-input"
+                            aria-label="Search products" />
+                        <ul class="custom-select-list">
+                            <li class="custom-select-empty" style="display: none;">Results Not Found!</li>
+                            <li data-id="1"><span>david</span></li>
+                            <li data-id="2"><span>gusby</span></li>
+                            <li data-id="3"><span>shawn</span></li>
+                            <li data-id="4"><span>potter</span></li>
+                            <li data-id="5"><span>jackie</span></li>
+                            <li data-id="6"><span>harry</span></li>
+                            <li data-id="7"><span>revdo</span></li>
+                        </ul>
+                        <button type="submit"
+                            class="flex gap-2.5 justify-center items-center px-4 py-1 h-9 bg-sky-600 cursor-pointer rounded-[60px] max-sm:px-3 max-sm:py-1 max-sm:h-8 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors"
+                            aria-label="Search">
+                            <span class="text-lg text-white capitalize max-lg:text-sm">Search</span>
+                        </button>
+                    </div>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="flex gap-10 items-center max-md:gap-6 max-xl:hidden" role="navigation"
+                        aria-label="Main navigation">
+                        <!-- Products Dropdown -->
+                        <div class="flex gap-2 items-center cursor-pointer group relative">
+                            <button class="text-base font-medium text-center max-md:text-sm hover-text"
+                                aria-expanded="false" aria-haspopup="true" aria-label="Products menu">
+                                Products
+                            </button>
+                            <div aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="dropdown-icon-products"
+                                    style="width: 20px; height: 20px">
+                                    <path
+                                        d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                        fill="#000000" />
+                                </svg>
+                            </div>
+
+                            <div class="dropdown-list">
+                                <ul>
+                                    <li><a href="category-page.html">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="category-page.html">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="category-page.html">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="category-page.html">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Brands Dropdown -->
+                        <div class="flex gap-2 items-center cursor-pointer group relative">
+                            <button class="text-base font-medium text-center text-black max-md:text-sm hover-text"
+                                aria-expanded="false" aria-haspopup="true" aria-label="Brands menu">
+                                Brands
+                            </button>
+                            <div aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="dropdown-icon-brands"
+                                    style="width: 20px; height: 20px">
+                                    <path
+                                        d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            <div class="dropdown-list">
+                                <ul>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+                                    <li><a href="">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            cable and antenna analyzer
+                                        </a></li>
+
+                                    <li class="see-more"><a href="manufacturers.html">
+                                            <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                            See All
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Catalog Button -->
+                        <button
+                            class="flex gap-2.5 justify-center items-center px-5 py-2 bg-sky-600 cursor-pointer rounded-[38px] max-md:px-4 max-md:py-1.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors trigger"
+                            aria-label="View catalog" data-modal="modal-1">
+                            <span class="text-base font-medium text-white max-md:text-sm">Catalog</span>
+                        </button>
+                    </nav>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuToggle"
+                        class="hidden text-3xl text-black cursor-pointer max-xl:block hover:text-gray-700 focus:outline-none"
+                        aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <img src="./assets/images/icons/menu-icon.svg" class="w-7 h-7" alt="menu icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileOverlay" class="mobile-overlay"></div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="p-6">
+                <!-- Close Button -->
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-xl font-bold text-gray-800">Menu</h2>
+                    <button id="mobileMenuClose"
+                        class="text-gray-600 hover:text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 rounded-lg p-1"
+                        aria-label="Close mobile menu">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <nav class="space-y-4">
+                    <!-- Products Dropdown -->
+                    <div class="border-b border-gray-200">
+                        <button
+                            class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium focus:outline-none"
+                            data-target="productsDropdown">
+                            Products
+                            <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00076 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                    fill="#000" />
+                            </svg>
+                        </button>
+                        <div id="productsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+                            <ul>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Brands Dropdown -->
+                    <div class="border-b border-gray-200">
+                        <button
+                            class="mobile-dropdown-toggle w-full flex justify-between items-center text-left text-base font-medium text-gray-800 focus:outline-none"
+                            data-target="brandsDropdown">
+                            Brands
+                            <svg class="mobile-dropdown-icon w-5 h-5" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3041 10.793L14.4291 6.66797L15.6074 7.8463L10.3041 13.1496L5.00075 7.8463L6.17909 6.66797L10.3041 10.793Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                        <div id="brandsDropdown" class="mobile-dropdown-content mt-2 space-y-3">
+                            <ul>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                                <li><a href="category-page.html">
+                                        <img src="./assets/images/icons/ion_flash-outline.svg" alt="icon">
+                                        cable and antenna analyzer
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Catalog Button -->
+                    <div class="pt-2">
+                        <button
+                            class="w-full flex justify-center items-center px-5 py-3 bg-sky-600 text-white font-medium rounded-[38px] hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 transition-colors trigger"
+                            data-modal="modal-1">
+                            Catalog
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER SECTION ENDS HERE -->
+
+    <!-- HERO SECTION STRTS HERE -->
+    <section class="lg:mt-18 mt-10">
+        <div class="container-fit">
+            <div class="swiper hero-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Hero image.png" class="rounded-2xl" alt="hero image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 2.png" class="rounded-2xl" alt="hero image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 3.png" class="rounded-2xl" alt="hero image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 4.png" class="rounded-2xl" alt="hero image" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/images/Property 1=Hero 5.png" class="rounded-2xl" alt="hero image" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- HERO SECTION ENDS HERE -->
+
+    <!-- CARDS SECTION STARTS HERE -->
+    <section class="md:mt-15 mt-10">
+        <div class="container-fit">
+            <div class="grid grid-cols-4 max-lg:gap-6 gap-8 max-xl:grid-cols-2 max-sm:grid-cols-1 ">
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
+                    <div class="flex justify-between items-center self-stretch w-full">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
+                            <img src="./assets/images/icons/service.svg" alt="icons" class=" w-12 h-12">
+                        </div>
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
+                            +12%
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 items-start self-stretch w-full">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
+                            64965.00
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
+                            Government Customers Served
+                        </p>
+                    </div>
+                </article>
+
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
+                    <div class="flex justify-between items-center self-stretch w-full">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
+                            <img src="./assets/images/icons/shop.svg" alt="icons" class=" w-12 h-12">
+                        </div>
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
+                            +8%
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 items-start self-stretch w-full">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
+                            440k
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
+                            Total Orders
+                        </p>
+                    </div>
+                </article>
+
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
+                    <div class="flex justify-between items-center self-stretch w-full">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
+                            <img src="./assets/images/icons/dollar.svg" alt="icons" class=" w-12 h-12">
+                        </div>
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
+                            +15%
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 items-start self-stretch w-full">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
+                            $2.4M
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
+                            Total Savings
+                        </p>
+                    </div>
+                </article>
+
+                <article
+                    class="box-border flex flex-col gap-3 items-start p-6 bg-white rounded-2xl shadow-sm flex-[1_0_0] max-md:p-5 max-sm:gap-2.5 max-sm:p-5 shadow-soft">
+                    <div class="flex justify-between items-center self-stretch w-full">
+                        <div class="box-border flex overflow-hidden shrink-0 justify-center items-center">
+                            <img src="./assets/images/icons/delivery.svg" alt="icons" class=" w-12 h-12">
+                        </div>
+                        <div class="text-base font-medium text-green-500 max-md:text-base max-sm:text-sm">
+                            98.7%
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 items-start self-stretch w-full">
+                        <h2 class="self-stretch text-3xl font-semibold text-black max-lg:text-2xl max-sm:text-2xl">
+                            91.26%
+                        </h2>
+                        <p
+                            class="self-stretch text-base font-medium text-black opacity-70 max-md:text-base max-sm:text-sm">
+                            On-Time Deliveries
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+    <!-- CARDS SECTION ENDS HERE -->
+
+    <!-- LOGOS SLIDER SECTION STARTS HERE -->
+    <section class="md:mt-20 mt-10">
+        <div class="container-fit">
+            <div class="swiper logo-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 03.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 04.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 05.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 06.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 07.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 08.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 03.png" class="h-full object-contain" alt="logo">
+                    </div>
+                    <div class="swiper-slide md:h-24 h-17.5">
+                        <img src="./assets/images/index/Logo 04.png" class="h-full object-contain" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOGOS SLIDER SECTION ENDS HERE -->
+
+    <!-- TWO IMAGE BANNER SECTION STARTS HERE -->
+    <section class="md:mt-20 mt-5">
+        <div class="container-fit">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8
+                max-md:gap-6 max-md:items-center max-sm:gap-4 max-sm:px-4">
+                <figure
+                    class="relative shrink-0 h-88.25 max-md:h-auto max-md:aspect-744/353 shadow-[0_4px_6px_0_#0000000A] border border-[#eeeeee] rounded-3xl">
+                    <img src="./assets/images/index/b2.jpg"
+                        alt="Product catalogue advertisement featuring promotional content"
+                        class="block object-cover rounded-3xl h-full" />
+                    <button type="button"
+                        class="box-border inline-flex absolute gap-2.5 justify-center items-center px-5 py-3 h-12 bg-sky-600 border border-white border-solid cursor-pointer rounded-[38px] right-6 bottom-6 w-50.25 max-md:right-6 max-md:bottom-6 max-md:top-auto max-md:left-auto max-md:w-auto max-md:min-w-45 max-sm:right-4 max-sm:bottom-4 max-sm:px-4 max-sm:py-2.5 max-sm:w-auto max-sm:h-auto max-sm:min-w-40 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors duration-200"
+                        aria-label="Get a catalogue for our products">
+                        <span class="text-base font-medium text-white whitespace-nowrap max-sm:text-sm">
+                            Get a catalogue
+                        </span>
+                        <span aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="arrow-icon"
+                                style="width: 20px; height: 20px; flex-shrink: 0">
+                                <path
+                                    d="M2.91699 10.0013H16.667M16.667 10.0013L10.8337 4.16797M16.667 10.0013L10.8337 15.8346"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </figure>
+
+                <figure
+                    class="relative shrink-0 h-88.25 max-md:h-auto max-md:aspect-744/353 shadow-[0_4px_6px_0_#0000000A] border border-[#eeeeee] rounded-3xl">
+                    <img src="./assets/images/index/b1.jpg"
+                        alt="Product catalogue advertisement featuring promotional content"
+                        class="block object-cover rounded-3xl h-full" />
+                    <button type="button"
+                        class="box-border inline-flex absolute gap-2.5 justify-center items-center px-5 py-3 h-12 bg-sky-600 border border-white border-solid cursor-pointer rounded-[38px] right-6 bottom-6 w-50.25 max-md:right-6 max-md:bottom-6 max-md:top-auto max-md:left-auto max-md:w-auto max-md:min-w-45 max-sm:right-4 max-sm:bottom-4 max-sm:px-4 max-sm:py-2.5 max-sm:w-auto max-sm:h-auto max-sm:min-w-40 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 transition-colors duration-200"
+                        aria-label="Get a catalogue for our products">
+                        <span class="text-base font-medium text-white whitespace-nowrap max-sm:text-sm">
+                            Get a catalogue
+                        </span>
+                        <span aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="arrow-icon"
+                                style="width: 20px; height: 20px; flex-shrink: 0">
+                                <path
+                                    d="M2.91699 10.0013H16.667M16.667 10.0013L10.8337 4.16797M16.667 10.0013L10.8337 15.8346"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- TWO IMAGE BANNER SECTION STARTS HERE -->
+
+    <!-- WHITE PAPER SECTION STARTS HERE -->
+    <section class="bg-[#FAFAFA] mt-15 py-15">
+        <div class="container-fit">
+            <div class="section-title">
+                <h2>whitepaper</h2>
+            </div>
+            <div class="mt-8 swiper whitepaper-carousel">
+                <div class="swiper-wrapper">
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                Cuts to Scientific Funding</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                GSA vs. GWACs: A Comparison</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                How to Sell to the U.S. Government: FAQ</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                Increased Funding Report</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                Marketing Report</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                Personnel Cuts Report</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                TestMart Chain of Custody Advisory (Updated)</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="box-border flex items-center flex-col gap-6 max-md:gap-5 max-sm:gap-5 swiper-slide"
+                        role="article" aria-labelledby="whitepaper-title">
+                        <div class="shadow-[0px_0px_4px_0px_rgba(0,0,0,0.25)] bg-white flex overflow-hidden relative justify-center items-center self-stretch rounded h-100 max-md:h-112.5 max-sm:h-87.5"
+                            role="img" aria-label="Whitepaper preview with download option">
+                            <img src="./assets/images/index/whitepaper.png" alt="Whitepaper 1 preview document"
+                                class="object-cover absolute top-0 left-0 blur size-full" />
+                            <h3
+                                class="absolute top-11 left-2/4 translate-x-[-50%]  text-xl font-semibold text-center text-[#4573A5] w-60">
+                                TestMart Unique Qualifications Support Document</h3>
+                            <button type="button"
+                                class="inline-flex relative gap-2.5 justify-center items-center px-5 py-3 bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] z-1 max-sm:px-5 max-sm:py-2.5 hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 trigger"
+                                aria-label=" Download and read whitepaper 1" tabindex="0" data-modal="modal1">
+                                <span
+                                    class="text-base font-semibold text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Read whitepaper
+                                </span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- WHITE PAPER SECTION ENDS HERE -->
+
+    <!-- FAQ SECTION STARTS HERE -->
+    <section class="max:md-[mt-60px] my-30 max-lg:my-15">
+        <div class="container-fit">
+            <div class="section-title">
+                <h2>faq</h2>
+            </div>
+
+            <div class="mt-10 space-y-4">
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span class="text-base lg:text-2xl font-medium text-[#0075BF] transition-colors duration-300">
+                            What types of customers does TestMart serve?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-[#0075BF] transform rotate-180 transition-transform duration-500 ease-in-out shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden transition-all duration-500 ease-in-out"
+                        style="max-height: 1000px;">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                We primarily serve government agencies, defense organizations, educational institutions,
+                                research labs, and enterprise companies requiring test and measurement equipment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            Can I purchase equipment directly, or is this only for government procurement?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-in-out shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Yes, we support both direct commercial sales and official government procurement
+                                channels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            How long does delivery typically take?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-in-out shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            Are the products covered by warranty and manufacturer support?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-in-out  shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            Does TestMart provide compliance and certification documentation?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-in-out  shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="accordion-item border border-[#eeeeee] rounded-lg bg-white shadow-[0px_4px_6px_0px_#0000000A] overflow-hidden">
+                    <button
+                        class="accordion-header w-full flex justify-between items-center text-left p-4 md:p-6 group focus:outline-none">
+                        <span
+                            class="text-base lg:text-2xl font-medium text-black group-hover:text-[#0075BF] transition-colors duration-300">
+                            How long does delivery typically take?
+                        </span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 md:h-6 md:w-6 text-black transform transition-transform duration-500 ease-in-out  shrink-0"
+                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
+                        <div class="px-4 pb-4 md:px-6 md:pb-6">
+                            <p class="text-sm lg:text-xl font-medium text-black opacity-70 leading-relaxed">
+                                Delivery times vary by product and availability, but most in-stock items ship within
+                                24-48 hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ SECTION ENDS HERE -->
+
+    <!-- FOOTER SECTION STARTS HERE -->
+    <footer class="footer" id="footer"></footer>
+    <!-- FOOTER SECTION ENDS HERE -->
+
+    <!-- WHITEPAPER FORM MODAL STARTS HERE -->
+    <div class="modal" id="modal1">
+        <div class="modal-content max-w-190 w-full  bg-white rounded-3xl">
+            <span class="close-button absolute top-5 right-5 cursor-pointer">
+                <img src="./assets/images/icons/close-btn.svg" alt="close button">
+            </span>
+            <form class="flex flex-col pb-6" role="form" aria-labelledby="form-title">
+                <div
+                    class="flex gap-2.5 justify-center items-center px-6 py-4 w-full text-xl md:text-2xl font-semibold text-center text-white uppercase bg-sky-600 rounded-[20px_20px_0_0] max-md:px-5 max-md:max-w-full">
+                    <div
+                        class="flex flex-col flex-1 shrink items-start self-stretch my-auto w-full basis-0 min-w-60 max-md:max-w-full">
+                        <h2 id="form-title" class="text-white max-md:max-w-full">
+                            Get the Full Whitepaper
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="px-6 mt-6 w-full max-md:px-5 max-md:max-w-full flex flex-col gap-5">
+                    <div class="flex flex-wrap gap-3 items-center w-full font-medium max-md:max-w-full">
+                        <label for="firstName"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-23.5 md:max-w-31 w-full">
+                            <span class="whitespace-nowrap">
+                                First Name :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 items-center w-full font-medium max-md:max-w-full">
+                        <label for="lastName"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-23.5 md:max-w-31 w-full">
+                            <span class="whitespace-nowrap">
+                                Last Name :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your lastname" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 items-center w-full font-medium max-md:max-w-full">
+                        <label for="phone"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-23.5 md:max-w-31 w-full">
+                            <span class="whitespace-nowrap">
+                                Phone :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 items-center w-full font-medium max-md:max-w-full">
+                        <label for="email"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-23.5 md:max-w-31 w-full">
+                            <span class="whitespace-nowrap">
+                                E-mail :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-5 my-auto text-base text-black whitespace-nowrap bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="email" id="email" name="email" value="jessica.hanson@example.com" required
+                                aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 items-center w-full font-medium max-md:max-w-full">
+                        <label for="company"
+                            class="flex gap-1 text-base md:text-xl text-neutral-800 max-w-23.5 md:max-w-31 w-full">
+                            <span class="whitespace-nowrap">
+                                Company :
+                            </span>
+                            <span class="text-[#e20041]">*</span>
+                        </label>
+                        <div
+                            class="flex flex-1 shrink gap-2.5 items-center self-stretch px-4 py-3 md:py-5 my-auto text-base text-black bg-white rounded-lg border border-solid basis-0 border-neutral-200 min-w-60 max-md:max-w-full">
+                            <input type="text" id="company" name="company" placeholder="Enter your Company name"
+                                required aria-required="true"
+                                class="self-stretch my-auto w-full bg-transparent border-none outline-none focus:ring-0" />
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2.5 items-start p-2.5 mt-5 w-full max-md:max-w-full">
+                        <div class="relative flex items-center mt-2">
+                            <input type="checkbox" class="peer sr-only" checked />
+                            <div
+                                class="w-4 h-4 bg-gray-100 border border-gray-300 rounded peer-checked:bg-[#007AC3] peer-checked:border-[#007AC3] transition-all duration-200">
+                            </div>
+                            <svg class="absolute inset-0 m-auto w-3 h-3 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-200 pointer-events-none"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                        </div>
+                        <label for="terms" id="terms-text"
+                            class="md:text-xl text-base text-center text-neutral-800 w-148.5 max-md:max-w-full cursor-pointer">
+                            By sending your email you've agree to our
+                            <a href="#"
+                                class="underline hover:text-sky-600 focus:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2">Terms
+                                of Service</a>
+                            <br />
+                            and
+                            <a href="#"
+                                class="underline hover:text-sky-600 focus:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2">Privacy
+                                Policy.</a>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="flex gap-2.5 justify-center items-center self-center px-5 py-3.5 mt-6 max-w-full text-base font-medium text-white whitespace-nowrap bg-sky-600 rounded-[38px] w-75 hover:bg-sky-700 focus:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 transition-colors duration-200"
+                    aria-label="Submit whitepaper request form">
+                    <span class="self-stretch my-auto">Submit</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- WHITEPAPER FORM MODAL STARTS HERE -->
+
+    <!-- Master Catelogue modal -->
+    <div class="modal" id="modal-1">
+        <div class="modal-content max-sm:w-full max-sm:max-w-[calc(100%-20px)]">
+            <div class="flex justify-center items-center">
+                <div
+                    class="box-border inline-flex relative flex-col gap-4 items-center p-6 bg-white rounded-[20px] border border-gray-100 border-solid shadow-sm w-116.5 max-md:p-5 max-md:max-w-116.5 max-md:w-[90%] max-sm:p-5 max-sm:w-full max-sm:max-w-full">
+                    <div
+                        class="flex relative flex-col gap-6 items-start w-104.5 max-md:gap-5 max-md:w-full max-sm:gap-5 max-sm:w-full">
+                        <div class="flex relative justify-between items-start self-stretch">
+                            <h2
+                                class="flex-1 text-2xl font-semibold text-center text-zinc-800 max-md:text-2xl max-sm:text-xl">
+                                Master Catelogue
+                            </h2>
+                            <div>
+                                <button type="button" aria-label="Close modal" class="relative close-button">
+                                    <img src="./assets/images/icons/close-btn.svg" alt="close-btn">
+                                </button>
+                            </div>
+                        </div>
+
+                        <form class="flex relative flex-col gap-4 items-start self-stretch">
+                            <div class="flex relative flex-col gap-2 items-start self-stretch">
+                                <label for="fullName"
+                                    class="self-stretch text-base font-medium text-zinc-900 max-md:text-base max-sm:text-sm">
+                                    Full Name
+                                </label>
+                                <div
+                                    class="box-border flex relative gap-0.5 justify-center items-center self-stretch px-4 py-3.5 bg-white border border-gray-100 border-solid rounded-[50px] max-sm:px-3.5 max-sm:py-3">
+                                    <input type="text" id="fullName" name="fullName" placeholder="Enter name"
+                                        class="text-base font-medium text-black opacity-50 flex-[1_0_0] max-md:text-base max-sm:text-sm bg-transparent border-none outline-none placeholder:text-black placeholder:opacity-50" />
+                                </div>
+                            </div>
+
+                            <div class="flex relative flex-col gap-2 items-start self-stretch">
+                                <label for="email"
+                                    class="self-stretch text-base font-medium text-zinc-900 max-md:text-base max-sm:text-sm">
+                                    Email
+                                </label>
+                                <div
+                                    class="box-border flex relative gap-0.5 justify-center items-center self-stretch px-4 py-3.5 bg-white border border-gray-100 border-solid rounded-[50px] max-sm:px-3.5 max-sm:py-3">
+                                    <input type="email" id="email" name="email" placeholder="Enter email"
+                                        class="text-base font-medium text-black opacity-50 flex-[1_0_0] max-md:text-base max-sm:text-sm bg-transparent border-none outline-none placeholder:text-black placeholder:opacity-50" />
+                                </div>
+                            </div>
+                        </form>
+
+                        <div
+                            class="flex relative gap-4 justify-between items-start self-stretch max-sm:flex-col max-sm:gap-3">
+                            <button type="button"
+                                class="btn-outline flex gap-2.5 justify-center items-center px-10 py-3.5 text-base font-medium text-black whitespace-nowrap bg-white border border-solid transition-all duration-200 cursor-pointer border-neutral-200 ease-[ease-in-out] rounded-[38px] max-md:px-8 max-md:py-3 max-md:text-base max-sm:px-6 max-sm:py-3 max-sm:w-full max-sm:text-sm">
+                                <span
+                                    class="text-base font-medium text-black whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Print Catelogue
+                                </span>
+                            </button>
+
+                            <button type="button"
+                                class="btn-primary flex gap-2.5 justify-center items-center px-10 py-3.5 text-base font-medium text-white whitespace-nowrap bg-sky-600 transition-all duration-200 cursor-pointer ease-[ease-in-out] rounded-[38px] max-md:px-8 max-md:py-3 max-md:text-base max-sm:px-6 max-sm:py-3 max-sm:w-full max-sm:text-sm">
+                                <span
+                                    class="text-base font-medium text-white whitespace-nowrap max-md:text-base max-sm:text-sm">
+                                    Download PDF
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Master Catelogue modal -->
+
+
+
+    <!-- JQUERY CDN -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+
+    <!-- LENIS SMOOTH SCROLL CDN LINK -->
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+
+    <!-- BUNDLE JS LINK -->
+    <script src="./assets/javascript/bundle.js"></script>
+
+    <!-- LENIS JS LINK -->
+    <script src="./assets/javascript/lenis.js"></script>
+
+    <!-- CUSTOM JS LINK -->
+    <script src="./assets/javascript/script.js"></script>
+
+
+
+</body>
+
+</html>
